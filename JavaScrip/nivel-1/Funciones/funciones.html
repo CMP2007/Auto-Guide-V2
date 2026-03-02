@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+    <title>Funciones JavaScript</title>
+</head>
+<header>
+    <nav >
+        <ul class="nav"> 
+            <li><a href="../../../Index.html" class="logo"><img src="../../../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+            <li><a href="../../../HTML/indice.html" class="HTML tema"><span class="text__tema">HTML</span></a></li>
+            <li><a href="../../../CSS/indiceCSS.html" class="CSS tema"><span class="text__tema">CSS</span></a></li>
+            <li><a href="../../indiceNivel.html" class="seleccion__JS tema"><span class="text__tema">JS</span></a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <aside class="aside">
+        <div class="outer ">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_JS">
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+            </label>
+            <div class="nav-aside_JS">
+                <ul>
+                    <a href="../Indice__JS.html"><h2>Nivel 1 JS</h2></a>
+                    <div class="aside-divisor"></div>
+                    <h2>Propiedades</h2>    
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Funciones JavaScript</h1>
+                    <section>
+                        <p>Las funciones se tratan de bloques de código a los que se les puede asignar un nombre como si de una variable se tratara, con el propósito de vincular la funcionalidad de todo el bloque a este nombre, en otras palabras, una función permite el ejecutar toda una funcionalidad múltiples veces simplemente con definirla una única vez, y realizar el llamado de esta utilizando su nombre cada vez que sea necesario ejecutar el código, de este modo ahorrando trabajo y simplificando el script de la página.</p>
+                    </section>
+                   
+                    <section>
+                        <dl>
+                            <dt> <h3>Formas de Crear Funciones y llamarlas</h3></dt>
+                            <dd>
+                                <p>Para definir una función es necesario utilizar la palabra clave "function" seguida del nombre que se le asignará, unos paréntesis ( ) y por último unas llaves ( { } ) las cuales contendrán el bloque de código a convocar por el nombre, la palabra clave "function" está reservada para indicar que el bloque de código contenido dentro de esta se ejecutará cada vez que se realice el llamado de esta por el nombre asignado a esta.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/funciones-1.PNG" class="img" alt="">
+                                <p>En este ejemplo se evidencia un bloque de código que realiza dos preguntas al usuario y lanza un "alert" en base a la respuesta de este, todo esto dentro de una función definida con el nombre de "saludar".</p>
+                                <h4>Llamado de una función</h4>
+                                <img src="./img/funciones-2.PNG" class="img" alt="">
+                                <p>De este modo cada vez que se realice el llamado de esta a través de su nombre el bloque de código estructurado dentro de esta se ejecutará.</p>
+                                <p>Existe una segunda forma de declarar una función, la cual es definir el nombre de esta e indicar con un signo igual (=) la palabra clave "function" seguida de los paréntesis ( ) y de las llaves que contendrán el bloque de código, de la siguiente forma:</p>
+                                <img src="./img/funciones-3.PNG" class="img" alt="">
+                                <p>Esta segunda forma de definir funciones tiene el mismo efecto que la primera, simplemente se trata de una alternativa a la hora de definirlas, la única diferencia con la forma tradicional es que esta forma permite encapsularla dentro de una variable.</p>
+                                <p><b>Nota: El declarar una función no significa que esta se ejecutará, simplemente se está definiendo, es decir como: "esta función existe" pero en ningún momento se está indicando que se ejecuta, para esto es necesario realizar el respectivo llamado de esta.</b></p>
+                                <p>Nota: Del mismo modo una función debe tener un uso concreto, no deben de tener múltiples funcionalidades, lo mejor es que cada función tenga una funcionalidad. </p>
+                            </dd>
+                        </dl>                       
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>Return</h3></dt>
+                            <dd>
+                                <p>Las funciones desarrollan una funcionalidad, sin embargo en cuanto a datos se refiere por sí solas no brindan ninguno, lo que es un problema a la hora de generar funciones que tengan el objetivo de generarlos o manipularlos, para estos casos existe la palabra clave "Return", se trata de una sentencia de culminación, es decir en el punto en el que esta sea ejecutada la función culminará y JavaScript continuará con la ejecución de otro bloque de código, pero al hacer "return" enviará un dato al exterior de la función, de ese modo se obtendrá un dato al ejecutarse una función.</p>
+                                <p>En otras palabras "return" no solo indica la culminación de la función, sino que también permite definir si uno o más datos se enviarán al exterior de la función para que puedan ser manipulados por otros bloques de código.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/funciones-4.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/funciones-5.PNG" class="img" alt="">
+                                <p>En este ejemplo se aprecia una función que lanza una alerta al usuario, sin embargo luego se ejecuta un "return" el cual tiene indicado un dato de tipo cadena que será enviado al exterior de la función, el dato cadena es un resultado de ejecutar la función por ello a la vez que se realiza el llamado de esta se almacena el dato enviado dentro de la variable "saludo", por último se indica que se imprima en pantalla el valor de "saludo" (dato enviado por la función).</p>
+                                <p>De este modo se puede usar "return" para enviar al exterior de la función cualquier dato, ya sea uno generado por esta como el resultado de una operación o un valor previamente definido. </p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>Parámetros de una función</h3></dt>
+                            <dd>
+                                <p>En una función es posible el enviarle uno o más datos en particular para que esta los pueda emplear en su proceso, para hacerlo se emplean los paréntesis que forman parte de la estructura de las funciones, dentro de estos se definirá una variable local de la función por cada dato que esta necesite para operar. </p>
+                                <p>De este modo al realizar el llamado de la función se ingresará los datos dentro de los paréntesis que acompañan al nombre de esta, los cuales serán almacenados por las variables declaradas en la formulación de la función de esta forma:</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/funciones-6.PNG" class="img" alt="">
+                                <p>En este ejemplo se puede apreciar el cómo los paréntesis de la estructura de una función se definen dos variables "num1" y "num2" las cuales recibirán los datos proveídos para la ejecución de la función, a la vez que estas variables son operadas por el código dentro de esta.</p>
+                                <h4>Ejecución</h4>
+                                <img src="./img/funciones-7.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/funciones-8.PNG" class="img" alt="">
+                                <p>En este segundo ejemplo se llama la función "suma" a la vez que se asigna a una variable llamada "resultado" para poder guardar los datos retornados por esta, se puede apreciar el cómo al realizar el llamado de la función se envían dos datos dentro de los paréntesis de esta (20 y 25), los cuales serán recibidos por las variables de la imagen anterior y operados por la función, de ese modo resultando en el valor 45 el cual es retornado hasta la variable "resultado".</p>
+                                <p>De este modo una función puede ser utilizada cada vez que sea necesario ya que en cada caso con enviar los datos pertinentes se obtendrá un resultado en base a estos.</p>
+                                <p>Nota: En el caso de que la función no requiera de ningún parámetro simplemente se incorporan los paréntesis a la estructura de function dejándolos vacíos, ya que estos forman parte de la sintaxis de estas.</p>
+                                <p>Nota: Las funciones tienen un alcance Global, eso quiere decir que están disponibles para utilizarse en todo el documento JS, por otro lado las variables definidas dentro de estas solo deben tener un alcance regional, esto es lo mejor para evitar cualquier tipo de conflicto o error en el sistema. Por ello es importante definir las variables como "let", ya que de no especificarse JavaScript por defecto definirá las variables como "var" lo que les dará un alcance global generando dichos conflictos. </p>                                         
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>Funciones Flecha</h3></dt>
+                            <dd>
+                                <p>Se trata de otra manera de definir funciones, sin embargo en esta ocasión este método sí presenta diferencias significativas con respecto a las formas mostradas con anterioridad.</p>
+                                <p>Las funciones flecha se caracterizan por simplificar la estructura de las funciones, la cual consiste en el nombre de la función seguido por el símbolo igual (=), seguido por paréntesis ( ) con los respectivos parámetros (si son necesarios) dentro de estos luego se encuentra otro símbolo igual (=) junto con el signo mayor que (>) culminando con las llaves ( { } ) las cuales contienen el bloque de código de la función. </p>
+                                <img src="./img/funciones-10.PNG" class="img" alt="">
+                                <p>Como se puede apreciar en este caso la estructura de la función se encuentra un poco más simplificada, por ejemplo la palabra función es reemplazada por los símbolos igual y mayor que (=>) los cuales forman la tan llamada "flecha" y se ubican entre los paréntesis () y las llaves ( { } ).</p>
+                                <p>Aun así las funciones flecha no terminan allí, ya que pueden llegar a simplificar aún más su estructura, ya que en estas en el caso de que solo se emplee un único parámetro se puede elegir omitir el uso de los paréntesis ().</p>
+                                <img src="./img/funciones-9.PNG" class="img" alt="">
+                                <p>Como se puede ver en este segundo ejemplo si se da el caso de que la función sea reducida y únicamente posea una línea de código como su bloque, incluso se puede llegar a omitir el uso de las llaves ( { } ). </p>
+                                <p>Por lo tanto una de las ventajas de las funciones flecha es que son más simples de estructurar que las funciones tradicionales, y que mientras más reducida es la función en sí más simple puede ser su estructura.</p>
+                                <p>Nota: Las funciones flecha únicamente retornan datos cuando están compuestas por una sola expresión de una línea (funciones simples de una línea).</p>
+                            </dd>
+                        </dl>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../../../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta, si quieres saber más visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img  src="../../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                            <a href="" class="footer__instagram">
+                                <img src="../../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Currículum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>

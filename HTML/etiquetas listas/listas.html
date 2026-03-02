@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+        <title>Componentes de una Lista</title>
+    </head>
+    <header>
+        <nav >
+            <ul class="nav"> 
+                <li><a href="../Index.html" class="logo"><img src="../../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+                <li><a href="../indice.html" class="seleccion__HTML tema">HTML</a></li>
+                <li><a href="../../CSS/indiceCSS.html" class="CSS tema">CSS</a></li>
+                <li><a href="../../JavaScrip/Indice__JS.html" class="JS tema">JS</a></li>
+                <div class="indicador"></div>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <aside class="aside">
+        <div class="outer ">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_HTML">
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+            </label>
+            <div class="nav-aside_HTML">
+                <ul>
+                        <h2>Temas HTML</h2>
+                        <li><a href="../etiquetas estructura/estructura.html"><h3>Estructura</h3></a></li>
+                        <li><a href="../etiquetas texto/texto.html"><h3>Texto</h3></a></li>
+                        <li><a href="../Etiquetas uso espesifico/usoEspesifico.html"><h3>Etiquetas Generales</h3></a></li>
+                        <li><a href="../etiquetas de metadatos/metadatos.html"><h3>Metadatos</h3></a></li>
+                        <li><a href="../Visualizar codigo/VerCodigo.html"><h3>Representar código</h3></a></li>
+                        <li> <a href="../Multimedia/multimedia.html"><h3>Multimedia</h3></a></li>
+                        <li><a href="../Tablas HTML/tablas.html"><h3>Tablas</h3></a></li>
+                        <li><a href="../Eventos HTML/eventos.html"><h3>Eventos</h3></a></li>
+                        <li><a href="../Formularios HTML/formularios.html"><h3>Formularios</h3></a></li>
+                        <li><a href="../Validaciones/validaciones.html"><h3>Validaciones</h3></a></li>
+                        <li><a href="../Enviar Datos Form/EnviarDatos.html"><h3>Envío de Datos</h3></a></li>
+                        <li><a href="../PersonalizarControladores/ControladoresJS.html"><h3>Controladores JS</h3></a></li>
+                        <li> <a href="../Pre-cargar Contenido/Precargar.html"><h3>Pre-Carga</h3></a></li>
+                        <li><a href="../Notas/notas.html"><h4>Recordatorios</h4></a></li>
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Componentes de una Lista</h1>
+            <section id="etiquetas">
+                <p>En este apartado se desglosan todas las etiquetas que conforman a las listas, así como los diferentes tipos de listas disponibles en HTML.</p>
+            </section>
+            <section id="ordenadaDesarodenada">
+                <h2>Listas Ordenadas y No Ordenadas</h2>
+                <p>Las listas ordenadas y no ordenadas son dos variantes de listas; la única diferencia real entre ambas es de qué forma se ordenarán los elementos entre sí.</p>
+                <dl>
+                    <dt id="ul"><h3>Ul</h3></dt>
+                    <dd>
+                        <p>Se trata de la etiqueta contenedora de las listas <b>no ordenadas</b>; en otras palabras, delimita el inicio y final de la lista. Al emplearse, los elementos de la lista estarán precedidos por un punto que indicará su pertenencia a esta, pero sin atribuir un orden en particular.</p>
+                    </dd>
+                    <dt id="ol"><h3>Ol</h3></dt>
+                    <dd>
+                        <p>En este caso se trata de la etiqueta contenedora de las listas <b>ordenadas</b>; en otras palabras, esta etiqueta delimita el inicio y final de la lista. Al emplearse, los elementos de la lista serán enumerados según sean ingresados, atribuyéndoles de este modo un orden a los elementos.</p>
+                    </dd>
+                    <dt id="li"><h3>Li</h3></dt>
+                    <dd>
+                        <p>El elemento "li" del inglés <i>item list</i> o elemento de lista declara cada uno de los elementos de una lista, sin importar si se trata de una lista ordenada o desordenada; en otras palabras, esta etiqueta actúa como contenedora del contenido de cada elemento de la lista.</p>
+                    </dd>
+                </dl>
+            </section>
+            <section id="descriptivas">
+                <h2>Listas Descriptivas</h2>
+                <p>Son una variante de lista pensada particularmente para aquellas ocasiones en las que es necesario describir un elemento, y para esto cuentan con un estilo por defecto que facilita su compresión. Están conformadas por etiquetas completamente diferentes a los tipos de listas nombradas anteriormente, como lo son: </p>
+                <dl>
+                    <dt id="dl"><h3>Dl</h3></dt>
+                    <dd>
+                        <p>Se trata de la etiqueta contenedora de este tipo de listas, es decir, cumple la misma función que "ul" u "ol".</p>
+                    </dd>
+                    <dt id="dt"><h3>Dt</h3></dt>
+                    <dd>
+                        <p>Esta etiqueta actúa como el contenedor en específico del nombre del término o elemento que será descrito; los estilos por defecto del navegador lo mostrarán con una sangría básicamente nula.</p>
+                    </dd>
+                    <dt id="dd"><h3>Dd</h3></dt>
+                    <dd>
+                        <p>Esta etiqueta es la que contiene la descripción del elemento en cuestión; se muestra con una sangría en el margen izquierdo. </p>
+                        <p><b>Nota: Puede que no lo parezca, pero en este tipo de lista es completamente posible que un elemento posea más de una descripción.</b></p>
+                    </dd>
+                </dl>
+                <p><b>Nota: una característica de todos estos tipos de listas es que se puede incluir prácticamente cualquier elemento en su interior, desde contenedores, elementos multimedia o de texto.</b></p>
+            </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta. Si quieres saber más, visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img  src="../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                
+                            <a href="" class="footer__instagram">
+                                <img src="../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Currículum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>

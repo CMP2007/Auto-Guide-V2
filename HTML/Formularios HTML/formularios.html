@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+    <title>Formularios HTML</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav"> 
+                <li><a href="../Index.html" class="logo"><img src="../../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+                <li><a href="../indice.html" class="seleccion__HTML tema">HTML</a></li>
+                <li><a href="../../CSS/indiceCSS.html" class="CSS tema">CSS</a></li>
+                <li><a href="../../JavaScrip/Indice__JS.html" class="JS tema">JS</a></li>
+                <div class="indicador"></div>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="aside">
+        <div class="outer">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_HTML">
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+            </label>
+            <div class="nav-aside_HTML">
+                <ul>
+                    <h2>Temas HTML</h2>
+                    <li><a href="../etiquetas estructura/estructura.html"><h3>Estructura</h3></a></li>
+                    <li><a href="../etiquetas texto/texto.html"><h3>Texto</h3></a></li>
+                    <li><a href="../Etiquetas uso espesifico/usoEspesifico.html"><h3>Etiquetas Generales</h3></a></li>
+                    <li><a href="../etiquetas listas/listas.html"><h3>Listas</h3></a></li>
+                    <li><a href="../etiquetas de metadatos/metadatos.html"><h3>Metadatos</h3></a></li>
+                    <li><a href="../Visualizar codigo/VerCodigo.html"><h3>Representar código</h3></a></li>
+                    <li><a href="../Multimedia/multimedia.html"><h3>Multimedia</h3></a></li>
+                    <li><a href="../Tablas HTML/tablas.html"><h3>Tablas</h3></a></li>
+                    <li><a href="../Eventos HTML/eventos.html"><h3>Eventos</h3></a></li>
+                    <li><a href="../Validaciones/validaciones.html"><h3>Validaciones</h3></a></li>
+                    <li><a href="../Enviar Datos Form/EnviarDatos.html"><h3>Envío de Datos</h3></a></li>
+                    <li><a href="../PersonalizarControladores/ControladoresJS.html"><h3>Controladores JS</h3></a></li>
+                    <li><a href="../Pre-cargar Contenido/Precargar.html"><h3>Pre-Carga</h3></a></li>
+                    <li><a href="../Notas/notas.html"><h4>Recordatorios</h4></a></li>
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Formularios HTML</h1>
+                    <section class="pagination">
+                        <a href="#" class="desplazar off">
+                            <div>
+                                <span>
+                                    <span class=" off"> &larr; </span>PREVIO
+                                </span>
+                            </div>
+                        </a>
+                        <div class="numbers">
+                            <a href="#" class="off">
+                                <div>1</div>
+                            </a>
+                            <a href="./formularios-pag-2.html" class="pagina paginaHTML">
+                                <div>2</div>
+                            </a>
+                        </div>
+                        <a href="./formularios-pag-2.html" class="desplazar">
+                            <div>
+                                <span class="pagina paginaHTML">Next <span class="pagArrowRight"> &rarr;</span></span>
+                            </div>
+                        </a>
+                    </section>
+
+                    <section id="descripcion">
+                        <p>Los formularios son herramientas web en las que los usuarios pueden ingresar datos, los cuales pueden ser enviados a una base de datos o aplicados en el lado del usuario (por ejemplo configuraciones de la página), básicamente son elementos HTML en los que el usuario puede ingresar datos los cuales pueden ser empleados o almacenados por la página. En los formularios los datos ingresados con frecuencia son validados para corroborar que cumplen con los requerimientos o características del caso de uso, no hay que olvidar que los elementos HTML únicamente aportan la estructura a la página, por ello es que todo lo relacionado con funcionalidad (envío de datos, validaciones etc.) son realizados empleando JavaScript, a su vez al igual que el resto de la página suelen ser decorados con estilos CSS por lo tanto en estos elementos es muy común que las tres tecnologías sean incorporadas. </p>
+                    </section>
+
+                    <section>
+                        <h2>Elementos contenedores de los formularios</h2>
+                        <dl>
+                            <dt id="form"><h3>Form</h3></dt>
+                            <dd>
+                                <p>Esta etiqueta se trata de un elemento contenedor especializado en los formularios, como tal su rol es la definir cuáles elementos pertenecen a cuál formulario, esto ya que no es muy extraño que una página posea más de un formulario en un mismo documento HTML, a su vez cuenta con algunos atributos específicos para definir su comportamiento, si bien todos sus atributos son opcionales se considera una buena práctica el incluir como mínimo los atributos: "action" y "method".</p>
+                                <ul>
+                                    <li><p><b>Action: </b> Define la ubicación (URL) a la que se deben enviar los datos recopilados por el formulario</p></li>
+                                    <li><p><b>method: </b> Define el método HTTP en el que se realizará la transferencia de datos ya sea la recepción o el envío de estos</p></li>
+                                </ul>
+                                <p><b>Nota: No se debe anidar un formulario dentro de otro, ya que esto causaría que ambos se comporten de forma impredecible.</b></p>
+                                <p><b>Los elementos de un formulario pueden ser utilizados perfectamente fuera de uno, aunque no tengan nada que ver con el formulario, para estos casos si es lo que se desea también hay formas de vincularlos a este pese a encontrarte fuera del formulario.</b></p>
+                            </dd>
+
+                            <dt id="FieldsetLegend"><h3>Fieldset y Legend</h3></dt>
+                            <dd>
+                                <p>El elemento "fieldset" se trata de un elemento contenedor especializado en agrupar widgets que comparten un mismo propósito, esto con fines semánticos y de estilos.</p>
+                                <p>Por otro lado el elemento "legend" se utiliza para etiquetar un elemento "fieldset", esto con el fin de brindar una guía a los motores de lectura, su método de implementación es incorporándolo justamente luego de la etiqueta de apertura de "fieldset" y su efecto es que los motores vincularán el valor de "legend" con todos los elementos dentro de "fieldset", a continuación se muestra un ejemplo de código: </p>
+                                <img src="./img/ejmFieldsetLegend.PNG" alt="" class="img">
+                                <p>Otra característica del elemento "legend" es que su valor se puede anexar a otros elementos de etiquetados, como se puede ver en el caso anterior, ya que para cada "input" se complementa el valor de su respectivo label con el valor de legends, por lo que un lector de pantalla leería: "Fruit juice size + valorLabel" para cada "input".</p>
+                                <p><b>Nota: Comúnmente los motores de lectura leerán el contenido de la etiqueta "legend" antes que los "widgets" del formulario.</b></p>
+                                <p>Como tal el elemento "fieldset" no altera la funcionalidad del formulario, lo que sí hace es mejorar la accesibilidad del formulario para los motores de búsqueda, por lo tanto es una etiqueta basada en mejorar la experiencia de personas con discapacidad visual.</p>
+                            </dd>
+
+                            <dt id="liLu"><h3>Li y Ul </h3></dt>
+                            <dd>
+                                <p>Estas etiquetas por sí solas conforman una lista, sin embargo en los formularios pudiese ser útil el incorporarlas para actuar como contenedores para cada sección del formulario, esto se hace con el fin de poder aplicar los estilos CSS de mejor forma, como se puede ver en la siguiente imagen:</p>
+                                <img src="./img/ejmLiUlFormularios.PNG" alt="" class="img">
+                            </dd>
+                        </dl>
+                    </section>
+
+                    <section id="elementos">
+                        <h2>Elementos de un Formulario</h2>
+                        <dl>
+                            <dt id="label"><h3>Label</h3></dt>
+                            <dd>
+                                <p>Este elemento define los encabezados de los elementos del formulario, la función de este plenamente de accesibilidad, tanto para usuarios comunes como para los motores de lectura, un elemento "label" se debe vincular con el elemento al que este hace referencia, al vincularlo correctamente los motores de lectura pueden funcionar de una forma más entendible para sus usuarios. </p>
+                                <p>Para vincularlo con el elemento controlador se utiliza el atributo "for" con un valor igual al atributo "id" del controlador al que este hace referencia, por lo tanto el valor de "for" en el label y de "id" del controlador deben ser el mismo, como tal a la hora de expresarlo en código existen dos formas de estructurarlo:</p>
+                                <ol>
+                                    <li>
+                                        <p> La primera se trata de estructurar el "label" e "input" como dos elementos separados </p>
+                                        <img src="./img/ejmInput2.PNG" alt="" class="img">
+                                    </li>
+                                    <li>
+                                        <p>La segunda forma consta de anidar el "input" dentro del elemento "label"</p>
+                                        <img src="./img/ejmInput3.PNG" alt="" class="img">
+                                    </li>
+                                </ol>
+                                <p><b>Nota: sea cual sea la forma en la que se estructure en código siempre es recomendable que se vincule los elementos mediante el "for" y el "id", para asegurar que todos los motores de lectura lo interpreten adecuadamente.</b></p>
+                                <p>Una ventaja de vincular correctamente los label con su respectivo widget es que al hacerse un clic sobre este automáticamente se activa el widget, esto es muy útil para el diseño y accesibilidad del formulario, el siguiente es tanto un ejemplo de uso así como del código en cuestión.</p>
+                                <h4>Ejemplo</h4>
+                                <form>
+                                    <p>
+                                        <input type="text" id="taste_1" name="taste_cherry" value="cherry" />
+                                        <label for="taste_1">I like cherry</label>
+                                    </p> 
+                                    <img src="./img/ejmLabel1.PNG" alt="" class="img">
+                                </form>
+                                <h4>Incluir varias etiquetas label</h4>
+                                <p>En la mayoría de los casos pese a que se puede hacer esto no es muy recomendable ya que lo que son los motores de lectura no interpretan bien esto, sin embargo existe una forma de ejecutar esto de forma adecuada, consiste en anidar una etiqueta "span" dentro de "label" como se puede ver a continuación:</p>
+                                <p>Pudiese darse casos como este en el que sea necesario o conveniente el incorporar más de una "etiqueta" para ayudar a los motores de lectura a interpretar adecuadamente el "label", por ejemplo este es un código estructurado correctamente ya que se usa el atributo "aria-label" en el cual su valor siempre es leído por estos, por lo tanto (importante recordar que el * representa que el campo es obligatorio). </p>
+                                <img src="./img/ejmMultiplesLabel.PNG" alt="" class="img">
+                                <p><b>Nota: Este tipo de prácticas son necesarias ya que los motores de lectura tienen formas definidas de describir los símbolos, por ejemplo al * lo describen como estrella, por lo tanto en este caso estructuramos el valor contextual del símbolo para su adecuada interpretación.</b></p>
+                                <p><b>Nota: El resultado de la interpretación de un motor de lectura puede variar dependiendo de cuál se utilice sin embargo esta es la forma más clara de estructurar el código.</b></p>
+                            </dd>
+
+                            <dt id="input"><h3>Input</h3></dt>
+                            <dd>
+                                <p>La etiqueta "input" se trata del elemento de entrada de datos, en este elemento el atributo más importante con diferencia es "type", este elemento cuenta con multitud de valores, la característica más resaltante del elemento "input" es que puede cambiar su forma según el valor del atributo "type", este elemento se utiliza para crear la mayoría de los widget de un formulario.</p>
+                                <h4>Formas del elemento "Input"</h4>
+                                <ul>
+                                    <li>
+                                        <p><b>Text: </b> Traducido como Campos de texto de una sola línea, para definir esta forma el valor del atributo "type" tiene que ser "text", otra forma de lograr que el input tome esta forma es ignorar el atributo "type" por completo ya que este es el valor predefinido del input.</p>
+                                        <p><b>Nota: Este valor también se utilizará en caso de que el navegador desconozca el valor del atributo "type".</b></p>
+                                        <img src="./img/ejmInputText.PNG" alt="" class="img">
+                                        <p><b>Nota: La limitación de un campo de texto de una sola línea es que cualquier salto de línea que se ingrese será eliminado al momento de enviar los datos.</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>password: </b> En esta forma de "input" se visualiza un cuadro de texto con la particularidad de que el texto ingresado en este no es visible, permanece oculto representado por puntos o asteriscos, en sí esta es la única característica distintiva de esta forma de "input", la cual es únicamente una función de la interfaz de usuario ya que en sí no incluye ningún tipo de característica de seguridad adicional, en los datos ni en el envío de estos.</p>
+                                        <p>Para la seguridad lo más recomendable es subir la página (al menos la de login) en un servicio HTTPS, ya que este tipo de conexión web cifra los datos antes de ser enviados, si de otra manera la página se encontrara en un formato con conexión HTTP los datos serían enviados sin encriptar, lo que los expondría a poder ser interceptados por terceros.</p>
+                                        <p>Para definir la utilización de este tipo de "input" el valor del atributo "type" tiene que ser igual a "password".</p>
+                                        <img src="./img/ejmInputPassword.PNG" alt="" class="img">
+                                        <p><b>Nota: Los navegadores reconocen la implementación de un campo de contraseña y tienen notificaciones que alertarán a los usuarios si están por enviar un formulario que no cumple con los requerimientos de seguridad adecuados o no incluyen conexiones HTTPS.</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Hidden: </b> Traducido como "contenido oculto" un input de tipo "hidden" consiste en un elemento <b>oculto</b> para los usuarios, por lo tanto nunca se mostrará en pantalla ni mucho menos el usuario podrá enfocarse en este, este elemento no solo puede almacenar datos sino que estos son enviados junto a la información del formulario. </p>
+                                        <p>Ya que el usuario nunca interactuará con este elemento su valor puede ser definido a través de JavaScript, es importante tener en cuenta que al tratarse de un elemento oculto este no debe estar vinculado a ninguna "etiqueta" y por lo mismo ya que no se muestra en pantalla es importante definir los atributos "name" y "value". </p>
+                                        <img src="./img/ejmInputHidden.PNG" alt="" class="img">
+                                    </li>
+                                    <li>
+                                        <p><b>Checkbox: </b> Este tipo de "input" se define con el valor "checkbox" en el atributo "type" y se trata de un elemento verificable, lo que significa que su estado puede cambiar dependiendo de si se encuentra verificado o no, otra característica es que al enviarse el formulario únicamente se envían los campos que se encuentren verificados, si el elemento no lo está, no será enviado absolutamente ningún dato.</p>
+                                        <img src="./img/ejmInputCheckbox.PNG" alt="" class="img">
+                                        <p>En este tipo de elementos es importante mantener una buena estructura de código para asegurar la accesibilidad de la página, los elementos que estén relacionados deben encontrarse en un mismo conjunto de campos con una leyenda que brinde una descripción general de la lista, por lo general cada conjunto de elementos "label/input" debe encontrarse en su propio elemento de lista (li).</p>
+                                        <p>En este tipo de "input" generalmente los elementos "label" se incorporan directamente antes o después del "input" y por último las instrucciones para el conjunto de checkbox generalmente es el contenido de la leyenda.</p>
+                                        <p><b>Nota: se puede crear un checkbox que esté verificado por defecto utilizando el atributo "checked".</b></p>
+                                        <p><b>Nota: si el elemento se encuentra verificado pero no tiene un valor definido este se enviará como "on".</b></p>
+                                        <p><b>Nota: Es importante recordar que cualquier "etiqueta" o elemento relacionado con el "checkbox" debe usar el mismo nombre en el atributo "name".</b></p>
+                                        <p>A continuación se muestra un ejemplo de código de este elemento:</p>
+                                        <img src="./img/ejmInputCheckbox2.PNG" alt="" class="img">
+                                        <p><b>Nota: por último muchos desarrolladores consideran al "checkbox" como un botón de alternancia, (ya que su visualización cambia al estar o no verificado) por lo que aplicando estilos CSS para presentarlo como tal, ve un ejemplo</b> <a href="https://mdn.github.io/learning-area/html/forms/toggle-switch-example/" class="a__HTML">Aquí</a>.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Radio: </b> El botón de radio es definido con un valor "radio" en el atributo "type", esta etiqueta puede parecer similar al "checkbox" sin embargo su funcionamiento es diferente ya que está pensado para que el usuario únicamente seleccione uno de varios elementos, conceptualmente funciona como una lista de "checkbox" en los que solo un elemento puede estar marcado a la vez, para lograr este funcionamiento hay que relacionar los diversos elementos "radio" con un mismo valor en el atributo "name", al hacer esto se considera que estos elementos conforman un grupo.</p>
+                                        <img src="./img/ejmInputRadio.PNG" alt="" class="img">
+                                        <p>Al enviarse el formulario únicamente se envía el elemento que esté verificado, si se da el caso de que ninguno de los elementos está verificado no se enviará ningún dato desde el grupo de elementos.</p>
+                                        <p><b>Nota: A diferencia del "checkbox" el elemento "radio" una vez verificado algún elemento este no puede ser desmarcado por el usuario al menos que restablezca el formulario.</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Botones: </b> Los valores del atributo "type" en el elemento "input" son tan versátiles que incluso puede llegar a mostrarse y actuar como un botón, en particular el "input" tiene tres valores con los que actúa como botón, los cuales son los siguientes:</p>
+                                        <ul>
+                                            <li>
+                                                <p><b>Submit:</b> Esta modalidad tiene específicamente la función de enviar los datos de un formulario, se define con el valor "submit" en el atributo "type"</p> 
+                                                <p><b>Nota: En los elementos "button" omitir o utilizar un valor desconocido en el atributo "type" genera un botón de tipo submit, ya que es la función por defecto.</b></p>
+                                            </li>
+                                            <li>
+                                                <p><b>Reset:</b> Restablece todos los widgets del formulario a su valor predeterminado, se define con un valor "reset" en el "type" del elemento</p>
+                                            </li>
+                                            <li>
+                                                <p><b>Button:</b> No tiene una función definida, se trata de un botón personalizable con JavaScript, se define con el valor "button" en el atributo "type"</p>
+                                            </li>
+                                        </ul>
+                                        <p>No confundir el "input" con el elemento "button" el cual puede realizar las mismas funciones ya que este elemento se especializa en crear botones, no obstante se diferencian en que el elemento "button" puede albergar texto y elementos de formato de texto en su interior, por otro lado en el input el texto del botón se define con el atributo "value" por lo que no puede contener estos elementos, en cambio la ventaja del "input" es que es más fácil de diseñar, a continuación se muestran ejemplos de cada caso con ambos elementos:</p>
+                                        <img src="./img/ejmInputAndButton1.PNG" alt="" class="img">
+                                        <img src="./img/ejmInputAndButton2.PNG" alt="" class="img">
+                                        <img src="./img/ejmInputAndButton3.PNG" alt="" class="img">
+                                        <p><b>Nota: la visualización de ambos elementos es básicamente la misma.</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Image:</b> Este tipo de "input" mezcla las características de los elementos "img" y "button", por lo tanto se visualiza igual que un "img" con la característica de que se comporta como un botón submit al hacer clic en este, se define con un valor "image" en el atributo "type", por sus características soporta todos los atributos de un elemento "img" así como los compatibles con los botones de un formulario.</p>
+                                        <img src="./img/ejmInputImage.PNG" alt="" class="img">
+                                        <p>Este elemento no envía los datos de un formulario, en su lugar envía las coordenadas del lugar de la imagen en el que se realizó el clic, para esto el valor de las coordenadas se define en base al eje X y el eje Y dentro de la imagen, tomando como el punto inicial (0X 0Y) la esquina superior izquierda de esta. </p>
+                                        <ul>
+                                            <li><p>La clave de valor del eje X es el valor del atributo X seguido de la cadena ".x"</p></li>
+                                            <li><p>La clave de valor del eje Y es el valor del atributo Y seguido de la cadena ".y"</p></li>
+                                        </ul>
+                                        <p>Por ejemplo si se realizó un clic en las coordenadas x=123 y=456 de la imagen entonces los datos se enviarían de la siguiente forma:</p>
+                                        <img src="./img/ejmInputImageCordenadas.PNG" alt="" class="img">
+                                    </li>
+
+                                    <li>
+                                        <p><b>File:</b> Este tipo de "input" tiene la función de recibir un archivo para enviarlo junto con los datos de un formulario, para definirlo como tal es necesario utilizar el valor "file" en el atributo "type", otros atributos muy utilizados en este elemento son:</p>
+                                        <ul>
+                                            <li><p><b>Multiple:</b> Este atributo le permite al usuario seleccionar más de un archivo a la vez</p></li>
+                                            <li><p><b>Accept:</b> Este atributo se utiliza para definir los formatos de archivo que serán aceptados por el elemento</p></li>
+                                        </ul>
+                                        <img src="./img/ejmInputFile.PNG" alt="" class="img">
+                                        <p><b>Nota: En algunos teléfonos este atributo puede aceptar fotos, vídeos y audio tomados directamente con el dispositivo, en este caso se añade información de la captura al atributo de aceptación de la siguiente manera:</b></p>
+                                        <img src="./img/ejmInputFile2.PNG" alt="" class="img">
+                                    </li>
+                                    <li>
+                                        <p><b>Email: </b> Se trata de un tipo de "input" más moderno ya que fue introducido en HTML5, consiste en un campo de texto con una validación con respecto al tipo de dato que recibe, está configurado para aceptar únicamente direcciones de correos electrónicos, cualquier texto ingresado que no cumpla con el formato de uno será automáticamente rechazado, se define como tal aplicando un valor "email" en el atributo "type".</p>
+                                        <img src="./img/ejmInputEmail.PNG" alt="" class="img">
+                                        <p><b>Nota: Utilizando el atributo multiple puede ser posible para el usuario ingresar varias direcciones de correo a la vez (separados entre sí por comas).</b></p>
+                                        <p>En este tipo de elementos la validación de los datos es ejecutada automáticamente en el lado del cliente por el navegador antes de enviar los datos, lo cual ahorra tiempo y consultas al servidor, no obstante las validaciones ejecutadas en el lado del cliente no son seguras, ya que son muy fáciles de desactivar, por lo tanto es indispensable implementar validaciones exhaustivas de los datos en el servidor, para evitar vulnerabilidades que terceros malintencionados puedan aprovechar.</p>
+                                        <p><b>Nota: La validación del correo por parte del navegador no comprueba que el correo existe en realidad.</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Search: </b> Este tipo de "input" también es reciente y al aplicarse muestra un cuadro de texto especializado en realizar búsquedas en la página, para utilizar este tipo de elemento es necesario aplicar el valor "search" en el atributo "type", un cuadro de búsqueda se diferencia de un cuadro de texto normal principalmente en la apariencia de este, ya que suele mostrar características particulares como:</p>
+                                        <ul>
+                                            <li><p>Bordes redondeados</p></li>
+                                            <li><p>Una "X" en un costado la cual eliminará el texto ingresado automáticamente</p> </li>
+                                            <li><p>Los teclados dinámicos mostrarán "buscar" o mostrarán un icono de lupa</p> </li>
+                                        </ul>
+                                        <img src="./img/ejmInputSearch.PNG" alt="" class="img">
+                                        <p>Otra característica positiva de estos es que los datos del atributo "search" se guardarán automáticamente para facilitar búsquedas dentro de la página.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Tel: </b> Se trata de un tipo de "input" especializado en recibir números de teléfono, su efecto aplica para aquellos dispositivos que utilicen un teclado dinámico, ya que al seleccionar el elemento automáticamente se muestra un tablero de números.</p>
+                                        <p>No cuenta con ninguna validación respecto a los datos ingresados en este ya que existen muchos formatos de números de teléfonos en el mundo, por lo tanto también puede recibir letras, cuenta con un atributo llamado "pattern" el cual permite definir los formatos de número de teléfono que se desea aceptar, para aplicar este tipo de "input" se utiliza el valor "tel" en el atributo "type".</p>
+                                        <img src="./img/ejmInputTel.PNG" alt="" class="img">
+                                    </li>
+                                    <li>
+                                        <p><b>Url: </b> Este tipo de "input" se define con un valor "url" en el atributo "type", este elemento cuenta con varias validaciones ejecutadas en el lado del cliente las cuales rechazarán cualquier dirección que no cuente con un protocolo HTTP o si la dirección tiene un formato incorrecto.</p>
+                                        <p> Al igual que con el "input" "email" estas validaciones son inseguras ya que pueden ser desactivadas fácilmente, por lo que lo mejor siempre es implementar validaciones en el servidor que comprueben los datos recibidos.</p>
+                                        <img src="./img/ejmInputUrl.PNG" alt="" class="img">
+                                        <p><b>Nota: Estas validaciones del lado del cliente no verifican que la dirección ingresada realmente existe.</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Number: </b> Este "input" muestra un campo de texto con la validación de exclusivamente aceptar números, también suelen mostrarse unas flechas ascendentes y descendentes en el costado derecho del recuadro, estas flechas son otra alternativa para ingresar o modificar el texto sin el uso del teclado, ya que permiten aumentar o disminuir los números.</p>
+                                        <p>En este elemento se pueden usar los atributos "min" y "max" para definir los valores mínimos y máximos del elemento respectivamente, también se puede usar el atributo "step" para definir en qué cantidad se realizará el aumento y disminución de las flechas, de forma determinada el valor de este atributo es "1", para incluir números flotantes se puede ingresar un valor "any" en este.</p>
+                                        <p><b>Por ejemplo:</b></p>
+                                        <ol>
+                                            <li>
+                                                <p>Control numérico restringido entre el 1 y el 10, con un incremento y reducción en sus botones de 2.</p>
+                                                <img src="./img/ejmInputNumber1.PNG" alt="" class="img">
+                                            </li>
+                                            <li>
+                                                <p>Control numérico restringido entre el 0 y el 1 con un incremento o reducción establecido de 0.01.</p>
+                                                <img src="./img/ejmInputNumber2.PNG" alt="" class="img">
+                                            </li>
+                                        </ol>
+                                        <p><b>Nota: este elemento es útil en aquellos casos en los que se ingresen números dentro de un rango establecido, si el número se encuentra dentro de un rango ilimitado o demasiado grande es mejor optar por el elemento "tel".</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Range: </b> Se trata de otra forma de seleccionar un número, la cual consiste en la implementación de un menú desplazable, el cual abarca un rango de valores definibles, se trata de un elemento menos preciso que los campos de texto por lo que se utiliza en aquellos casos en los que el valor exacto no es muy importante, se define este elemento aplicando un valor "range" al atributo "type".</p>
+                                        <p>Al utilizar este tipo de elemento es muy importante definir los atributos "min" "max" y "step" ya que cada uno define el valor mínimo, el valor máximo y el valor incremental del elemento respectivamente.</p>
+                                        <img src="./img/ejmInputRange.PNG" alt="" class="img">
+                                        <p>En este ejemplo se utiliza el atributo "value" para definir el valor inicial del elemento.</p>
+                                        <p>El elemento "range" no provee de un elemento visual que ayude a conocer el valor actual del elemento por esto es que suele acompañarse por el <b>elemento output</b> el cual permite mostrar un valor de entrada o salida de un elemento dentro de cualquier otro, este elemento se caracteriza por funcionar igual que un "label", es decir con el atributo "for" es posible relacionarlo con los elementos que generan la salida.</p>
+                                        <p><b>Nota: para que el elemento output funcione es necesario comandarlo con JS, he aquí un ejemplo:</b></p>
+                                        <img src="./img/ejmInputRangeJS.PNG" alt="" class="img">
+                                    </li>
+                                    <li>
+                                        <p><b>Date y Time: </b> En esta ocasión no se trata de un tipo de "input" en particular, sino que en su lugar se refiere a un conjunto de "inputs" de los cuales cada uno cumple con el rol de manejar los datos referentes a la hora y fecha proveída por el usuario, en este caso existen varios tipos de "input" para un mismo tipo de función ya que en realidad existen diversas formas de expresar la hora y fecha, por lo tanto cada tipo cuenta con características propias que lo hacen adaptarse a un formato hora/fecha en específico.</p>
+                                        <p>Los elementos Hora/fecha son:</p>
+                                        <ul>
+                                            <li>
+                                                <p><b>Datetime-local: </b> crea un widget para mostrar y elegir una fecha con hora sin información de zona horaria específica</p>
+                                                <img src="./img/ejmInputDateTime1.PNG" alt="" class="img">
+                                            </li>
+                                            <li>
+                                                <p><b>Month: </b> crea un widget para mostrar y elegir un mes con un año</p>
+                                                <img src="./img/ejmInputDateTime2.PNG" alt="" class="img">
+                                            </li>
+                                            <li>
+                                                <p><b>Time: </b> 
+                                                    crea un widget para mostrar y elegir un valor de tiempo. Si bien la hora puede mostrarse en formato de 12 horas, el valor devuelto está en formato de 24 horas</p>
+                                                    <img src="./img/ejmInputDateTime3.PNG" alt="" class="img">
+                                            </li>
+                                            <li>
+                                                <p><b>Week: </b> crea un widget para mostrar y elegir un número de semana y su año</p>
+                                                <img src="./img/ejmInputDateTime4.PNG" alt="" class="img">
+                                                <p><b>Nota: En este formato la semana comienza el lunes y termina el domingo.</b></p>
+                                            </li>
+                                        </ul>
+                                        <p><b>Nota: Un aspecto que vuelve complejo el uso de este tipo de etiquetas es el tema de la compatibilidad ya que se tratan de etiquetas HTML5.</b></p>
+                                        <p><b>Restricción de valores fecha/hora: </b> Todos los controles de fecha y hora se pueden restringir mediante los atributos "min" y "max", y se pueden restringir aún más mediante el atributo "step" (cuyo valor varía según el tipo de "input"), tal y como se puede apreciar a continuación:</p>
+                                        <img src="./img/ejmInputDateTime5.PNG" alt="" class="img">
+                                        <p><b>Nota: Este elemento también puede adoptar el atributo "step" el cual define en qué cantidad incrementará o se reducirá el valor cuando se usen controles de entrada (flechas arriba y abajo).</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Color: </b> Esta es otra forma de "input", puede crear este elemento utilizando el valor "color" en el atributo "type". Los colores son siempre un poco difíciles de manejar. Hay muchas formas de expresarlos: valores RGB (decimales o hexadecimales), valores HSL, palabras clave, etc.</p>
+                                        <p>Su funcionamiento consiste en hacer clic en un control de color, generalmente se muestra la funcionalidad de selección de color predeterminada del sistema operativo.</p>
+                                        <img src="./img/ejmInputColor.PNG" alt="" class="img">
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section class="pagination">
+                        <a href="#" class="desplazar off">
+                            <div>
+                                <span>
+                                    <span class=" off"> &larr; </span>PREVIO
+                                </span>
+                            </div>
+                        </a>
+                        <div class="numbers">
+                            <a href="#" class="off">
+                                <div>
+                                    1
+                                </div>
+                            </a>
+                            <a href="./formularios-pag-2.html" class="pagina paginaHTML">
+                                <div>
+                                    2
+                                </div>
+                            </a>
+                        </div>
+                         <a href="./formularios-pag-2.html" class="desplazar">
+                           <div>
+                                <span class="pagina paginaHTML">Next <span class="pagArrowRight"> &rarr;</span></span>
+                            </div>
+                        </a>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta, si quieres saber más visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img  src="../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                            <a href="" class="footer__instagram">
+                                <img src="../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Curriculum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>

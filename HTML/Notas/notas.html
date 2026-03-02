@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+        <title>Notas a recordar al utilizar HTML</title>
+    </head>
+    <header>
+        <nav >
+            <ul class="nav"> 
+                <li><a href="../Index.html" class="logo"><img src="../../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+                <li><a href="../indice.html" class="seleccion__HTML tema">HTML</a></li>
+                <li><a href="../../CSS/indiceCSS.html" class="CSS tema">CSS</a></li>
+                <li><a href="../../JavaScrip/Indice__JS.html" class="JS tema">JS</a></li>
+                <div class="indicador"></div>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <aside class="aside">
+        <div class="outer ">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_HTML">
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+            </label>
+            <div class="nav-aside_HTML">
+                <ul>
+                        <h2>Temas HTML</h2>
+                        <li><a href="../etiquetas estructura/estructura.html"><h3>Estructura</h3></a></li>
+                        <li><a href="../etiquetas texto/texto.html"><h3>Texto</h3></a></li>
+                        <li><a href="../Etiquetas uso espesifico/usoEspesifico.html"><h3>Etiquetas Generales</h3></a></li>
+                        <li><a href="../etiquetas listas/listas.html"><h3>Listas</h3></a></li>
+                        <li><a href="../etiquetas de metadatos/metadatos.html"><h3>Metadatos</h3></a></li>
+                        <li><a href="../Visualizar codigo/VerCodigo.html"><h3>Representar código</h3></a></li>
+                        <li> <a href="../Multimedia/multimedia.html"><h3>Multimedia</h3></a></li>
+                        <li><a href="../Tablas HTML/tablas.html"><h3>Tablas</h3></a></li>
+                        <li><a href="../Eventos HTML/eventos.html"><h3>Eventos</h3></a></li>
+                        <li><a href="../Formularios HTML/formularios.html"><h3>Formularios</h3></a></li>
+                        <li><a href="../Validaciones/validaciones.html"><h3>Validaciones</h3></a></li>
+                        <li><a href="../Enviar Datos Form/EnviarDatos.html"><h3>Envío de Datos</h3></a></li>
+                       <li><a href="../PersonalizarControladores/ControladoresJS.html"><h3>Controladores JS</h3></a></li>
+                        <li> <a href="../Pre-cargar Contenido/Precargar.html"><h3>Pre-Carga</h3></a></li>
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Notas a recordar al utilizar HTML</h1>
+                    <section id="descripcion">
+                        <p>Algunas de las cosas que es necesario recordar al trabajar la estructura o funcionamiento de una página web con HTML son:</p>
+                    </section>
+                    <section id="notas">
+                        <ol>
+                            <li>
+                                <p>Lo ideal es confiar en HTML para el contenido tanto como sea posible</p>
+                            </li>
+                            <li>
+                                <p><b>Una buena práctica es tomarse el tiempo de pensar y definir la estructura que tendrá la página, desde el cómo se estructurará, conectará por cuántas páginas estará compuesta, qué contenido albergará, y el cómo se quiere que se vea entre otros aspectos (siempre es bueno dibujar o plasmar las ideas en borradores o referencias visuales)</b></p>
+                            </li>
+                            <li>
+                                <p>Lo mejor para una página es incluir contenido de terceros solo cuando es necesario, ya sea por temas de derechos de autor, licencias o vulnerabilidades aprovechables por terceros malintencionados </p>
+                            </li>
+                            <li>
+                                <p>Si es posible utilizar un servicio HTTPS para nuestra página, tener presente la seguridad de esta siempre debe ser primordial</p>
+                            </li>
+                            <li>
+                                <p>El anidamiento de las etiquetas debe de hacerse de forma correcta para evitar mal funcionamiento de los elementos, es decir el primer elemento en abrirse es el último en cerrarse, y viceversa, por lo tanto nunca hay que mezclar el inicio y final de las etiquetas como se ve en el ejemplo, las etiquetas deben estar claramente dentro o fuera una de otras</p>
+                                <img src="./img/ejmRecordarAnidar.PNG" alt="" class="img">
+                            </li>
+                            <li>
+                                <p>Si escribimos "lorem" en alguna etiqueta de texto emergerá una recomendación del editor de texto, seleccionarla se plasmará en la etiqueta un texto en latín, su única función es actuar como un texto de relleno para que podamos emular el contenido de la página mientras esta es desarrollada </p>
+                            </li>
+                            <li>
+                                <p>Es posible aplicar más de una clase a los elementos HTML utilizando el atributo <b>"class"</b>, para hacerlo únicamente basta con dejar un espacio entre los nombres de las clases. </p>
+                            </li>
+                            <li>
+                                <p><b>Como pequeño recordatorio si se hunde "alt+z" el código extenso mostrado en el editor de texto en vez de extenderse hacia la derecha de forma indefinida, se replegará y se alineará dentro de la pantalla</b></p>
+                            </li>
+                            <li>
+                                <p>Los atributos <b>booleanos</b> son aquellos que únicamente tienen un valor, generalmente es el mismo que el nombre del atributo por lo que estos atributos se implementan sin valor alguno </p>
+                                <img src="./img/ejmRecordarBooleano.PNG" alt="" class="img">
+                            </li>
+                            <li>
+                                <p>Se puede usar libremente ya sea comillas dobles o simples ya que estas son equivalentes, lo que nunca debe pasar es que se mezclen en un mismo elemento</p>
+                                <img src="./img/ejmRecordarComillas.PNG" alt="" class="img">
+                                <p>También se puede usar un tipo de comillas para los valores de los atributos y otro en el contenido.</p>
+                                <img src="./img/ejmRecordarComillas2.PNG" alt="" class="img">
+                                <p>Si se necesita incluir el mismo tipo de comillas en el contenido es necesario utilizar entidades HTML para estas.</p>
+                                <img src="./img/ejmRecordarComillas3.PNG" alt="" class="img">
+                            </li>
+                            <li>
+                                <p>Dentro del elemento "head" no solo se definen los metadatos también se puede encontrar la descripción de la página para los motores de búsqueda</p>
+                            </li>
+                            <li>
+                                <b><p>Los comentarios dentro de HTML se aperturan con "&lt;!--" y se culminan con "--&gt;"</p></b>
+                            </li>
+                            <li>
+                                <p>El elemento "nav" de la barra de navegación se puede incluir como parte del encabezado o se puede manejar como un elemento independiente</p>
+                            </li>
+                            <li>
+                                <p>El elemento "main" solo debería ser usado una vez por página ya que representa el contenido exclusivo de esta, tampoco debería estar anidado dentro de otros elementos</p>
+                            </li>
+                            <li>
+                                <p><b>No utilizar demasiados contenedores "div" ya que al no poseer un significado semántico pueden ocasionar un código difícil de actualizar y mantener, lo recomendable es que solo se use si no existe una mejor opción para ese caso de uso</b></p>
+                            </li>
+                            
+                            <li>
+                                <p>Solo aplicar un único "h1" por página</p>
+                            </li>
+                            <li>
+                                <p><b>No usar más de tres niveles de títulos en un documento, si son necesarios usar más lo recomendable es separar el contenido en diferentes páginas</b></p>
+                            </li>
+                            <li>
+                                <p>Actualmente no es muy recomendable usar los elementos "b", "i" y "u" ya que no aportan semántica, a menos que se dé el caso de que se necesite transmitir el significado tradicional de las negritas, en este caso si no hay otro elemento mejor para hacer esto sería correcto su uso</p>
+                                <p>Recordemos sus usos tradicionales:</p>
+                                <ul>
+                                    <li><p><b>&lt;i&gt;</b> se usa para transmitir el significado que tradicionalmente transmite la itálica: extranjerismos, clasificaciones taxonómicas, conceptos técnicos, un pensamiento...</p></li>
+                                    <li><p><b>&lt;b&gt;</b> se usa para transmitir el significado que tradicionalmente transmite la negrita: palabras clave, nombres de productos, frases principales...</p></li>
+                                    <li><p><b>&lt;u&gt;</b> se usa para transmitir el significado que tradicionalmente conlleva el subrayado: nombres propios, errores ortográficos...</p></li>
+                                    <p><b>Nota: normalmente el subrayado se asocia con los hipervínculos por lo que se recomienda puntualizar su uso o cambiar los estilos con CSS.</b></p>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>Incluso los nombres de las imágenes son tomados en cuenta para el SEO (posicionamiento en los buscadores) de la página, por eso lo mejor es aplicar nombres descriptivos en estas</p>
+                            </li>
+                            <li>
+                                <p>Se puede incluir una imagen usando la URL absoluta o la URL relativa, sin embargo aplicar la URL absoluta es desperdiciar tiempo y recursos ya que el navegador tiene que recorrer un camino más largo para encontrar la imagen, por lo tanto la solución más eficiente es usar la ruta relativa </p>
+                            </li>
+                            <li>
+                                <p>Si se adjunta una imagen de la que no se sea el propietario siempre tener presente:</p>
+                                <ul>
+                                    <li><p>Tener un permiso escrito explícito del dueño de la imagen</p></li>
+                                    <li><p>Se tengan suficientes pruebas de que la imagen es de dominio público</p></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>Recordar el uso del atributo "alt" (texto alternativo) en los elementos "img" ya que esto se mostrará en los casos en que la imagen no pueda ser mostrada al usuario o se use un lector de pantalla </p>
+                            </li>
+                            <li>
+                                <p>No solo es posible utilizar los enlaces para apuntar a un documento o archivo, también podemos dirigirlos a alguna sección o elemento en específico de la página, para esto únicamente se necesita hacer referencia al atributo "id" del elemento en cuestión, como se puede ver en el ejemplo</p>
+                                <img src="./img/Recordarenlaces2.PNG" alt="" class="img">
+                                <p>También podemos hacer esto desde otra página, incluyendo el "id" al final de la ruta a la página:</p>
+                                <img src="./img/Recordarenlaces.PNG" alt="" class="img">
+                            </li>
+                            <li>
+                                <p>En caso de que se asigne una URL en la que se defina en qué carpeta ingresar pero no a qué archivo acceder la mayoría de los servidores buscan por defecto los archivos index cuando no se especifica uno</p>
+                            </li>
+                            <li>
+                                <p>Los motores de búsqueda también se fijan en el texto de los enlaces por lo tanto es bueno utilizar palabras claves para describirlos, esto también ayuda a los usuarios que ingresen en la página</p>
+                            </li>
+                            <li>
+                                <p>No escribir "enlace a" o "link" porque los lectores de pantalla ya anuncian los enlaces, y los usuarios comunes pueden distinguirlos por sus estilos, por lo tanto es redundante</p>
+                            </li>
+                            <li><p>Incluir el contenido de reserva en los elementos de vídeo</p></li>
+                            <li><p>También es recomendable incluir más de un formato de vídeo para asegurar la compatibilidad con diversos navegadores</p></li>
+                            <li>
+                                <p>Al usar un elemento "iframe" es recomendable establecer el atributo "src" con JavaScript, para que primero se cargue nuestra página y luego el contenido incrustado, mejorando los tiempos de carga y la usabilidad </p>
+                            </li>
+                            <li>
+                                <p>Siempre que se embebe contenido en un iframe hacerlo desde un protocolo HTTPS ya que este elemento puede ser un punto de ataque malintencionado</p>
+                            </li>
+                            <li>
+                                <p>También es esencial siempre usar el atributo "sandbox" en el caso de usar un iframe ya que de ese modo se limitan las opciones que pudiese tener un ataque malicioso, del mismo modo una nota importante es que nunca debe agregar tanto "allow-scripts" como "allow-same-origin" a su atributo "sandbox"; en ese caso, el contenido incrustado podría pasar por alto la misma política de seguridad de origen que impide que los sitios ejecuten scripts y usar JavaScript para desactivar sandboxing por completo</p>
+                            </li>
+                            <li>
+                                <p>Recordar que un atributo indispensable para enviar los datos de un formulario es el atributo "name" ya que los datos son enviados en cadenas "clave/valor"</p>
+                            </li>
+                            <li>
+                                <p>No es recomendable anidar un formulario dentro de otro ya que esto puede ocasionar comportamientos impredecibles, lo que sí se puede es usar elementos de formularios que se encuentren fuera de este, todo esto a través del uso del atributo "form" </p>
+                            </li>
+                            <li>Es una práctica común usar listas o "div" para delimitar los elementos de los formularios y aplicar estilos CSS más fácilmente, también en casos más complejos se usan elementos "section" y "fieldset" para agrupar en base a la funcionalidad de los elementos </li>
+                        </ol>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta, si quieres saber más visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img  src="../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                            <a href="" class="footer__instagram">
+                                <img src="../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Currículum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>

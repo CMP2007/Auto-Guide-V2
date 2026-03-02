@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+    <title>Objeto Math</title>
+</head>
+<header>
+    <nav >
+        <ul class="nav"> 
+            <li><a href="../../../Index.html" class="logo"><img src="../../../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+            <li><a href="../../../HTML/indice.html" class="HTML tema"><span class="text__tema">HTML</span></a></li>
+            <li><a href="../../../CSS/indiceCSS.html" class="CSS tema"><span class="text__tema">CSS</span></a></li>
+            <li><a href="../../indiceNivel.html" class="seleccion__JS tema"><span class="text__tema">JS</span></a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <aside class="aside">
+        <div class="outer ">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_JS">
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+            </label>
+            <div class="nav-aside_JS">
+                <ul>
+                    <a href="../Indice__JS.html"><h2>Nivel 1 JS</h2></a>
+                    <div class="aside-divisor"></div>
+                    <h2>Propiedades</h2>    
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Objeto Math</h1>
+                    <section>
+                        <p>El Objeto "Math" es un objeto nativo de JavaScript con múltiples métodos disponibles para trabajar con datos numéricos.</p>
+                    </section>
+                    <h2>Métodos</h2>
+                    <section>
+                        <dl>
+                            <dt><h3>sqrt()</h3></dt>
+                            <dd>
+                                <p>Se trata de un método de uso matemático que permite calcular la raíz cuadrada de un número; es decir, este método retorna la raíz cuadrada del número que se le ingrese.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/sqrt-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/sqrt-2.PNG" class="img" alt="">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt>
+                                <dt><h3>cbrt()</h3></dt>
+                                <dd>
+                                    <p>Se trata de un método de uso matemático que permite calcular la raíz cúbica de un número; es decir, este método retorna la raíz cúbica del número que se le ingrese.</p>
+                                    <h4>Ejemplo</h4>
+                                <img src="./img/cbrt-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/cbrt-2.PNG" class="img" alt="">
+                                </dd>
+                            </dt>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>max()</h3></dt>
+                            <dd>
+                                <p>Se trata de un método aplicable exclusivamente a valores numéricos; la función de este método es retornar el número positivo más alto que se encuentre dentro de un array.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/max-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/max-2.PNG" class="img" alt="">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>min()</h3></dt>
+                            <dd>
+                                <p>Se trata de un método aplicable exclusivamente a valores numéricos; la función de este método es exactamente la opuesta a la del método "max", ya que este, en vez del valor más alto, retorna el número con el menor valor que se encuentre dentro de un array.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/min-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/min-2.PNG" class="img" alt="">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>random()</h3></dt>
+                            <dd>
+                                <p>Devuelve un número pseudoaleatorio entre cero (0) y uno (1). </p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/random-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/random-2.PNG" class="img" alt="">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>round()</h3></dt>
+                            <dd>
+                                <p>Este método permite redondear un número decimal; por lo tanto, el método "round" retorna el número entero más cercano al valor del número decimal. </p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/round-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/round-2.PNG" class="img" alt="">
+                                <p>En este ejemplo se utiliza la propiedad "random" para generar un número aleatorio entre 1 y 0, luego se multiplica por 100 para que el número random se encuentre dentro del rango de 0 a 100, luego se utiliza el método "round" para redondear los decimales de los números y de ese modo obtener únicamente números enteros; por último, se imprime el resultado en pantalla.</p>
+                                <p>Nota: Esta no es la forma correcta de generar números enteros aleatorios, ya que por probabilidad los números 0, 1 y 99 tienen mayor oportunidad de resultar seleccionados al ser redondeados. </p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>floor()</h3></dt>
+                            <dd>
+                                <p>Este método permite redondear hacia abajo los números decimales, retornando únicamente el número entero.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/floor-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/floor-2.PNG" class="img" alt="">
+                                <p>Empleando este método en vez de "round" es la forma correcta de realizar el ejemplo de uso dado en el método anterior, como de la siguiente manera:
+                                    <h4>Ejemplo</h4>
+                                <img src="./img/floor-3.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/floor-4.PNG" class="img" alt="">
+                                <p>Nota: De este modo todos los números entre 0 y 100 tendrán la misma probabilidad de ser seleccionados.</p>
+                                <p>Del mismo modo, con las siguientes modificaciones al ejemplo, se puede adaptar para que se generen números aleatorios que sean mayores a 0 y menores a 100.</p>
+                                <img src="./img/floor-5.PNG" class="img" alt="">
+                                </p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>fround()</h3></dt>
+                            <dd>
+                                <p>Este método limita el número de decimales de un valor a únicamente 15 (ya que estos son la cantidad de valores que caben en 4 bytes), por lo tanto este número permite tomar números decimales realmente largos y limitarlos a únicamente 15 decimales, para lo cual realiza redondeo. </p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/fround-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/fround-2.PNG" class="img" alt="">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>trunc()</h3></dt>
+                            <dd>
+                                <p>Este método permite eliminar los números decimales como tal; es decir, ignora por completo el valor de estos, únicamente retornando el número entero. </p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/trunc-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/trunc-2.PNG" class="img" alt="">
+                            </dd>
+                        </dl>
+                    </section>
+                    <h2>Propiedades</h2>
+                    <section>
+                        <dl>
+                            <dt><h3>PI</h3></dt>
+                            <dd>
+                                <p>Se trata del valor del número "PI" (aproximadamente 3.14159), el cual corresponde a la circunferencia de un círculo respecto a su diámetro.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/PI-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/PI-2.PNG" class="img" alt="">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>SQRT1_2</h3></dt>
+                            <dd>
+                                <p>Se trata de la representación de la raíz cuadrada de 1/2, equivalente a 1 sobre la raíz cuadrada de 2 (aproximadamente 0.707). </p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/sqrt1_2-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/sqrt1_2-2.PNG" class="img" alt="">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>SQRT2</h3></dt>
+                            <dd>
+                                <p>Se trata de la representación de la raíz cuadrada de 2 (aproximadamente 1.414).</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/sqrt2-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/sqrt2-2.PNG" class="img" alt="">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>E</h3></dt>
+                            <dd>
+                                <p>Se trata de la representación de la base de "Euler", la base de los logaritmos naturales (aproximadamente 2.718).</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/E-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/E-2.PNG" class="img" alt="">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>LN2</h3></dt>
+                            <dd>
+                                <p>Se trata de la representación del logaritmo natural de 2 (aproximadamente 0.693).</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/LN2-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/LN2-2.PNG" class="img" alt="">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>LN10</h3></dt>
+                            <dd>
+                                <p>Se trata de la representación del logaritmo natural de 10 (aproximadamente 2.303).</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/LN10-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/LN10-2.PNG" class="img" alt="">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>LOG2E</h3></dt>
+                            <p>Se trata de la representación del logaritmo de "E" con base 2 (aproximadamente 1.443).</p>
+                            <h4>Ejemplo</h4>
+                                <img src="./img/LOG2E-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/LOG2E-2.PNG" class="img" alt="">
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>LOG10E</h3></dt>
+                            <p>Se trata de la representación del logaritmo de "E" con base 10 (aproximadamente 0.434).</p>
+                            <h4>Ejemplo</h4>
+                                <img src="./img/LOG10E-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/LOG10E-2.PNG" class="img" alt="">
+                        </dl>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../../../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta; si quieres saber más visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img  src="../../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                            <a href="" class="footer__instagram">
+                                <img src="../../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Curriculum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>

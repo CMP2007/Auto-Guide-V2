@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+    <title>Timers</title>
+</head>
+<header>
+    <nav >
+        <ul class="nav"> 
+            <li><a href="../../../Index.html" class="logo"><img src="../../../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+            <li><a href="../../../HTML/indice.html" class="HTML tema"><span class="text__tema">HTML</span></a></li>
+            <li><a href="../../../CSS/indiceCSS.html" class="CSS tema"><span class="text__tema">CSS</span></a></li>
+            <li><a href="../../indiceNivel.html" class="seleccion__JS tema"><span class="text__tema">JS</span></a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <aside class="aside">
+        <div class="outer ">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_JS">
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+            </label>
+            <div class="nav-aside_JS">
+                <ul>
+                    <a href="../indiceJavaScriptNivel2.html"><h2>Nivel 1 JS</h2></a> 
+                    <div class="aside-divisor"></div>
+                    <h2>Propiedades</h2>    
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Timers JS</h1>
+                    <section>
+                        <p>Se tratan de cuatro funciones incorporadas en JavaScript las cuales realizan la misma función de un "temporizador", cada una de ellas posee sus propias características y funcionamiento, los diferentes "timers" son:   </p>
+                        <p>Nota: Los temporizadores consumen una elevada cantidad de recursos, por lo que no se recomienda hacer un uso excesivo de estos.</p>
+                    </section>
+                    <h2>setTimeout()</h2>
+                    <section>
+                        <p>Esta función se utiliza para definir cuánto tiempo esperar para ejecutar una función, es decir "setTimeout" realiza un tiempo de espera para la ejecución de la función definida. </p>
+                        <p>Para lo cual esta recibe como primer valor una función (ya sea el llamado a una función o una función flecha dentro de sus paréntesis), y como segundo valor recibe el tiempo de espera que se aplicará expresado en milésimas de segundo (1 seg = 1000). </p>
+                        <img src="./img/setTimeOut-1.PNG" class="img" alt="">
+                        <p>De este modo en este ejemplo la función flecha tardará dos segundos en imprimir en la pantalla.</p>
+                    </section>
+                    <h2>clearTimeout()</h2>
+                    <section>
+                        <p>El propósito de esta función específicamente es el de remover "setTimeout", por lo tanto esta función permite eliminar el tiempo de espera para la ejecución de una función.</p>
+                        <img src="./img/clarTimeout-1.PNG" class="img" alt="">
+                        <p>Al almacenar "setTimeout" en una variable y aplicarle "clearTimeout" el temporizador nunca se ejecuta.</p>
+                    </section>
+                    <h2>setInterval()</h2>
+                    <section>
+                        <p>Esta función permite ejecutar una función indefinida cantidad de veces con un cierto tiempo de intervalo entre cada ejecución, por lo tanto se podría decir que lo que "setInterval" permite es ejecutar una función cada X cantidad de tiempo.</p>
+                        <p>El tiempo de intervalo de esta función también debe expresarse en milisegundos. </p>
+                        <img src="./img/setInterval-1.PNG" class="img" alt="">
+                    </section>
+                    <h2>clearInterval</h2>
+                    <section>
+                        <p>Esta función permite detener la infinita ejecución de "setInterval". </p>
+                        <img src="./img/clearInterval-1.PNG" class="img" alt="">
+                        <p>Para esto se guarda "setInterval" en una variable y se le aplica la función "clearInterval".</p>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../../../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta, si quieres saber más visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img  src="../../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                            <a href="" class="footer__instagram">
+                                <img src="../../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Curriculum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>

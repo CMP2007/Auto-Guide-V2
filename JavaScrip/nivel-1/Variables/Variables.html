@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+    <title>Variables</title>
+</head>
+<header>
+    <nav>
+        <ul class="nav"> 
+            <li><a href="../../../Index.html" class="logo"><img src="../../../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+            <li><a href="../../../HTML/indice.html" class="HTML tema"><span class="text__tema">HTML</span></a></li>
+            <li><a href="../../../CSS/indiceCSS.html" class="CSS tema"><span class="text__tema">CSS</span></a></li>
+            <li><a href="../../indiceNivel.html" class="seleccion__JS tema"><span class="text__tema">JS</span></a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <aside class="aside">
+        <div class="outer">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_JS">
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+            </label>
+            <div class="nav-aside_JS">
+                <ul>
+                    <a href="../Indice__JS.html"><h2>Nivel 1 JS</h2></a>      
+                    <div class="aside-divisor"></div>
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Variables en JavaScript</h1>
+                    <section>
+                        <p>En cualquier lenguaje de programación el concepto de "variables" no se diferencia, se trata de un espacio en memoria que se designa para guardar un dato.</p>
+                        <p>Existen diferentes tipos de variables de acuerdo a cuál sea el tipo de dato que se almacenará en esta, JavaScript tiene la característica de ser un lenguaje dinámico, esto significa que no es necesario declarar el tipo de forma que esta se corresponda de acuerdo al tipo de dato que va a almacenar, ya que como lenguaje dinámico este define por sí solo el tipo de variable que se utilizará en base al dato a almacenar.</p>
+                    </section>
+                    <section>
+                        <h2>Tipos de Datos en JavaScript</h2>
+                        <dl>
+                            <dt><h3>String</h3></dt>
+                            <dd>
+                                <p>Este tipo de dato consiste en una cadena de caracteres, es decir almacena una secuencia de caracteres preestablecida, como pudiese ser por ejemplo un texto.</p>
+                                <p>La sintaxis de JavaScript dicta que los datos que serán guardados dentro de una string deben de declararse utilizando comillas dobles (" "), comillas simples (' ') o (` `) de la siguiente forma:</p>
+                                <img src="./img/variables-1.PNG" alt="" class="img">
+                                <p><b>Nota: Los espacios en blanco se conservan dentro de un string, ya que también es considerado un carácter.</b></p>
+                                <p>Por lo tanto, cualquier carácter que se indique entre comillas será guardado como un string por JavaScript.</p>
+                                <p><b>Nota: Es posible incluir cualquiera de estas comillas como parte de la cadena de texto, lo único que se requiere es que sean diferentes a las comillas que se estén utilizando para delimitar la cadena de texto en ese momento, por ejemplo si se quiere mostrar comillas simples ('') en la cadena de texto se utilizan comillas dobles ("") o invertidas (``) para delimitar el texto.</b></p>
+                                <h3>Comillas Invertidas (``)</h3>
+                                <p>En el caso de los string no hay diferencia entre utilizar comillas simples o dobles, no obstante el uso de las comillas invertidas (``) ofrece ciertas particularidades únicas:</p>
+                                <ul>
+                                    <li>
+                                        <h4>Incluir variables dentro de cadenas de texto</h4>
+                                        <p>Esta es una posibilidad única de las comillas invertidas, así como una forma de concatenación, consiste en definir el texto de la cadena con comillas invertidas (``) y dentro de este incluir la variable utilizando el símbolo de dólar ($) y las llaves ({ }) para delimitar el inicio y fin de esta, de la siguiente forma:</p>
+                                        <h4>Ejemplo</h4>
+                                        <img src="../concatenación/img/concatenación-9.PNG" class="img" alt="">
+                                        <h4>Resultado</h4>
+                                        <img src="../concatenación/img/concatenación-10.PNG" class="img" alt="">
+                                    </li>
+                                    <li>
+                                        <h4>Cadenas de texto con salto de líneas</h4>
+                                        <p>Se trata de otra característica de estas comillas, y es que permiten el incluir el salto de línea como una parte de la cadena de texto:</p>
+                                        <img src="./img/variables-13.PNG" class="img" alt="">
+                                        <p>Por lo tanto los saltos de línea conformarán parte de la cadena de texto, generando entonces saltos de línea en el valor final:</p>
+                                        <img src="./img/variables-14.PNG" class="img" alt="">
+                                    </li>
+                                    <li>
+                                        <h4>Generar código HTML</h4>
+                                        <p>Las comillas invertidas también permiten almacenar código HTML ejecutable por el navegador, en otras palabras podemos almacenar código HTML dentro de un String y este puede ser ejecutado por el navegador con normalidad, de la siguiente forma:</p>
+                                        <h4>Ejemplo</h4>
+                                        <img src="./img/variables-15.PNG" class="img" alt="">
+                                        <h4>Resultado</h4>
+                                        <img src="./img/variables-16.PNG" class="img" alt="">
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>Number</h3></dt>
+                            <dd>
+                                <p>Estos datos consisten en valores numéricos, para indicarlo como tal simplemente se necesita escribir el número en sí, ya que esta no emplea ningún símbolo para indicarse como number, escribiendo el número por sí solo es la forma correcta de indicar el dato, de la siguiente forma:</p>
+                                <img src="./img/variables-2.PNG" alt="" class="img">
+                                <p><b>Nota: Si se llegase a utilizar comillas al guardar el dato este valor sería tratado como un conjunto de caracteres en vez de un número lo que imposibilitaría su uso en operaciones matemáticas.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>boolean</h3></dt>
+                            <dd>
+                                <p>Este tercer tipo de dato realmente es más simple, ya que únicamente puede almacenar dos valores los cuales son "true" (el cual indica que un valor es cierto) o "false" (el cual indica que un valor es falso), de la siguiente forma:</p>
+                                <img src="./img/variables-3.PNG" alt="" class="img">
+                            </dd>
+                        </dl>
+                    </section>
+                    <h2>Tipos de Variables y su Alcance (Scope)</h2>
+                    <section>
+                        <p>Se utilizan palabras clave programadas para indicar la disponibilidad de la variable dentro del bloque de código, esto quiere decir que estas palabras claves definen en qué zonas del código estarán disponibles las variables para los elementos, en JavaScript existen tres tipos de variables, las cuales son:</p>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>Let</h3></dt>
+                            <dd>
+                                <p>Este tipo de variable establece que esta únicamente estará disponible dentro del bloque de código en la que esta haya sido declarada, por lo tanto no será accesible para todos aquellos elementos que se encuentren fuera de este.</p>
+                                <img src="./img/variables-4.PNG" class="img" alt="">
+                                <p>Este es el tipo de variable con el que se recomienda trabajar en la mayoría de los casos ya que al tener menos alcance afecta menos el funcionamiento de los datos.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>var</h3></dt>
+                            <dd>
+                                <p>Este tipo de variable establece que el dato almacenado en esta estará disponible para todos los elementos del código, independientemente del bloque de código en el que estos se encuentren, por lo que se puede considerar como una "variable Global".</p>
+                                <img src="./img/variables-5.PNG" alt="" class="img">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>const</h3></dt>
+                            <dd>
+                                <p>Se trata de un tipo particular de variable ya que por redundante que sea esta se trata de una variable inalterable, es decir que una vez que sea definido un valor para esta, dicho valor no podrá modificarse nuevamente, por ello se utiliza para almacenar datos que se tengan la certeza de que no cambiarán en ningún momento.</p>
+                                <img src="./img/variables-6.PNG" alt="" class="img">
+                                <p><b>Nota: El intentar modificar una variable "const" resultaría en una alerta de error dentro de la consola de desarrollador.</b></p>                                
+                            </dd>
+                        </dl>
+                    </section>
+                    <h2>Declaración, Inicialización y Modificación de una variable</h2>
+                    <section>
+                        <dl>
+                            <dt><h3>Declarar una Variable</h3></dt>
+                            <dd>
+                                <p>Para declarar una variable únicamente es necesario el indicar el nombre y el alcance que tendrá esta, es decir declarar una variable es igual a crearla de forma que esta exista dentro del código pero sin atribuirle ningún valor, resultando en una variable "indefinida" o "undefined", ya que no posee un valor hasta el momento.</p>
+                                <img src="./img/variables-7.PNG" alt="" class="img">
+                            </dd>
+                            <dd>
+                                <p>Existen dos alternativas a la hora de declarar las variables, esto se puede hacer ya sea declarando varias en una sola declaración utilizando una coma (,) para separar cada variable, ahorrando código de esta forma:</p>
+                                <img src="./img/variables-10.PNG" alt="" class="img">
+                                <p>O también se pueden generar una declaración en particular para cada variable priorizando así la indentación del código:
+                                <img src="./img/variables-11.PNG" alt="" class="img">
+                                </p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>Inicializar una variable</h3></dt>
+                            <dd>
+                                <p>Simplemente se trata de asignar un valor a la variable, solo con eso la variable ya se encuentra inicializada.</p>
+                                <img src="./img/variables-8.PNG" alt="" class="img">
+                                <p>Una característica particular de las "const" es que en estas no es posible declararla e inicializarla por separado, en estas variables es necesario indicar su valor a la vez que estas son declaradas, de lo contrario se generará un error en la consola de desarrollador.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl><h3>Modificar una Variable</h3></dl>
+                        <dd>
+                            <p>En JavaScript para Modificar una variable simplemente es necesario asignarle un nuevo valor a la variable ya existente.</p>
+                            <img src="./img/variables-9.PNG" alt="" class="img">
+                            <p><b>Nota: Recordar que esto solo se puede hacer con las variables "var" y "let", ya que las "const" son inalterables una vez inicializadas.</b></p>
+                        </dd>
+                    </section>
+                    <h2>Casos Especiales de Datos</h2>
+                    <section>
+                        <dl>
+                            <dt><h3>undefined</h3></dt>
+                            <dd>
+                                <p>Se trata de un tipo de dato especial el cual indica que una variable se encuentra declarada pero no ha sido inicializada, es decir que dicha variable existe pero no ha sido asignado ningún dato en esta por lo que se encuentra "sin definir", es decir que hasta el momento no posee un valor.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>Null</h3></dt>
+                            <dd>
+                                <p>En JavaScript este tipo de dato significa "vacío o nulo" e indica que una variable está definida como nula en alguna circunstancia, por lo que no debe de poseer valor alguno.</p>
+                                <img src="./img/variables-12.PNG" alt="" class="img">
+                                <p><b>Nota: en JavaScript "Null" significa nula o vacía, sin embargo en algunos lenguajes esto no es así, e indicar una variable como nula o vacía son dos cosas diferentes.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>NaN</h3></dt>
+                            <dd>
+                                <p>NaN significa "Not a Number" es decir no es un número, este valor especial indica que se está esperando un dato numérico para realizar algún tipo de operación pero en su lugar se está recibiendo algún otro tipo de dato que imposibilita el cálculo, es decir este tipo de valor señala que ha ocurrido un error debido a la recepción de un dato que no es un número.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <h2>Arrays</h2>
+                    <section>
+                        <p>Se tratan de conjuntos de memoria que pueden almacenar múltiples datos y de diversos tipos, en palabras simples un "array" es una variable que no está limitada a almacenar un único dato sino que puede almacenar multitud de estos sin importar el tipo de dato del que sean.</p>
+                        <p>En un "array" los elementos que se almacenen se enumeran según el orden en los que estos sean ingresados, con la particularidad de que se empiezan a enumerar desde el cero (0) y no desde el uno (1) como podría esperarse, por lo tanto el primer elemento en el "array" responde al identificador cero (0), el segundo al identificador (1) y así sucesivamente.</p>
+                        <p>Para declarar un array se indica de la misma forma que con una variable, primero se define su tipo (let, var, const), luego se define el nombre de este seguido del símbolo igual (=), de aquí en más se diferencia de las variables, ya que en lugar de simplemente ingresar los datos es necesario abrir corchetes ([ ]) y dentro de estos se introducen todos los datos que se deseen, separados entre sí por comas (,), de la siguiente forma:</p>
+                        <img src="./img/array-1.PNG" class="img" alt="">
+                        <p>En este ejemplo el dato "banana" (primer dato) ocupa la posición cero (0), "manzana" la posición uno (1) y "pera" la posición dos (2).</p>
+                    </section>
+                    <section>
+                        <h3>Extraer los datos de un Array</h3>
+                        <p>Debido a que un array alberga múltiples datos surge la problemática de cómo extraer únicamente el dato que sea necesario para su uso, para esto se utiliza la enumeración de los datos del array, por lo tanto se realiza el llamado del array seguido de corchetes y dentro de estos el número de identificador del dato seleccionado.</p>
+                        <h4>Ejemplo</h4>
+                        <img src="./img/array-2.PNG" class="img" alt="">
+                        <h4>Resultado</h4>
+                        <img src="./img/array-3.PNG" class="img" alt="">
+                        <p>En este ejemplo se muestra el tercer dato en pantalla, el cual es enumerado por el número dos (2).</p>
+                        <p>Nota: En el caso de que en este ejemplo se seleccionase el identificador número tres (3) o cualquier otra posición sin asignar un dato, el array retornaría un "undefined", ya que al estar declarado el array todas sus posibles posiciones también lo están, simplemente no se les ha asignado un dato.</p>
+                    </section>
+                    <h2>Arrays Asociativos</h2>
+                    <section>
+                        <p>Se trata de un tipo de array con un funcionamiento muy similar al anterior, con la particularidad de que estos le permiten al programador el personalizar la configuración de la numeración de los elementos del array, es decir este tipo de array permite modificar la numeración tradicional (0, 1, 2, ...) y en su lugar definir un nombre para cada elemento del array, por lo tanto para extraer los datos desde un array asociativo es necesario convocar al respectivo dato empleando el nombre definido para este, del mismo modo al ingresar los datos en este también es necesario definir el respectivo nombre de cada dato.</p>
+                        <h4>Ejemplo</h4>
+                        <img src="./img/array-4.PNG" class="img" alt="">
+                        <h4>Resultado</h4>
+                        <img src="./img/array-5.PNG" class="img" alt="">
+                        <p>En este ejemplo la variable "pc1" corresponde a un array asociativo, del cual se extrae su segundo dato, el cual está definido con el nombre de "procesador".</p>
+                        <p>En otras palabras del mismo modo que toda variable tiene nombre un array asociativo permite definir un nombre para cada dato dentro de este y convocar el dato utilizando su respectivo nombre y no la numeración del dato.</p>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../../../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta, si quieres saber más visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img src="../../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                            <a href="" class="footer__instagram">
+                                <img src="../../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Currículum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside> 
+</body>
+</html>

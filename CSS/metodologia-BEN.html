@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+
+        <title>Metodología BEM</title>
+    </head>
+    <header>
+        <nav >
+            <ul class="nav"> 
+                <li><a href="../Index.html" class="logo"><img src="../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+                <li><a href="../HTML/indice.html" class="HTML tema"><span class="text__tema">HTML</span></a></li>
+                <li><a href="../CSS/indiceCSS.html" class="seleccion__CSS tema"><span class="text__tema">CSS</span></a></li>
+                <li><a href="../JavaScrip/Indice__JS.html" class="JS tema"><span class="text__tema">JS</span></a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <aside class="aside">
+        <div class="outer ">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_CSS">
+                <span class="hl_CSS"></span>
+                <span class="hl_CSS"></span>
+                <span class="hl_CSS"></span>
+                <span class="hl_CSS"></span>
+            </label>
+            <div class="nav-aside_CSS">
+                <ul>
+                    <h2>Teorías CSS</h2>
+                    <li><a href="./espesificidad.html"><h3>Especificidad</h3></a></li>
+                    <li><a href="./teoriaMedidas.html"><h3>Teoría Medidas de Texto</h3></a></li>
+                    <li><a href="./normmalize.html"><h3>Archivo Normalize.CSS</h3></a></li>
+                    <li><a href="./TeoriaCajas.html"><h3>Teoría de las Cajas</h3></a></li>
+                    <div class="aside-divisor"></div>
+                    <h2>Propiedades</h2>
+                    <li><a href="./selectoresCSS.html "><h3>Selectores CSS</h3></a></li>
+                    <li><a href="./pseudoElementos.html"><h3>Pseudo-Elementos</h3></a></li>
+                    <li><a href="./pseudoClases.html"><h3>Pseudo-Clases</h3></a></li>
+                    <li><a href="./propiedadesTexto.html"><h3>Propiedades de texto</h3></a></li>
+                    <li><a href="./PropiedadesCajas.html"><h3>Propiedades de Cajas</h3></a></li>
+                    <li><a href="./position.html"><h3>Propiedad Position</h3></a></li>
+                    <li><a href="./display.html"><h3>Propiedad Display</h3></a></li>
+                    <li><a href="./propiedadesDiseño.html"><h3> Diseños CSS</h3></a></li>
+                    <li><a href="./object-fit-position.html"><h3> Object-fit-Object-position</h3></a></li>
+                    <li><a href="./coloresCSS.html"><h3>Colores CSS</h3></a></li>
+                    <li><a href="./display/flexBox.html"><h3>Flex-Box</h3></a></li>
+                    <li><a href="./display/Grid.html"><h3>Grid-Box</h3></a></li>
+                    <li><a href="./responsive-desing.html"><h3>Responsive Design</h3></a></li>
+                    <li><a href="./transiciones.html"><h3>Transition</h3></a></li>
+                    <li><a href="./animaciones.html"><h3>Animaciones</h3></a></li>
+                    <li><a href="./transform.html"><h3>Propiedad Transform</h3></a></li>
+                    <li><a href="./variables.html"><h3>Variables CSS</h3></a></li>
+                    <li><a href="./filtros.html"><h3>Filtros CSS</h3></a></li>
+                    <div class="aside-divisor"></div>
+                    <h2>Otros</h2>
+                    <li><a href="./ErroresComunes.html"><h3>Errores Comunes al usar CSS</h3></a></li>
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Metodología BEM</h1>
+                    <section>
+                        <p>Se trata de una de las Metodologías de estructura de estilos CSS más conocidas a nivel mundial, la cual consiste en basar todos los estilos únicamente en clases, para evitar problemas de <b>especificidad</b>; por su lado, a estas clases se les aplicarán ciertas pautas a la hora de definir sus nombres para que de este modo no existan errores sobre a qué elemento HTML estas actúan. </p>
+                        <p>Al estructurar los nombres de las clases en la Metodología BEM se utiliza: </p>
+                        <ol>
+                            <li><p>En primera instancia el nombre del contenedor en el que se encuentre el elemento.</p></li>
+                            <li><p>Seguido de <b>"dos pisos ( __ )"</b></p></li>
+                            <li><p>Seguido del nombre del elemento</p></li>
+                            <h4>De este modo:</h4>
+                            <img src="./img/ejmBEM1.PNG" alt="" class="img">
+                        </ol>
+
+                        <p>Otro caso de uso bastante probable es que un solo documento HTML posea varios elementos del mismo tipo en un contenedor pero se necesite aplicar un estilo diferente a solo uno de ellos, como en el siguiente ejemplo:</p>
+                        <img src="./img/ejmBEM2.PNG" alt="" class="img">
+
+                        <p>Para estos casos existen dos opciones, la primera es definir dentro de CSS la posición del elemento de la siguiente forma:</p>
+                        <img src="./img/ejmBEM3.PNG" alt="" class="img">
+
+                        <p>La otra alternativa es aplicar una clase diferente para este elemento empleando la estructura de su nombre de la siguiente manera:</p>
+                        <img src="./img/ejmBEM4.PNG" alt="" class="img">
+
+                        <p>Como se puede ver se aplican <b>dos barras laterales (--)</b> las cuales significan que todos los elementos son iguales pero uno de ellos es especial, seguidas de cualquier identificador que se desee, en este caso se usará la palabra "active"</p>
+                        <img src="./img/ejmBEM5.PNG" alt="" class="img">
+
+                        <p><b>Nota: En una página funcional estos estilos pueden ser alternados entre los diferentes elementos utilizando JavaScript.</b></p>
+
+                        <h4>Para Concluir</h4>
+                        <p>En los casos de que se trabaje con elementos que se encuentren dentro de más de un contenedor, la estructura del nombre de las clases sería la siguiente:</p>
+                        <img src="./img/ejmBEM6.PNG" alt="" class="img">
+                        <p><b>Nota: El doble piso únicamente se coloca después del nombre del contenedor principal de la sección.</b></p>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta. Si quieres saber más, visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img  src="../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                            <a href="" class="footer__instagram">
+                                <img src="../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Currículum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>

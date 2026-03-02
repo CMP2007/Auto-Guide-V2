@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+        <title>Etiquetas Generales</title>
+    </head>
+    <header>
+        <nav >
+            <ul class="nav"> 
+                <li><a href="../Index.html" class="logo"><img src="../../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+                <li><a href="../indice.html" class="seleccion__HTML tema">HTML</a></li>
+                <li><a href="../../CSS/indiceCSS.html" class="CSS tema">CSS</a></li>
+                <li><a href="../../JavaScrip/Indice__JS.html" class="JS tema">JS</a></li>
+                <div class="indicador"></div>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <aside class="aside">
+        <div class="outer ">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_HTML">
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+            </label>
+            <div class="nav-aside_HTML">
+                <ul>
+                        <h2>Temas HTML</h2>
+                        <li><a href="../etiquetas estructura/estructura.html"><h3>Estructura</h3></a></li>
+                        <li><a href="../etiquetas texto/texto.html"><h3>Texto</h3></a></li>
+                        <li><a href="../etiquetas listas/listas.html"><h3>Listas</h3></a></li>
+                        <li><a href="../etiquetas de metadatos/metadatos.html"><h3>Metadatos</h3></a></li>
+                        <li><a href="../Visualizar codigo/VerCodigo.html"><h3>Representar código</h3></a></li>
+                        <li> <a href="../Multimedia/multimedia.html"><h3>Multimedia</h3></a></li>
+                        <li><a href="../Tablas HTML/tablas.html"><h3>Tablas</h3></a></li>
+                        <li><a href="../Eventos HTML/eventos.html"><h3>Eventos</h3></a></li>
+                        <li><a href="../Formularios HTML/formularios.html"><h3>Formularios</h3></a></li>
+                        <li><a href="../Validaciones/validaciones.html"><h3>Validaciones</h3></a></li>
+                        <li><a href="../Enviar Datos Form/EnviarDatos.html"><h3>Envío de Datos</h3></a></li>
+                        <li><a href="../PersonalizarControladores/ControladoresJS.html"><h3>Controladores JS</h3></a></li>
+                        <li> <a href="../Pre-cargar Contenido/Precargar.html"><h3>Pre-Carga</h3></a></li>
+                        <li><a href="../Notas/notas.html"><h4>Recordatorios</h4></a></li>
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Etiquetas Generales</h1>
+                    <section id="descripcion">
+                        <p>Se tratan de etiquetas creadas con el fin de cumplir con roles específicos; esto no significa que sean elementos inútiles o poco relevantes, ya que según sea el caso de uso, cualquiera de estas etiquetas puede ser muy útil siempre que sea bien empleada. Son etiquetas con usos simples y fáciles de entender.</p>
+                    </section>
+                    <section id="A">
+                        <dl>
+                            <dt id="A"><h3>A</h3></dt>
+                            <dd>
+                                <p><b>Significa "ancla," es la etiqueta utilizada para definir los hipervínculos; el texto que se desee mostrar como enlace deberá estar ubicado dentro de esta etiqueta.</b></p>
+                                <p>Esta etiqueta no solo redirige al usuario a otra página, sino que también puede llevarlo a una sección en específico de esta. Esto se hace añadiendo un "#" seguido del id del elemento que se desee ubicar (todo esto escrito sin espacios), ya que el "#" hace referencia al id de un elemento. De la misma forma, también se puede redirigir a una sección dentro del mismo documento; esto se hace únicamente escribiendo el "#" seguido del id del elemento seleccionado.</p>
+                                <p>A continuación se muestran dos ejemplos: el primero es de una redirección a un elemento del mismo documento, y el segundo a una redirección a un área en particular de un documento externo.</p>
+                                <img src="./img/re-Dir1.PNG" alt="" class="img">
+                                <img src="./img/re-Dir2.PNG" alt="" class="img">
+
+                                <h4>Atributos</h4>
+                                <ul>
+                                    <li><p><b>href:</b> Es el atributo designado para indicar la dirección http a la que el enlace dirigirá al usuario; puede ser una ubicación interna o externa de la página.</p></li>
+                                    <li><p><b>title:</b> Este atributo define un texto explicativo que hará aparición si el usuario mantiene el ratón sobre el enlace; por lo tanto, no será visible para usuarios que naveguen usando el teclado o dispositivos táctiles.</p></li>
+                                    <li><p><b>target:</b> Este atributo define la ventana en la que se abrirá el nuevo enlace; si se usa el valor "_blank" se abrirá la nueva página en una pestaña diferente, en cambio, si se omite este atributo el enlace se abrirá por defecto en la pestaña activa.</p></li>
+                                </ul>
+                                <p><b>Nota: cualquier elemento puede ir dentro de la etiqueta "a", por lo tanto casi cualquier cosa puede ser convertida en un enlace, desde contenedores e imágenes, etc.</b></p>
+                                <p><b>Nota: Es recomendable que los enlaces brinden palabras clave o algún tipo de información sobre el contenido al que redirigen, ya que tanto los usuarios como los motores de lectura escanean la página y uno de los elementos resaltados en los que se guían son los enlaces.</b></p>
+                                <p><b>Nota: Otros consejos al crear enlaces son: que el texto que los componga sea breve (los textos excesivamente largos no son gratos) y evitar que el texto de estos sea repetitivo; ejemplo de mala práctica: "Haz clic aquí".</b></p>
+                                <p><b>Nota: Es recomendable usar las direcciones relativas de archivos siempre que sea posible ya que, pese a que dejan de funcionar si el archivo cambia de lugar, son más eficientes y legibles, lo que dará un código más limpio.</b></p>
+
+                                <h4>Descargar un archivo en un enlace</h4>
+                                <p>Para indicar que se trata de la descarga de un elemento se utiliza el atributo "download", el cual no solo indicará que el navegador debe descargar el elemento seleccionado, sino que también define el nombre que se vinculará al archivo al hacerlo (esto lo hace en base al texto que se indique en el atributo).</p>
+                                <img src="./img/ejmADowload.PNG" alt="" class="img">
+
+                                <h4>Enviar un correo mediante un enlace</h4>
+                                <p>Esta es otra función que ofrece la etiqueta "a"; para hacer uso de esta se utiliza el valor "mailto:" en el atributo "href", seguido del correo electrónico al que se desee que el usuario contacte. Esto abrirá una ventana de correo con dicho destinatario seleccionado. A su vez, otra opción es poner el atributo "href" únicamente con valor "mailto:"; esto abrirá la ventana de correo pero no proveerá un destinatario en específico.</p>
+                                <p>El siguiente es un ejemplo de cómo se usa el atributo "mailto":</p>
+                                <img src="./img/ejemMailto.PNG" alt="" class="img">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="br"><h3>Br</h3></dt>
+                            <dd>
+                                <p>La función de esta etiqueta es muy simple: <b>indica un salto de línea</b>. Sin importar realmente en qué lugar o contenedor se encuentre, siempre tendrá el mismo efecto, el cual es equivalente a presionar Enter en un editor de texto.</p>
+                                <p>Si se utiliza en el interior de una etiqueta "p" (párrafo), esta etiqueta aplicará el mismo efecto que tendría un "punto y aparte"; por lo tanto, el texto saltará a la siguiente línea pero no se distanciará de la anterior ni tomará sangría. Se puede usar para representar líneas cortas como las de un verso.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="details"><h3>Details</h3></dt>
+                            <dd>
+                                <p>Actúa como un widget de revelación, ya que tiene la funcionalidad de mostrar un texto oculto el cual se despliega cuando se cliquea sobre este. Es un elemento de contenido dinámico. Es necesario tener presente que se trata de una etiqueta bastante reciente, por lo tanto no está habilitada en versiones antiguas de los navegadores.</p>
+
+                                <h4>Atributos</h4>
+                                <ul>
+                                    <li><p>"Details" incluye los <b>atributos globales</b>.</p></li>
+                                    <li><p><b>open:</b> Este atributo booleano indica si los detalles serán mostrados al usuario cuando la página se cargue; por defecto el valor es false y, por lo tanto, estarán ocultos.</p></li>
+                                </ul>
+                                <p>A continuación se muestran dos ejemplos: el primero consiste en el código del elemento y el segundo en el resultado de este código:</p>
+
+                                <h4>Ejemplo</h4>
+                                <img src="./img/ejmDetails.PNG" alt="ejemplo details" class="img">
+
+                                <h4>Efecto</h4>
+                                <details>
+                                    <summary>Some details</summary>
+                                    <p>More info about the details.</p>
+                                </details>
+                                <p><b>Nota: (los estilos CSS de este proyecto afectan la visualización del details)</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="hr"><h3>Hr</h3></dt>
+                            <dd>
+                                <p>Esta es otra etiqueta con una función simple: crea una línea horizontal en el contenedor en que se encuentre. Se utiliza para crear divisiones visuales.</p>
+                                
+                                <h4>Ejemplo de visualización</h4>
+                                <p>Primer elemento</p>
+                                <hr>
+                                <p>Segundo elemento</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="time"><h3>Time</h3></dt>
+                            <dd>
+                                <p>Existen muchas formas de plasmar una fecha, sin mencionar que esto puede representarse de forma diferente en algunos lugares. Para eso se utiliza el elemento <strong>"time"</strong>, acompañado del atributo <strong>"datetime"</strong>, ya que este elemento tiene la ventaja de que funciona para cualquier formato de fecha (hora, día, mes, año) así como para las mezclas de estos.</p>
+                                <p>Su uso consiste en ingresar la fecha dentro del atributo "datetime" con el formato adecuado para que sea entendible por el navegador; a su vez, dentro de la etiqueta se ingresa la fecha de la forma en que será visible para los usuarios. De esa forma, el usuario visualiza el formato con el que esté familiarizado sin que el navegador presente errores.</p>
+                                <h4>Ejemplos de aplicación</h4>
+                                <img src="./img/ejmTime.PNG" alt="" class="img">
+                            </dd>
+                        </dl>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta. Si quieres saber más, visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img  src="../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                
+                            <a href="" class="footer__instagram">
+                                <img src="../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Currículum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>

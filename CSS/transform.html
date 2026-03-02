@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+        <title>Propiedad Transform</title>
+    </head>
+    <header>
+        <nav >
+            <ul class="nav"> 
+                <li><a href="../Index.html" class="logo"><img src="../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+                <li><a href="../HTML/indice.html" class="HTML tema"><span class="text__tema">HTML</span></a></li>
+                <li><a href="../CSS/indiceCSS.html" class="seleccion__CSS tema"><span class="text__tema">CSS</span></a></li>
+                <li><a href="../JavaScrip/Indice__JS.html" class="JS tema"><span class="text__tema">JS</span></a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <aside class="aside">
+        <div class="outer ">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_CSS">
+                <span class="hl_CSS"></span>
+                <span class="hl_CSS"></span>
+                <span class="hl_CSS"></span>
+                <span class="hl_CSS"></span>
+            </label>
+            <div class="nav-aside_CSS">
+                <ul>
+                    <h2>Teorías CSS</h2>
+                    <li><a href="./espesificidad.html"><h3>Especificidad</h3></a></li>
+                    <li><a href="./metodologia-BEN.html"><h3>Metodología BEM</h3></a></li>
+                    <li><a href="./teoriaMedidas.html"><h3>Teoría Medidas de Texto</h3></a></li>
+                    <li><a href="./normmalize.html"><h3>Archivo Normalize.CSS</h3></a></li>
+                    <li><a href="./TeoriaCajas.html"><h3>Teoría de las Cajas</h3></a></li>
+                    <div class="aside-divisor"></div>
+                    <h2>Propiedades</h2>
+                    <li><a href="./selectoresCSS.html "><h3>Selectores CSS</h3></a></li>
+                    <li><a href="./pseudoElementos.html"><h3>Pseudo-Elementos</h3></a></li>
+                    <li><a href="./pseudoClases.html"><h3>Pseudo-Clases</h3></a></li>
+                    <li><a href="./propiedadesTexto.html"><h3>Propiedades de texto</h3></a></li>
+                    <li><a href="./PropiedadesCajas.html"><h3>Propiedades de Cajas</h3></a></li>
+                    <li><a href="./position.html"><h3>Propiedad Position</h3></a></li>
+                    <li><a href="./display.html"><h3>Propiedad Display</h3></a></li>
+                    <li><a href="./propiedadesDiseño.html"><h3> Diseños CSS</h3></a></li>
+                    <li><a href="./object-fit-position.html"><h3> Object-fit-Object-position</h3></a></li>
+                    <li><a href="./coloresCSS.html"><h3>Colores CSS</h3></a></li>
+                    <li><a href="./display/flexBox.html"><h3>Flex-Box</h3></a></li>
+                    <li><a href="./display/Grid.html"><h3>Grid-Box</h3></a></li>
+                    <li><a href="./responsive-desing.html"><h3>Responsive Design</h3></a></li>
+                    <li><a href="./transiciones.html"><h3>Transition</h3></a></li>
+                    <li><a href="./animaciones.html"><h3>Animaciones</h3></a></li>
+                    <li><a href="./variables.html"><h3>Variables CSS</h3></a></li>
+                    <li><a href="./filtros.html"><h3>Filtros CSS</h3></a></li>
+                    <div class="aside-divisor"></div>
+                    <h2>Otros</h2>
+                    <li><a href="./ErroresComunes.html"><h3>Errores Comunes</h3></a></li>
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Propiedad Transform</h1>
+                    <section>
+                        <p>La función de esta propiedad es la de transformar el elemento en el que esta se aplique, lo cual esta propiedad puede hacerlo de varias maneras: </p>
+                        <ul>
+                            <li><p><b>Desplazando el elemento:</b> Ya sea vertical o horizontalmente con el uso de las propiedades.</p></li>
+                            <li><p><b>Escalando el elemento:</b> Ya sea haciéndolo más grande o más chico.</p></li>
+                            <li><p><b>Cambiando la forma del elemento:</b> Añadiéndole grados de inclinación.</p></li>
+                        </ul>
+                        
+                        
+
+                        <p><b>Nota: La propiedad transform con el valor Translate es la mejor forma de hacer las animaciones y transiciones, ya que es la propiedad que menos cantidad de recursos consume, ya que únicamente desplaza al elemento de la animación a una nueva capa y lo modifica.</b></p>
+                    </section>
+                    <h2>Valores</h2>
+                    <section>
+                        <dl>
+                            <dt id="translateX"><h3>TranslateX</h3></dt>
+                            <dd>
+                                <p>Este valor indica que el elemento deberá desplazarse <b>horizontalmente</b>. Para el funcionamiento de este valor también debe incluirse la distancia que el elemento se desplazará, para lo cual se incluye la cantidad en medidas dentro de paréntesis.</p>
+                                <img src="img/transform1.PNG" alt="" class="img">
+                                <p><b>Nota: Si se da el caso de que se defina 100% como cantidad de desplazamiento, el elemento se desplazará una distancia igual al tamaño de este; es decir, si el elemento mide 100px el desplazamiento horizontal será de 100px.</b></p>
+                                <p><b>Nota: Los valores positivos en esta propiedad trasladan el elemento hacia la derecha y los negativos hacia la izquierda.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="translateY"><h3>TranslateY</h3></dt>
+                            <dd>
+                                <p>Este valor indica que el elemento deberá desplazarse <b>verticalmente</b>. Para el funcionamiento de este valor también debe incluirse la distancia que el elemento se desplazará, para lo cual se incluye la cantidad en medidas dentro de paréntesis.</p>
+                                <img src="img/transform2.PNG" alt="" class="img">
+                                <p><b>Nota: Si se da el caso de que se defina 100% como cantidad de desplazamiento, el elemento se desplazará una distancia igual al tamaño de este; es decir, si el elemento mide 100px el desplazamiento vertical será de 100px.</b></p>
+                                <p><b>Nota: Los valores positivos en esta propiedad trasladan el elemento hacia abajo mientras que los negativos lo hacen hacia arriba.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="translate"><h3>Translate</h3></dt>
+                            <dd>
+                                <p>Se trata de la propiedad de abreviatura de <b>translateX</b> y <b>translateY</b>. Su función es simplemente realizar el mismo efecto que estas propiedades en una sola declaración, por lo que el fin de esta propiedad es simplificar y optimizar el código CSS. Esta propiedad recibe dos datos, cada uno referente a cada eje.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="img/transform3.PNG" alt="" class="img">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="scale"><h3>Scale</h3></dt>
+                            <dd>
+                                <p>Este valor permite aumentar el tamaño de un elemento <b>X</b> número de veces. Para hacerlo, esta propiedad multiplica las dimensiones del elemento por un valor numérico definido en la propiedad dentro de un paréntesis; es decir, el elemento se puede multiplicar por el número que se desee, volviéndose tan grande como se plazca. También es posible reducir su tamaño multiplicando las dimensiones del elemento por números menores a 1, como por ejemplo "0.5".</p>
+                                <img src="img/transform4.PNG" alt="" class="img">
+                                <p>Esta propiedad cuenta con diversas variantes que seccionan la funcionalidad de <b>scale</b>, estas propiedades son:</p>
+                                <ul>
+                                    <li>
+                                        <p><b>ScaleX: </b> Esta propiedad aumenta el tamaño del elemento únicamente en el eje X.</p>
+                                        <p><b>ScaleY: </b> Esta propiedad aumenta el tamaño del elemento únicamente en el eje Y.</p>
+                                        <p><b>ScaleZ: </b> Este valor no se aborda en el curso por su complejidad.</p>
+                                        <p><b>Scale3D: </b> Este valor no se aborda en el curso por su complejidad.</p>
+                                    </li>
+                                </ul>
+                                <p><b>Nota: Esta propiedad convierte los elementos en imágenes vectorizadas con el fin de que no se pierda calidad a la hora de agrandarlos.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="skew"><h3>Skew</h3></dt>
+                            <dd>
+                                <p>Este valor permite modificar la forma de los elementos añadiéndole <b>X</b> cantidad de grados de inclinación a estos. Ya que esta propiedad trabaja en base a grados, únicamente acepta las siguientes medidas como sus valores: <b>deg (grados)</b>, <b>rad (radianes)</b> y <b>grad (gradianes)</b>. Entre todas estas medidas, la más recomendable así como la más utilizada son los grados.</p>
+                                <p><b>Código</b></p>
+                                <img src="./img/transform6.PNG" alt="" class="img">
+                                <p><b>Resultado</b></p>
+                                <img src="./img/ejmTransform1.PNG" alt="" class="img">
+                                <p>Como se puede ver en el ejemplo, al aplicar esta propiedad en el contenedor, su efecto también influye en el contenido de este. Para contrarrestar esto, la solución es aplicar una segunda propiedad <b>skew</b> al elemento hijo, pero con un valor inverso, para que de este modo ambas propiedades se contrarresten y resulte en un contenedor inclinado pero un contenido sin ningún tipo de inclinación.</p>
+                                <p><b>Código</b></p>
+                                <img src="img/transform7.PNG" alt="" class="img">
+                                <p><b>Resultado</b></p>
+                                <img src="./img/ejmTransform2.PNG" alt="" class="img">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <p><b>Nota: Todas estas propiedades, al fin y al cabo, son valores de la propiedad "transform", por lo que se pueden aplicar a la vez desde un único llamado de esta, esto con el fin de poder aplicar más de un efecto a la vez para obtener la mayor cantidad de posibilidades a la hora de crear un efecto.</b></p>
+                        <img src="img/transform45.PNG" alt="" class="img">
+                        <p><b>Nota: Es útil tener en cuenta que al utilizar la propiedad "transform" en un evento, esta será sobreescrita, así que es necesario repetir cualquier valor que se desee conservar. </b></p>
+                    </section>
+                    <section>
+                        <h4>Realmente la propiedad transform es inmensa, con un gran número de posibles valores; en este apartado tan solo se tocaron los valores básicos, sin embargo existen muchas más posibilidades. Todas estas están <a href="https://www.w3schools.com/cssref/css3_pr_transform.php" class="a__CSS">definidas en este enlace</a>, en caso de que se necesite o desee indagar más.</h4>
+                    </section>
+                    <section>
+                        <h3>Propiedad Clip-path: polygon;</h3>
+                        <p>Como tal, esta es una propiedad completamente independiente de <b>transform</b>; sin embargo, al igual que esta, permite transformar un elemento al cambiar la forma de este. Debido a la gran relación en su efecto, se hace referencia a esta propiedad en este apartado.</p>
+                        <p>La propiedad <b>Clip-path</b> junto con el valor <b>polygon</b> permite modificar la forma de los elementos a placer. Sin embargo, para generar las formas se necesitan ingresar múltiples tipos de datos, razón por la cual simplemente se suele utilizar un generador de <a href="https://bennettfeely.com/clippy/" class="a__CSS"><b>Clip-path</b></a> como el que se encuentra en este enlace. </p>
+                        <p><b>Código</b></p>
+                        <img src="./img/clip-path.PNG" alt="" class="img">
+                        <p><b>Resultado</b></p>
+                        <img src="./img/ejmTransform3.PNG" alt="" class="img">
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta; si quieres saber más visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img  src="../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                            <a href="" class="footer__instagram">
+                                <img src="../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Currículum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>

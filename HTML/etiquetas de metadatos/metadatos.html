@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+        <title>Metadatos de una Página Web</title>
+    </head>
+    <header>
+        <nav >
+            <ul class="nav"> 
+                <li><a href="../Index.html" class="logo"><img src="../../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+                <li><a href="../indice.html" class="seleccion__HTML tema">HTML</a></li>
+                <li><a href="../../CSS/indiceCSS.html" class="CSS tema">CSS</a></li>
+                <li><a href="../../JavaScrip/Indice__JS.html" class="JS tema">JS</a></li>
+                <div class="indicador"></div>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <aside class="aside">
+        <div class="outer ">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_HTML">
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+            </label>
+            <div class="nav-aside_HTML">
+                <ul>
+                        <h2>Temas HTML</h2>
+                        <li><a href="../etiquetas estructura/estructura.html"><h3>Estructura</h3></a></li>
+                        <li><a href="../etiquetas texto/texto.html"><h3>Texto</h3></a></li>
+                        <li><a href="../Etiquetas uso espesifico/usoEspesifico.html"><h3>Etiquetas Generales</h3></a></li>
+                        <li><a href="../etiquetas listas/listas.html"><h3>Listas</h3></a></li>
+                        <li><a href="../Visualizar codigo/VerCodigo.html"><h3>Representar código</h3></a></li>
+                        <li> <a href="../Multimedia/multimedia.html"><h3>Multimedia</h3></a></li>
+                        <li><a href="../Tablas HTML/tablas.html"><h3>Tablas</h3></a></li>
+                        <li><a href="../Eventos HTML/eventos.html"><h3>Eventos</h3></a></li>
+                        <li><a href="../Formularios HTML/formularios.html"><h3>Formularios</h3></a></li>
+                        <li><a href="../Validaciones/validaciones.html"><h3>Validaciones</h3></a></li>
+                        <li><a href="../Enviar Datos Form/EnviarDatos.html"><h3>Envío de Datos</h3></a></li>
+                        <li><a href="../PersonalizarControladores/ControladoresJS.html"><h3>Controladores JS</h3></a></li>
+                        <li> <a href="../Pre-cargar Contenido/Precargar.html"><h3>Pre-Carga</h3></a></li>
+                        <li><a href="../Notas/notas.html"><h4>Recordatorios</h4></a></li>
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Metadatos de una Página Web</h1>
+                    <section id="descripcion">
+                        <p>En este apartado se definen todas aquellas etiquetas empleadas para definir los metadatos de una página web; recordemos que los metadatos son toda aquella información que no está disponible para los usuarios, su función es la de indicarle las características y requerimientos de la página al navegador. </p>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="meta"><h3>Meta</h3></dt>
+                            <dd>
+                                <p>Meta se utiliza para incluir y definir los metadatos de la página en el header; existen varios tipos de meta que pueden ser interpretados por el navegador.</p>
+                                <p>Un ejemplo de esto es la implementación de "viewport" en la etiqueta "meta"; esta etiqueta es la responsable de que las páginas web se puedan visualizar con las dimensiones de dispositivos móviles, permitiendo de ese modo el "responsive design" aplicable en el desarrollo web.</p>
+                                <img src="./img/metaViewport.PNG" alt="" class="img">
+                                <p>Otro uso posible es definir que, al ser compartida la página web en alguna red social, el enlace se visualice con una descripción y alguna imagen predefinida; esto con la intención de que la vista sea más llamativa y brinde más información a los usuarios sobre el enlace de la página, por lo tanto brinde una mejor experiencia. <br> Para lograr esto muchas redes sociales crean sus propios protocolos de metadatos, los cuales es necesario incluirlos en etiquetas "meta" para lograr este efecto al ser compartidas en una red social. </p>
+                                <p>En los siguientes ejemplos se muestra una ejemplificación de un código para dar una buena visualización al compartir una página web, así como el resultado de este código:</p>
+
+                                <h4>Código</h4>
+                                <img src="./img/metadatoRedSocial1.PNG" alt="" class="img">
+                                <h4>Resultado</h4>
+                                <img src="./img/metadatoRedSocial2.PNG" alt="" class="img">
+                                <p>Otros usos pueden ser: definir el autor de la página web (esto puede ser ventajoso utilizarlo por temas de contacto con el autor); también puede ser utilizado para incluir una breve descripción del contenido de la página. Es bueno utilizar palabras claves ya que esto puede ayudar a que la página se posicione de mejor manera en los buscadores.</p>
+                                <img src="./img/metaDescripcion.PNG" alt="" class="img">
+
+                                <h4>Atributos</h4>
+                                <ul>
+                                    <li><strong>name: </strong> se utiliza para especificar el tipo de metadato del que se trata, es decir el tipo de información que contiene.</li>
+                                    <li><strong>content:</strong> especifica el contenido del metadato en sí. </li>
+                                </ul>
+                                <p><strong>Nota: </strong>Una etiqueta meta con el name = description y un atributo content componen la descripción que se puede encontrar debajo del enlace de la página en las búsquedas de Google u otros buscadores.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="link"><h3>Link</h3></dt>
+                            <dd>
+                                <p>Se trata de una etiqueta de metadatos, por lo cual siempre debe estar ubicada en el head de la página; esta etiqueta consta de varios usos, entre los cuales uno de los principales es <b>contener los llamados de archivos CSS</b>. Al usarse de esta forma es necesario que se acompañe de dos de sus atributos con un valor en particular:</p>
+                                <ul>
+                                    <li><strong> rel="stylesheet":</strong> Indica que se trata de la hoja de estilos del documento.</li>
+                                    <li><strong>href=:</strong> Como siempre, este debe contener la ruta al archivo CSS en cuestión. </li>
+                                </ul>
+                                <p>Dependiendo de la versión del lenguaje que se maneje también puede ir acompañado de otros atributos complementarios como, por ejemplo, <strong>type="text/css"</strong>.</p>
+
+                                <h4>Definir iconos personalizados para la página web</h4>
+                                <p>Para enriquecer el diseño de la web se usan los iconos personalizados, los cuales se usan en diversos contextos.</p> 
+                                <p>El más común de estos es el fav.icon; consiste en un icono predefinido que se mostrará en la parte del navegador que contiene las pestañas abiertas, y también se visualizará al guardar la página como favoritos.</p>
+                                <p>Para implementarlo se necesita guardar la imagen icono en el directorio del proyecto y añadir el siguiente código al "head". Un caso de uso real es crear varios "fav.ico", para que se apliquen uno u otro dependiendo del dispositivo desde el cual se visite el sitio.</p>
+                                <img src="./img/favEjemplo.PNG" alt="" class="img">
+                                <p><b>Nota: Actualmente los navegadores aguantan formatos como png o incluso gif; sin embargo, el formato .ico garantiza funcionar incluso en versiones desactualizadas.</b></p>
+                                <p><b>Nota: Si tu sitio web utiliza una política de seguridad de contenido (content security policy o CSP) para mejorar la seguridad, la política afecta al favicon. Si te encuentras con problemas como que el favicon no se carga, comprueba que la respuesta a Content-Security-Policy del header para la directriz img-src (en-US) en la cabecera no impide el acceso a este.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="script"><h3>Script</h3></dt>
+                            <dd>
+                                <p>Esta etiqueta se usa para introducir código JavaScript al documento, ya sea haciendo referencia a un archivo externo (para lo cual se usa el atributo "src" para definir la ruta del archivo) o incluyendo el código directamente en el interior de la etiqueta; en este caso no se utiliza ningún atributo en particular.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="defIdioma"><h3>Definir el Idioma de la página</h3></dt>
+                            <dd>
+                                <p>Es muy recomendable indicar el idioma en el que está escrito el contenido del sitio web, esto con el fin de que los buscadores y servicios puedan ubicar y trabajar de mejor forma con nuestro proyecto en base a las preferencias lingüísticas del usuario:</p>
+                                <p>Para esto es necesario incluir el atributo "lang" dentro de la etiqueta "html" del documento; el valor de este atributo debe ser un código ISO, el cual define cuál es el lenguaje a utilizar.</p>
+                                <p>En HTML5 el atributo lang es aplicable a cualquier elemento HTML, por lo que se puede definir un lenguaje en particular para un elemento en específico, e incluso aplicar más de un lenguaje en la página de la siguiente forma: </p>
+                                <img src="./img/ejmLang1.PNG" alt="" class="img">
+                                <p>De esta forma los buscadores pueden entender perfectamente los lenguajes e incluso aplicar la pronunciación correcta en el caso de que se use alguna acción de lectura en la página.</p>
+                                <p>En el caso de tener definido un lenguaje y necesitar aplicar otro en algún lugar sería así:</p>
+                                <img src="./img/ejmLang2.PNG" alt="" class="img">
+                                <p>Si se diese el caso de ser necesario usar tan solo algunas palabras en otro lenguaje, también se puede usar el elemento <a href="../etiquetas texto/texto.html#span" class="a__HTML">span</a> con el atributo "lang" para definir el lenguaje de solo una fracción del texto de la siguiente manera:</p>
+                                <img src="./img/ejmLang3.PNG" alt="" class="img">
+                                <p><b>Nota: para saber el código de cada lenguaje basta con buscar "código ISO países" en Google.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta. Si quieres saber más, visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img  src="../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                
+                            <a href="" class="footer__instagram">
+                                <img src="../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Currículum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>

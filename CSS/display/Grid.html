@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+        <title>Grid</title>
+    </head>
+    <header>
+        <nav >
+            <ul class="nav"> 
+                <li><a href="../../Index.html" class="logo"><img src="../../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+                <li><a href="../../HTML/indice.html" class="HTML tema"><span class="text__tema">HTML</span></a></li>
+                <li><a href="../../CSS/indiceCSS.html" class="seleccion__CSS tema"><span class="text__tema">CSS</span></a></li>
+                <li><a href="../../JavaScrip/Indice__JS.html" class="JS tema"><span class="text__tema">JS</span></a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <aside class="aside">
+        <div class="outer ">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_CSS">
+                <span class="hl_CSS"></span>
+                <span class="hl_CSS"></span>
+                <span class="hl_CSS"></span>
+                <span class="hl_CSS"></span>
+            </label>
+            <div class="nav-aside_CSS">
+                <ul>
+                    <h2>Teorías CSS</h2>
+                    <li><a href=".././espesificidad.html"><h3>Especificidad</h3></a></li>
+                    <li><a href=".././metodologia-BEN.html"><h3>Metodología BEM</h3></a></li>
+                    <li><a href=".././teoriaMedidas.html"><h3>Teoría Medidas de Texto</h3></a></li>
+                    <li><a href=".././normmalize.html"><h3>Archivo Normalize.CSS</h3></a></li>
+                    <li><a href=".././TeoriaCajas.html"><h3>Teoría de las Cajas</h3></a></li>
+                    <div class="aside-divisor"></div>
+                    <h2>Propiedades</h2>
+                    <li><a href=".././selectoresCSS.html "><h3>Selectores CSS</h3></a></li>
+                    <li><a href=".././pseudoElementos.html"><h3>Pseudo-Elementos</h3></a></li>
+                    <li><a href=".././pseudoClases.html"><h3>Pseudo-Clases</h3></a></li>
+                    <li><a href=".././propiedadesTexto.html"><h3>Propiedades de texto</h3></a></li>
+                    <li><a href=".././PropiedadesCajas.html"><h3>Propiedades de Cajas</h3></a></li>
+                    <li><a href=".././position.html"><h3>Propiedad Position</h3></a></li>
+                    <li><a href=".././display.html"><h3>Propiedad Display</h3></a></li>
+                    <li><a href=".././propiedadesDiseño.html"><h3> Diseños CSS</h3></a></li>
+                    <li><a href=".././object-fit-position.html"><h3> Object-fit-Object-position</h3></a></li>
+                    <li><a href=".././coloresCSS.html"><h3>Colores CSS</h3></a></li>
+                    <li><a href=".././display/flexBox.html"><h3>Flexbox</h3></a></li>
+                    <li><a href=".././responsive-desing.html"><h3>Responsive Design</h3></a></li>
+                    <li><a href=".././transiciones.html"><h3>Transition</h3></a></li>
+                    <li><a href=".././animaciones.html"><h3>Animaciones</h3></a></li>
+                    <li><a href=".././transform.html"><h3>Propiedad Transform</h3></a></li>
+                    <li><a href=".././variables.html"><h3>Variables CSS</h3></a></li>
+                    <li><a href=".././filtros.html"><h3>Filtros CSS</h3></a></li>
+                    <div class="aside-divisor"></div>
+                    <h2>Otros</h2>
+                    <li><a href=".././ErroresComunes.html"><h3>Errores Comunes</h3></a></li>
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Grid</h1>
+                    <h2>Conceptos</h2>
+                    <section id="conceptos">              
+                        <dl>
+                            <dt id="gridContainer"><h3>Grid Container</h3></dt>
+                            <dd>
+                                <p>El nombre <b>Grid</b> proviene de la "grilla", la cual es: un sistema organizador del espacio gráfico que permite la estructuración, el orden y la disposición de distintos elementos que componen una pieza. Al basarse en este formato los elementos <b>grid</b> poseen una gran variedad de características únicas. </p>
+                                <img src="../img/grid.PNG" alt="" class="img">
+                                <p>La estructura de un <b>grid container</b> está compuesta por diversas columnas y filas de celdas, similar a una tabla. </p>
+                                <h4>Ejemplo</h4>
+                                <img src="../img/gridBox.PNG" alt="" class="img">
+                                <p><b>Nota: Al igual que Flexbox, los contenedores grid se comportan como elementos de bloque para los elementos externos.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="gridCell"><h3>Grid Cell</h3></dt>
+                            <dd>
+                                <p>Las Grid celdas se tratan de todos los recuadros que seccionan el contenedor. En un elemento <b>Grid</b> puede ser definido el número de filas y de columnas según sea necesario; por defecto, la propiedad <b>display: grid;</b> genera una única columna y no genera ninguna fila. Como es obvio, esto puede ser modificado a conveniencia del diseño.  </p>
+                                
+                                <img src="../img/GridConcepto3.PNG" alt="" class="img">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="gridItem"><h3>Grid Item</h3></dt>
+                            <dd>
+                                <p>Al igual que el <b>Flexbox</b>, todos los elementos hijos que se encuentran dentro del contenedor son llamados items; es decir, un <b>grid item</b> es todo elemento que se asigne en el interior del contenedor <b>grid</b>. Por lo tanto, la cantidad máxima o mínima de <b>grid item</b> es definida por el desarrollador.</p>
+                                <img src="../img/GridConcepto2.PNG" alt="" class="img">
+                                <p><b>Nota: Al igual que en Flexbox, en grid los "items" están limitados únicamente a los elementos hijos directos; por lo tanto, un elemento que se encuentre dentro de un item ya no es considerado como uno.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="gridtracks"><h3>Grid Tracks</h3></dt>
+                            <dd>
+                                <p>Se tratan de conjuntos de <b>grid cell</b>, y se dividen en dos grupos:
+                                    <ul>
+                                        <li>
+                                            <p><b>Filas</b></p>
+                                            <img src="../img/GridConcepto4.PNG" alt="" class="img">
+                                        </li>
+                                        <li>
+                                            <p><b>Columnas</b></p>
+                                            <img src="../img/GridConcepto5.PNG" alt="" class="img">
+                                        </li>
+                                    </ul>
+                                     y, por su parte, para saber el número de <b>grid tracks</b> que posee un contenedor simplemente es necesario sumar las filas y las columnas del elemento en cuestión; por lo tanto, cada columna y cada fila se define como un <b>grid track</b>.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="gridArea"><h3>Grid Area</h3></dt>
+                            <dd>
+                                <p>Las <b>grid area</b> son conjuntos de celdas consecutivas que el desarrollador puede definir, ya que estas no están estructuradas; por lo tanto, cualquier conjunto de celdas consecutivas puede ser definido como un <b>grid area</b>, esto incluye a uno o más <b>grid tracks</b>.</p>
+                                <img src="../img/GridConcepto6.PNG" alt="" class="img">
+                                <p><b>Nota: también se podría definir una sola celda como un área, pero esto carece de sentido; lo ideal es que un grid area posea al menos dos celdas.</b></p>
+                                <p><b>Nota: Las grid areas tienen que ser celdas consecutivas vertical u horizontalmente; no pueden ser en diagonal ni en vertical y horizontal en la misma área.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="gridLine"><h3>Grid Line</h3></dt>
+                            <dd>
+                                <p>Se refiere a las líneas divisoras de las columnas y las celdas, por lo tanto se dividen en dos grupos:</p>
+                                <ul>
+                                    <li><p><b>Row line:</b> Líneas divisoras de las filas.</p></li>
+                                    <li><p><b>Column line: </b>Líneas divisoras de las columnas.</p></li>
+                                </ul>
+                                <p>A su vez, estas se empiezan a enumerar desde la línea borde izquierda para las columnas y desde la línea borde superior para las filas, de la siguiente manera:</p>
+                                
+                                <img src="../img/GridConcepto7.PNG" alt="" class="img">
+                            </dd>
+                        </dl>
+                    </section>
+                    <h1>Propiedades</h1>
+                    <h2>Propiedades a aplicar en el Contenedor:</h2>
+                    <section>
+                        <dl>
+                            <dt id="girdTemplate"><h3>Grid Template</h3></dt>
+                            <dd>
+                                <p>Esta primera propiedad cuenta con dos variaciones: <b>grid-template-rows</b> y <b>grid-template-columns</b>. En ambos casos la función es la misma: definir el número de filas y de columnas respectivamente, de la siguiente forma:</p>
+                                <p><b>Código</b></p>
+                                <img src="../img/grid-Templates.PNG" alt="" class="img">
+                                <p><b>Resultado</b></p>
+                                <img src="../img/ejmGrid-Templates.PNG" alt="" class="img">
+                                <p>De este modo es como se asigna el número de filas y columnas que poseerá el contenedor a la vez que se definen las dimensiones de estas. De hecho, para definir las dimensiones de las columnas y filas se puede aplicar cualquiera de las diversas unidades de medida CSS.</p>
+                                <h4>Medida "fr"</h4>
+                                <p>Los elementos <b>grid</b> cuentan con un valor especial abreviado como <b>"fr"</b> (fractional unit), y su efecto es similar al de la propiedad <b>flex-grow</b>, en la cual se define que todo el espacio sobrante se asigne al elemento en el que esta se aplique. Del mismo modo, al utilizar este valor para definir las dimensiones de alguna columna o fila, esta dispondrá del espacio disponible o se reducirá según sea necesario.</p>
+                                <img src="../img/ejmGrid-Templates2.PNG" alt="" class="img">
+                                <p><b>Nota: la medida "fr" se puede aplicar a todas las columnas y filas si es necesario.</b></p>
+                                <h4>Valor Repeat</h4>
+                                <p>Se trata de una función que se puede emplear a la hora de definir el valor de estas propiedades. Su función es la de simplificar la declaración de las columnas y filas al definirlas una única vez en lugar de repetir las pautas numerosas veces.</p>
+                                <p>Su sintaxis consta de la palabra clave <b>repeat</b> y, dentro de paréntesis, el número de repeticiones a realizar seguido de las pautas de las filas o de las columnas, como se puede ver en el siguiente ejemplo:</p>
+                                <img src="../img/repeat.PNG" alt="" class="img">
+                                <p>De esta forma se logra que la función ejecute las pautas el número de veces designado; en este caso: que se cree una columna de 100px seguida de una de 1<b>fr</b> tres veces.</p>
+                                <p><b>Nota: Esta función es muy útil en aquellos casos en los que es necesario crear numerosas filas o columnas.</b></p>
+                                <p><b>Nota: grid-template-columns y grid-template-rows también poseen valores dinámicos los cuales son mencionados <a href="./Grid.html#min-contentMax-content">más adelante</a>.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="gridGap"><h3>Grid-gap</h3></dt>
+                            <dd>
+                                <p>Esta segunda propiedad también posee dos variantes: <b>grid-row-gap</b> y <b>grid-column-gap</b>. Tal como su nombre lo indica, la diferencia entre ambas es que una aplica su efecto a las columnas y otra a las filas; fuera de esto el efecto es el mismo. El efecto de esta propiedad es aplicar un tipo de margen entre las celdas del contenedor de la siguiente forma:</p>
+                                <p><b>Código</b></p>
+                                <img src="../img/grid-gap.PNG" alt="" class="img">
+                                <p><b>Resultado</b></p>
+                                <img src="../img/ejmGrid-gap.PNG" alt="" class="img">
+                                <p>Tal como se puede ver en el ejemplo, en este código se utilizó la propiedad de abreviatura <b>grid-gap</b>, la cual simplemente generaliza el efecto tanto para las columnas como para las filas; sin embargo, se pueden utilizar las propiedades <b>grid-row-gap</b> y <b>grid-column-gap</b> de la misma forma, claro que cada una se limita a aplicar los márgenes a las filas y a las columnas respectivamente.</p>
+                                <p><b>Nota: Tal como se puede apreciar en el ejemplo, esta propiedad no distancia las celdas de los bordes del contenedor; su efecto únicamente se aplica entre celdas. </b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="gridColumnRow"><h3>Grid-column y Grid-row</h3></dt>
+                            <dd>
+                                <p>Se trata de dos propiedades con efectos muy similares entre sí llamadas <b>grid-column</b> y <b>grid-row</b>. La función de ambas es definir el espacio que ocupará una celda en la grilla, para lo cual estas propiedades se basan en las <b>grid lines</b>; es decir, se basan en las diferentes líneas que conforman la grilla, tal como se puede ver <a href="./Grid.html#gridLine" class="a__CSS"><b>en este ejemplo</b></a>. Por lo tanto, el efecto de cada propiedad es:  </p>
+                                <ul>
+                                    <li>
+                                        <p><b>Grid-column:</b> Define en cuáles líneas de columna (líneas verticales) empieza y termina la celda en cuestión; por lo tanto, esta propiedad modifica las dimensiones horizontales de la celda. </p>
+                                    </li>
+                                    <li>
+                                        <p><b>Grid-row: </b> Define en cuáles líneas de fila (líneas horizontales) empieza y termina la celda en cuestión; por lo tanto, esta propiedad modifica las dimensiones verticales de la celda.</p>
+                                    </li>
+                                </ul>
+                                <p>Por lo tanto, se podría decir que estas propiedades modifican la cantidad de casillas que ocupará la celda seleccionada, como en el siguiente ejemplo:</p>
+                                
+                                <p><b>Código</b></p>
+                                <img src="../img/GridColumRow.PNG" alt="" class="img">
+                                <p><b>Resultado</b></p>
+                                <img src="../img/ejmGridColumRow.PNG" alt="" class="img">
+                                <p>Una característica de las grillas es que pese a que el espacio ocupado por las celdas se modifique, esto solo afecta a las dimensiones de estas; no significa que la celda "absorba" a algún item <b>grid</b>. Estos elementos simplemente proceden a correrse dando espacio a la celda para ocupar el espacio designado, ya sea desplazándose a otra columna o descendiendo a otra fila. </p>
+                                <p>A su vez, tal y como se puede ver en el ejemplo, esta propiedad acepta dos valores numéricos en los cuales el <b>primero representa la numeración de la línea donde comienza la celda</b>, seguida de un "slash (/)" y continuando con el <b>segundo</b> dígito, el cual <b>representa la numeración de la línea donde termina la celda</b>; esto es igual para ambas propiedades.</p>
+                                <p>Es importante no confundir: <b>estos valores numéricos no representan el número de casillas que ocupará la celda, sino en cuáles líneas empieza y termina</b>. Sin embargo, existe una forma de utilizar el número de casillas que se desea utilizar como valor; esto se logra añadiendo la palabra <b>span</b> delante del segundo número. De ese modo, este deja de representar la numeración de la línea y pasa a representar el número de celdas a cubrir de la siguiente forma:</p>
+                                <p><b>Código</b></p>
+                                <img src="../img/GridColumRow3.PNG" alt="" class="img">
+                                <p><b>Resultado</b></p>
+                                <img src="../img/ejmGridColumRow3.PNG" alt="" class="img">
+                                <p>De este modo, la declaración de este ejemplo deja de ser: "empieza en la línea 1 y termina en la 3" y pasa a ser: "empieza en la línea 1 y cubre 3 casillas". <b>Este método puede simplificar bastante más la implementación de esta propiedad</b>.</p>
+                                <h4>Variantes</h4>
+                                <p>Realmente ambas propiedades se tratan de propiedades de abreviatura, ya que cada una tiene la función de recibir los datos pertinentes a otras dos propiedades de la siguiente forma: </p>
+                                <ul>
+                                    <li>
+                                        <p><b>Grid-column</b> abrevia los datos de:</p>
+                                        <ul>
+                                            <li><p><b>Grid-column-start:</b> Define la línea de columna (vertical) en la que empieza la celda.</p></li>
+                                            <li><p><b>Grid-column-end:</b> Define la línea de columna (vertical) en la que termina la celda.</p></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p><b>Grid-row:</b> Abrevia los datos de:</p>
+                                        <ul>
+                                            <li><p><b>Grid-row-start: </b> Define la línea de fila (horizontal) en la que empieza la celda. </p></li>
+                                            <li><p><b>Grid-row-end:</b> Define la línea de fila (horizontal) en la que termina la celda.</p></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <h4>Ejemplo</h4>
+                                <img src="../img/GridColumRow2.PNG" alt="" class="img">
+                                <p>Por lo tanto, utilizar estas propiedades es más óptimo que sus versiones específicas, lo que nos permite definir más datos con menos líneas de código.</p>
+        
+                                <h4 id="nombre">Dar nombre a las líneas</h4>
+                                <p>Esta es una opción que nos brinda CSS; básicamente permite asignar un nombre de nuestra elección a cada una de las líneas de la grilla. Esto se hace a la vez que se definen las dimensiones de las filas y columnas. Para vincular el nombre con las respectivas líneas es necesario cambiar la estructura de los valores de las propiedades <b>grid-template-rows</b> y <b>grid-template-columns</b> de la siguiente forma:</p>
+                                
+                                <img src="../img/GridNombreLine.PNG" alt="" class="img">
+                                <p>Con esta estructura se vinculan los nuevos nombres a cada línea, ya sea de columna o de fila. Es importante encerrar los nombres en corchetes ("[]") y una vez hecho esto, se puede utilizar cualquiera de los nombres como si de la numeración de la línea se tratase.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="../img/ejmGridNombreLine.PNG" alt="" class="img">
+                            </dd>
+                        </dl>
+                    </section>
+                    <h2>Grid Implícito y Grid Explícito</h2>
+                    <section id="inplicito-explicito">
+                        <p><b>Explícito</b> es algo que está explicado de forma clara y detallada sin dejar nada por sabido o entendido.</p>
+                        <p><b>Implícito</b> es algo que está incluido sin decirlo o especificarlo.</p>
+                        <p>Teniendo presentes estas dos definiciones podemos hacernos a la idea de qué trata este concepto: el <b>grid explícito</b> son todas aquellas celdas, columnas y filas que son estructuradas y detalladas en los estilos; por otro lado, el <b>grid implícito</b> consta de todas aquellas celdas, filas o columnas "extra" que pueden ser añadidas por un nuevo elemento, las cuales no son especificadas o definidas por los estilos pero aun así son presentadas dentro de la cuadrícula.</p>
+                        <p>Un ejemplo de esto sería que se estructure en CSS una cuadrícula con 3 columnas y 3 filas (generando 9 celdas); ese es el <b>grid explícito</b>. Sin embargo, si en el código HTML existen dos elementos más dentro del contenedor, estos elementos no definidos son el grid implícito.</p>
+                        <p>Para trabajar con el <b>grid implícito</b> existen tres (3) propiedades, las cuales son las siguientes:</p>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="auto-Rows"><h3>Grid-auto-rows</h3></dt>
+                            <dd>
+                                <p>El funcionamiento de esta propiedad es muy similar a <b>grid-template-rows</b>, con la diferencia de que esta se aplica específicamente para el <b>grid implícito</b> y no define la cantidad de filas que serán creadas, sino que define las dimensiones de las mismas.</p>
+                                <p>Por defecto, <b>grid</b> trata al <b>grid implícito</b> como filas. Para definir las dimensiones de estas se hace lo siguiente:</p>
+                                <p><b>Sin Aplicar la propiedad</b></p>
+                                <img src="../img/ejmGrid-auto-ColumnsRows.PNG" alt="" class="img">
+                                <p><b>Código</b></p>
+                                <img src="../img/grid-auto-columnsRows.PNG" alt="" class="img">
+                                <p>En esta propiedad no es necesario declarar un valor para cada celda por separado; se define un único valor que se aplicará a todo el <b>grid implícito</b>. Este código declara: "el grid implícito tendrá 150px".</p>
+                                <p><b>Resultado</b></p>
+                                <img src="../img/ejmGrid-auto-ColumnsRows2.PNG" alt="" class="img">
+                                <p><b>Nota: la propiedad grid-auto-rows no surte ningún efecto si el grid implícito está ubicado como columnas.</b></p>
+                                <p><b>Nota: las filas implícitas también pueden poseer la medida fr.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="auto-flow"><h3>Grid-auto-flow</h3></dt>
+                            <dd>
+                                <p>A su vez también es posible modificar la orientación por defecto del <b>grid implícito</b>; esa es la función de esta propiedad, para lo cual cuenta con el valor <b>column</b>, el cual indica que el <b>grid implícito</b> sea tratado como columna en vez de como fila.</p>
+                                <p><b>Grid-auto-flow</b> también cuenta con otro uso y es el de rellenar cualquier espacio vacío que se genere dentro de la grilla. Esto puede suceder a raíz de las dimensiones que se les asigne a celdas continuas; si por algún motivo a una de las celdas se le asigna un <b>Grid Template</b> que la fuerce a reubicarse para poder cumplir con las indicaciones, se generarán espacios vacíos.</p>
+                                <img src="../img/ejmGrid-autoDense2.PNG" alt="" class="img">
+                                <p>Para rellenar estos espacios vacíos se utiliza la propiedad <b>auto-flow</b> con el valor <b>"dense"</b> de la siguiente forma:</p>
+                                <p><b>Código</b></p>
+                                <img src="../img/gird-autoDense.PNG" alt="" class="img">
+                                <p><b>Resultado</b></p>
+                                <img src="../img/ejmGrid-autoDense.PNG" alt="" class="img">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="auto-columns "><h3>Grid-auto-columns</h3></dt>
+                            <dd>
+                                <p>El funcionamiento de esta propiedad es muy similar a <b>grid-template-columns</b>, con la diferencia de que esta se aplica específicamente para el <b>grid implícito</b> y define las dimensiones de las nuevas columnas.</p>
+                                <p>Por defecto <b>grid</b> trata al <b>grid implícito</b> como filas, por lo que esta propiedad debe ser usada en conjunto con <b>grid-auto-flow: column;</b> de la siguiente forma:</p>
+                                <p><b>Código</b></p>
+                                <img src="../img/grid-auto-columnsRows2.PNG" alt="" class="img">
+                                <p>Al igual que en <b>grid-auto-rows</b>, en esta propiedad no es necesario declarar un valor para cada celda por separado, ya que se define un único valor que se aplicará a todo el <b>grid implícito</b>.</p>
+                                <p><b>Resultado</b></p>
+                                <img src="../img/ejmGrid-auto-ColumnsRows3.PNG" alt="" class="img">
+                                <p><b>Nota: la propiedad grid-auto-columns no surte ningún efecto si el grid implícito está ubicado como filas.</b></p>
+                                <p><b>Nota: las columnas implícitas también pueden poseer la medida fr.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <h2>Grid Dinámico</h2>
+                    <section id="grid-dinamico">
+                        <p>Es posible el definir la grilla de modo que el número de filas y columnas se ajuste a las dimensiones del dispositivo de forma dinámica, para esto se utilizan las siguientes propiedades</p>
+                        <p>Como ya se ha mencionado anteriormente <b>grid-template</b> es la propiedad que define la cantidad de filas y columnas junto con sus respectivas dimensiones, por lo cual acepta múltiples formatos de medidas, entre los cuales se encuentra <b>fr</b> el cual es un valor exclusivo de los elementos <b>grid</b>, cuando una fila o columna es definida con este valor no solo se asignará unas dimensiones base, sino que a su vez esta se adaptará al espacio disponible en pantalla, por lo tanto permite que la tabla se ajuste hasta cierto punto a las dimensiones de la pantalla.</p>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="min-contentMax-content"><h3>Min-content y Max-Content</h3></dt>
+                            <dd>
+                              
+                                <p>En los elementos <b>grid</b> el contenido se ajusta automáticamente a las dimensiones de sus respectivas celdas, sin embargo una opción también es el definir que el tamaño de la celda se ajuste en base al espacio ocupado por el contenido, esto se logra de igual modo con las propiedades <b>grid-template-columns</b> y <b>grid-template-rows</b> pero en esta ocasión con los valores:  </p>
+                                <ul>
+                                    <li>
+                                        <p><b>min-content: </b>Define que las dimensiones de la celda serán iguales al menor espacio posible que pueda ocupar el contenido de la celda de la siguiente forma:</p>
+                                        <p><b>Código</b></p>
+                                        <img src="../img/gridMin-content.PNG" alt="" class="img">
+                                        <p><b>Resultado</b></p>
+                                        <img src="../img/ejmGridMin-content.PNG" alt="" class="img">
+                                    </li>
+                                    <li>
+                                        <p>max-content: <b></b> Define que las dimensiones de la celda serán iguales al mayor espacio posible que pueda ocupar el contenido de la celda de la siguiente forma: </p>
+                                        <p><b>Código</b></p>
+                                        <img src="../img/gridMax-content.PNG" alt="" class="img">
+                                        <p><b>Resultado</b></p>
+                                        <img src="../img/ejmGridMax-content.PNG" alt="" class="img">
+                                        <p><b>Nota: Realmente es raro llegar a utilizar el valor max-content, la mayoría de las ocasiones se utiliza únicamente min-content.</b></p>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="minmax"><h3>Minmax</h3></dt>
+                            <dd>
+                                <p>Se trata de un valor de <b>grid-template-columns</b> o <b>grid-template-rows</b> que en sí es la combinación de <b>min-content</b> y de <b>max-content</b>, este valor es capaz de definir el valor mínimo y máximo que podrán adoptar las filas y columnas, su estructura es la siguiente:</p>
+                                <img src="../img/gridMinMax.PNG" alt="" class="img">
+                                <p><b>Nota: min-content y max-content pueden definirse como los valores mínimo y máximo respectivamente en "minmax" como si de cualquier otro tipo de medida se tratase.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="auto-fill"><h3>Auto-fill</h3></dt>
+                            <dd>
+                                <p>Esta propiedad permite que la cantidad de filas y columnas de la grilla se modifiquen dinámicamente en base a las dimensiones de la pantalla, es decir el efecto de esta propiedad no es que las dimensiones de las celdas cambien, en vez de eso reorganiza las celdas ya sea ubicándolas en fila o columna según el espacio disponible en pantalla. </p>
+                                <p>Por lo tanto esta propiedad permite que en pantallas anchas la grilla se ensanche poseyendo numerosas columnas y pocas filas, del mismo modo en pantallas estrechas la grilla se afina pasando a poseer numerosas filas y pocas columnas.</p>
+                                <p>Esta propiedad se utiliza como valor de las propiedades <b>grid-template-columns</b> y <b>grid-template-rows</b>, a su vez se utiliza con las propiedades <b>min-content</b>, <b>max-content</b> y <b>minmax</b> de la siguiente forma:</p>
+                                <img src="../img/gridAuto-fill.PNG" alt="" class="img">
+                                <p>Este ejemplo indica lo siguiente: "repite la creación de columnas <b>auto-fill</b> con un valor mínimo de 120px y un valor máximo adaptable al espacio disponible (1fr)", de este modo se crea una celda por cada <b>"div"</b> establecido en el documento HTML, y si el espacio es suficiente ubica todas las celdas posibles como columnas, y si el espacio no es suficiente para colocar más celdas distribúyelo entre todas (esto por el valor 1fr).</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="auto-fit"><h3>Auto-fit</h3></dt>
+                            <dd>
+                                <p>Esta propiedad es muy similar a <b>auto-fill</b> tanto en funcionamiento como en empleación en el código</p>
+                                <img src="../img/gridAuto-fit.PNG" alt="" class="img">
+                                <p>La diferencia solo se evidencia en los casos en los que exista espacio disponible en el contenedor <b>grid</b>, ya que esta propiedad una vez todos los elementos se ubicaron en una línea esta permite escalarlos aumentando sus dimensiones, mientras que en su lugar <b>auto-fill</b> no permite que los elementos se escalen, sino que en caso de que exista espacio disponible esta genera celdas invisibles para ocupar ese lugar, evitando que las celdas visibles dispongan de ese espacio</p>
+                                <p><b>Auto-fit</b></p>
+                                <img src="../img/ejmGridAutoFit.PNG" alt="" class="img">
+                                <p><b>Auto-Fill</b></p>
+                                <img src="../img/ejmGridAutoFill.PNG" alt="" class="img">
+                                <p>En este ejemplo se usó una herramienta de google que permite ver las celdas invisibles generadas por <b>auto-fill.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <h2>Alineación y control de flujo</h2>
+                    <section id="alineacion-grid">                      
+                        <p>La alineación en los elementos <b>grid</b> se diferencia de la de flex, ya que en vez de tratarse de una alineación total del contenido, se trata de una alineación dentro de cada celda, por lo tanto se podría decir que cada celda pasa a ser un <b>"flex-container"</b>.</p>
+                        <p>Debido a esto la alineación de las grillas están constituidas por dos partes en función de los dos tipo de elementos que almacena, por un lado se tiene la alineación de las celdas organizadas en filas y columnas que conforman la grilla, y por otro lado tenemos la alineación del contenido de las celdas, por lo tanto existen propiedades para controlar el cómo se justifican las celdas y otras para definir el cómo se justifica el contenido de estas. </p>
+                        <h3>Alineación del contenido</h3>
+                        <p>Estas propiedades únicamente definen la alineación del contenido de las celdas:</p>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="justify-items"><h3>Justify-items</h3></dt>
+                            <dd>
+                                <p>Esta propiedad define la alineación del contenido de forma <b>horizontal</b>, es decir el si se encuentra centrado, a la derecha o izquierda, sus posibles valores son:</p>
+                                <ul>
+                                    <li><p><b>Center:</b> Centra el contenido horizontalmente</p></li>
+                                    <li><p><b>Start: </b> Alinea el contenido a la derecha</p></li>
+                                    <li><p><b>End: </b> Alinea el contenido a la izquierda</p></li>
+                                    <li><p><b>stretch: </b> Se trata del valor por defecto de las celdas grid, estira horizontalmente la celda para que ocupe todo su espacio designado</p></li>
+                                </ul>
+                                <p><b>Nota: Los grid items no tienen ni largo ni ancho así que al aplicar otros valores que no sean stretch las dimensiones de la celda se ajustan como en la siguiente imagen:</b></p>
+                                <img src="../img/EjmGridJustify-items.PNG" alt="" class="img">
+                                <b><p>Nota: La distancia entre las celdas se debe a la propiedad grid-template.</p></b>
+                                <p><b>Nota: Se puede usar padding para aumentar el tamaño de la celda.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="aling-items"><h3>aling-items</h3></dt>
+                            <dd>
+                                <p>Esta propiedad define la alineación del contenido de forma <b>vertical</b>, es decir el si se encuentra centrado, en la parte superior o inferior, sus posibles valores son:</p>
+                                <ul>
+                                    <li><p><b>Center:</b> Centra el contenido verticalmente</p></li>
+                                    <li><p><b>Start:</b> Alinea el contenido en la parte superior</p></li>
+                                    <li><p><b>End: </b> Alinea el contenido en la parte inferior</p></li>
+                                    <li><p><b>stretch: </b> Se trata del valor por defecto de las celdas grid, estira verticalmente la celda para que ocupe todo su espacio designado</p></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <p><b>Nota: tal como se puede apreciar ambas propiedades cuentan con los mismos valores con las mismas funciones, solo que una los aplica en el eje vertical y la otra en el eje horizontal.</b></p>
+                            <img src="../img/gridAlineacionItem.PNG" alt="" class="img">
+                            <p><b>Nota: Esta es la forma correcta de centrar los items.</b></p>
+                            <p><b>Nota: Las propiedades de los items no pueden recibir las propiedades flex ">Space-around", ">Space-between" ni ">Space-evenly". </b></p>
+                        </dl>
+                    </section>
+                    <h2>Propiedades del Grid-container</h2>
+                    <section>
+                        <p>Se tratan de aquellas dos propiedades que definen exclusivamente la alineación de las celdas mediante la organización de las filas y columnas:</p>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="justufy-content"><h3>Justify-content</h3></dt>
+                            <dd>
+                                <p>esta propiedad permite que las <b>columnas</b> se ubiquen horizontalmente, es decir en el centro, en la derecha o a la izquierda, del mismo modo sus valores son:</p>
+                                <ul>
+                                    <li><p><b>Center:</b> Centra las columnas horizontalmente</p></li>
+                                    <li><p><b>Start: </b> Alinea las columnas a la derecha</p></li>
+                                    <li><p><b>End: </b> Alinea las columnas a la izquierda</p></li>
+                                    <li><p><b>stretch: </b> Se trata del valor por defecto de las celdas grid, estira horizontalmente la celda para que ocupe todo su espacio designado</p></li>
+                                </ul>
+                                <p>Esta propiedad también acepta los valores <b>flex</b>:  </p>
+                                <ul>
+                                    <li><p><b>Space-around: </b>Deja la mayor cantidad de espacio horizontal posible alrededor de las columnas</p></li>
+                                    <li><p><b>Space-between: </b> Separa las columnas horizontalmente con la mayor cantidad de espacio posible</p></li>
+                                    <li><p><b>Space-evenly: </b> Asigna la misma distancia horizontal a todas las columnas</p></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="aling-content"><h3>Aling-content</h3></dt>
+                            <dd>
+                            <p>Esta propiedad permite que las <b>filas</b> se ubiquen verticalmente, es decir que lo hagan en el centro, en la parte superior o inferior del contenedor, sus valores posibles son:</p>
+                            <ul>
+                                    <li><p><b>Center:</b> Centra las filas verticalmente</p></li>
+                                    <li><p><b>Start:</b> Alinea las filas en la parte superior</p></li>
+                                    <li><p><b>End: </b> Alinea las filas en la parte inferior</p></li>
+                                    <li><p><b>stretch: </b> Se trata del valor por defecto de las celdas grid, estira verticalmente la celda para que ocupe todo su espacio designado</p></li>
+                                </ul>
+                                <p>Esta propiedad también acepta los valores <b>flex</b>:  </p>
+                                <ul>
+                                    <li><p><b>Space-around: </b>Deja la mayor cantidad de espacio vertical posible alrededor de las columnas</p></li>
+                                    <li><p><b>Space-between: </b> Separa las columnas verticalmente con la mayor cantidad de espacio posible</p></li>
+                                    <li><p><b>Space-evenly: </b> Asigna la misma distancia a todas las columnas verticalmente</p></li>
+                                </ul>
+                                <img src="../img/gridAlineacionContent.PNG" alt="" class="img">
+                                <p><b>Nota: para que estas propiedades se evidencien debe de haber espacio disponible en el contenedor, para que de ese modo las filas y columnas puedan desplazarse.</b></p>
+                        <p><b>Nota: Es perfectamente correcto el aplicar las cuatro propiedades a la vez, ya que de ese modo se estaría definiendo la alineación tanto de las filas y columnas como de su contenido.</b></p>
+                        <p><b>Notas: Todas estas propiedades también aceptan los valores "flex-start" y "flex-end", ya que se comportan como contenedores flex, sin embargo nada cambia al emplear estos valores.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <h2>Alineación individual de celdas</h2>
+                    <section>
+                        <p>También existen propiedades que se enfocan en definir la alineación de una única celda en específico, el funcionamiento de estas propiedades es muy similar al de cualquiera de las anteriores propiedades de alineación, con la diferencia de que estas propiedades se aplican a la celda en individual y no a los conjuntos de celdas, estas propiedades son:</p>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="aling-self"><h3>Aling-self</h3></dt>
+                            <dd>
+                                <p>Esta propiedad define la alineación vertical de la celda, sus valores son:</p>
+                                <ul>
+                                    <li><p><b>Center:</b> Centra la celda verticalmente</p></li>
+                                    <li><p><b>Start:</b> Alinea la celda en la parte superior</p></li>
+                                    <li><p><b>End: </b> Alinea la celda en la parte inferior</p></li>
+                                    <li><p><b>stretch: </b> Se trata del valor por defecto de las celdas grid, estira verticalmente la celda para que ocupe todo su espacio designado</p></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="justify-self"><h3>Justify-self</h3></dt>
+                            <dd>
+                                <p>Esta propiedad define la alineación horizontal de la celda, sus valores son:</p>
+                                <ul>
+                                    <li><p><b>Center:</b> Centra la celda horizontalmente</p></li>
+                                    <li><p><b>Start: </b> Alinea la celda a la derecha</p></li>
+                                    <li><p><b>End: </b> Alinea la celda a la izquierda</p></li>
+                                    <li><p><b>stretch: </b> Se trata del valor por defecto de las celdas grid, estira horizontalmente la celda para que ocupe todo su espacio designado</p></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="place-self"><h3>Place-self</h3></dt>
+                            <dd>
+                                <p>Se trata simplemente de la propiedad de abreviatura de <b>justify-self</b> y de <b>align-self</b>, por lo que su propósito es cumplir con exactamente la misma función que estas pero en una sola declaración, esta propiedad recibe dos datos a la vez, el primero se trata del <b>align-self (alineación vertical)</b> mientras que el segundo se refiere a <b>justify-self (alineación horizontal), de la siguiente forma:</b></p>
+                                <img src="../img/gridPlace-self.PNG" alt="" class="img">
+                                <p>Del mismo modo ya que ambas propiedades aceptan los mismos valores también se puede simplificar aún más ingresando un único valor, en este caso ese valor se aplicará a ambas propiedades, como en el siguiente ejemplo:</p>
+                                <img src="../img/gridPlace-self2.PNG" alt="" class="img">
+                                <p><b>Nota: Su uso solo es realmente útil en los casos en los que se desee modificar ambas propiedades a la vez.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="order"><h3>order</h3></dt>
+                            <dd>
+                                <p>Esta propiedad se asemeja mucho al z-index, propiedad que define qué elemento se visualizará por encima o por debajo cuando estos se sobreponen entre sí, esto lo hace en base al valor numérico que se le asigna a cada elemento, en el cual el más grande se ubica por encima de los otros.</p>
+                                <p>Por su lado <b>order</b> lo que hace es definir en qué orden se ubican los elementos, es decir esta propiedad define el si los items se ubican de primero, segundo, cuarto, último etc, en base al valor numérico que se le asigne a cada item al igual que en la propiedad z-index. En esta propiedad el item con el menor valor se ubica en el inicio, mientras que el item con el mayor valor lo hace al último.</p>
+                                <p><b>Código</b></p>
+                                <img src="../img/gridOrder.PNG" alt="" class="img">
+                                <p><b>Resultado</b></p>
+                                <img src="../img/ejmGridOrder.PNG" alt="" class="img">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section id="grid-nombres">
+                        <h2>Grid Areas</h2>
+                        <p>Las <b>Grid Areas</b> son una forma de estructurar los elementos <b>grid</b> alternativa a <b>grid-template-columns</b> y a <b>grid-template-rows</b>, ya que de esta forma las casillas de la grilla son declaradas de una forma diferente, para esto se utiliza la propiedad <b>grid-template-areas</b>, esta dinámica consiste en otorgarle un nombre a cada grupo de casillas definiendo a cada una de estas con ese nombre de la siguiente forma: </p>
+                        <img src="../img/gridAreas1.PNG" alt="" class="img">
+                        <p><b>Cada uso del respectivo nombre del grupo genera una casilla</b>, en este ejemplo como nombre de los grupos se utiliza las partes básicas de una página web, por lo tanto en esta estructura se están generando una fila perteneciente al área "header" conformada por tres casillas, seguido a esto se creó un área llamada "aside" conformada por una columna de dos casillas, seguido de una tercera área llamada "main" conformada por cuatro casillas ocupando dos columnas y dos filas, y por último un grupo llamado "footer" conformado por una fila de tres casillas, de esta forma es como se declara la generación de las casillas utilizando las áreas.  </p>
+                        <p>Lo siguiente es asignar las áreas generadas a cada uno de los elementos HTML:</p>
+                        <img src="../img/gridAreas2.PNG" alt="" class="img">
+                        <p>De este modo los elementos proceden a ubicarse en el espacio designado para cada una de las casillas de sus respectivas áreas.</p>
+                        <img src="../img/ejmGridArea1.PNG" alt="" class="img">
+                        <p>Como se puede ver los elementos se ubicaron según la estructura de áreas definida anteriormente, sin embargo esto es todo, esta técnica únicamente consiste en generar las casillas, para asignarles medidas y seguir trabajando con la grilla se utilizan mecanismos normales, por ejemplo:</p>
+                        <img src="../img/gridAreas3.PNG" alt="" class="img">
+                        <p>En este ejemplo aparte de aumentar el tamaño de las áreas generando más celdas, se define el tamaño de las celdas ya creadas utilizando <b>grid-template-columns</b> y sus respectivas funciones, así como también las dimensiones del contenedor y un borde.</p>
+                        <p>De ese modo es como se pueden generar celdas utilizando las <b>áreas grid</b>, si bien no ofrece mucho más que eso es una alternativa que puede llegar a resultar útil al estructurar la grilla.</p>
+                        <p><b>Nota: Lo ideal sería darle al "header" y al "footer" medidas fijas</b></p>
+                        <p><b>Nota: Al igual que con el uso de grid-template-columns y grid-template-rows con las áreas también es posible el asignarle nombres a las líneas, esto se puede hacer de la <a href="./Grid.html#nombre" class="a__CSS">misma forma</a> que se hace con grid-template-columns y grid-template-rows.</b></p>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentación links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta, si quieres saber más visita mi perfil de GitHub haciendo clic en mi fotografía, o visitas mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img  src="../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                            <a href="" class="footer__instagram">
+                                <img src="../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Curriculum links">
+                            <h3>Curriculum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>

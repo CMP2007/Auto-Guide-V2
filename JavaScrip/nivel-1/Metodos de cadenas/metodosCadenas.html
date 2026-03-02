@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+    <title>Métodos de Cadenas</title>
+</head>
+<header>
+    <nav >
+        <ul class="nav"> 
+            <li><a href="../../../Index.html" class="logo"><img src="../../../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+            <li><a href="../../../HTML/indice.html" class="HTML tema"><span class="text__tema">HTML</span></a></li>
+            <li><a href="../../../CSS/indiceCSS.html" class="CSS tema"><span class="text__tema">CSS</span></a></li>
+            <li><a href="../../indiceNivel.html" class="seleccion__JS tema"><span class="text__tema">JS</span></a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <aside class="aside">
+        <div class="outer ">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_JS">
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+            </label>
+            <div class="nav-aside_JS">
+                <ul>
+                    <a href="../Indice__JS.html"><h2>Nivel 1 JS</h2></a>
+                    <div class="aside-divisor"></div>
+                    <h2>Propiedades</h2>    
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Métodos de Cadenas</h1>
+                    <section>
+                        <p>Los métodos de cadenas son diversos métodos que nos permiten modificar y manipular los valores de una cadena de texto; existen multitud de métodos, los más comunes y esenciales son: </p>
+                    </section>
+                    <h2>Métodos para Buscar Dentro de Cadenas</h2>
+                    <section>
+                        <dl>
+                            <dt><h3>Concat()</h3></dt>
+                            <dd>
+                                <p>Se trata de un método para concatenar string; debido a esto, no funciona con ningún otro tipo de variable. En sí su funcionamiento es muy similar al del símbolo "+", por lo que simplemente se trata de una alternativa a este, con la diferencia de que en el caso de que se ingresen variables diferentes a un string simplemente no va a funcionar.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/concatenación-7.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/concatenación-8.PNG" class="img" alt="">
+                                <p>Nota: Forzar la variable como String también funciona con el "concat" tal como se puede ver en el ejemplo.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>StartWith()</h3></dt>
+                            <dd>
+                                <p>Este método determina si una cadena empieza con los mismos caracteres que otra; de ser así devuelve "true", de lo contrario devuelve "false". </p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/startWith-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/startWith-2.PNG" class="img" alt="">
+                                <p>En este ejemplo la primera cadena empieza con los mismos caracteres que la segunda, por lo que el resultado es "true". Sin embargo, este método es de carácter estricto; por lo tanto, si ambas cadenas se diferencian en algo se dispara el resultado "false", por ejemplo, si se añade un espacio al inicio de alguna de las dos cadenas o si se añade algún carácter al final de estas. </p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>EndsWith()</h3></dt>
+                            <dd>
+                                <p>Este método devuelve "true" si una cadena termina con los mismos caracteres que otra, de lo contrario devuelve "false".</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/endsWith.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/endsWith-2.PNG" class="img" alt="">
+                                <p>Este método se asemeja mucho al anterior, por lo que también es de carácter estricto; eso quiere decir que si se ingresa algún carácter que diferencie el final de ambas cadenas se dispara el "false" como resultado. </p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>Includes()</h3></dt>
+                            <dd>
+                                <p>Si una cadena se puede encontrar dentro de otra devuelve "true", de lo contrario devuelve "false"; en otras palabras, este método no diferencia en qué parte de la cadena se encuentra, simplemente determina si se encuentra o no dentro de otra.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/includes-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/includes-2.PNG" class="img" alt="">
+                                <p>En este ejemplo la cadena "dalto" se encuentra dentro de la primera cadena por lo que el resultado es "true". Este método es estricto, por lo que del mismo modo que en los métodos anteriores, si se ingresa un carácter que genere alguna diferencia entre las dos cadenas el resultado será "false". </p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>IndexOf()</h3></dt>
+                            <dd>
+                                <p>Este método es exactamente igual que el anterior, con la diferencia de que este no retorna valores booleanos; en su lugar retorna la posición en la que se encuentra el primer carácter de la cadena que está siendo buscada dentro de la otra.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/indexOf.1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/indexOf.2.PNG" class="img" alt="">
+                                <p>Es necesario recordar que los datos "strings" realmente son como un array, en los que se concatenan un valor detrás de otro, por lo que la numeración (posición) en la que está guardado dicho carácter es el dato que retorna este método; por lo tanto el primer carácter de la cadena se encuentra en la posición "19" dentro de la primera cadena. </p>
+                                <p>Una particularidad de este método es que en el caso de que no se encuentre ningún carácter dentro de la cadena este método no retorna "false", en su lugar retorna "-1" de la siguiente manera:</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/indexOf.3.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/indexOf.4.PNG" class="img" alt="">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>LastIndexOf()</h3></dt>
+                            <dd>
+                                <p>Este método es igual que el anterior con la diferencia de que este se aplica en aquellas ocasiones en las que la cadena se repita más de una vez en el interior de la otra; entre todas estas repeticiones, este método devolverá la posición del primer carácter de la última coincidencia de la cadena: </p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/lastIndexOf-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/lastIndexOf-2.PNG" class="img" alt="">
+                                <p>En este ejemplo el resultado es "40" ya que esta es la posición del carácter "t", el cual es el primer carácter de la cadena "tarado" encontrada por última vez dentro de la cadena principal.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <h2>Métodos para Rellenar Cadenas</h2>
+                    <section>
+                        <dl>
+                            <dt><h3>Repeat()</h3></dt>
+                            <dd>
+                                <p>Este método permite repetir una cadena las veces que sean indicadas. </p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/repeat-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/repeat-2.PNG" class="img" alt="">
+                                <p>Al emplear este método es útil tener en cuenta que ingresar un valor negativo como número de repeticiones arrojará un error de rango, a la vez que ingresar un número decimal hará que este se convierta en entero y se ejecute dicha cantidad de repeticiones.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <h2>Métodos de Cadenas Experimentales</h2>
+                    <section>
+                        <p>Estos métodos como tal aún no forman parte del estándar que todos los navegadores siguen, por lo que no todos los navegadores los reciben, haciendo necesario revisar la compatibilidad con estos; sin embargo, están propuestos para el estándar, por lo que puede que en un futuro cercano lleguen a formar parte de este.</p>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>PadStart()</h3></dt>
+                            <dd>
+                                <p>Este método permite tanto definir la cantidad de caracteres que se desea que posea una cadena como definir con qué caracteres se quiere rellenar estos espacios; este método añade los nuevos caracteres al inicio de la cadena y los repite las veces que hagan falta hasta que se cumple con el número de caracteres establecido.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/padStart-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/padStart-2.PNG" class="img" alt="">
+                                <p>En este ejemplo se generó una primera cadena de tres (3) caracteres, se definió el método "padStart" para añadir el carácter "a" hasta que la cadena tenga una duración de seis (6) caracteres.  </p>
+                                <p>Nota: este método toma en cuenta los caracteres originales de la cadena para el conteo de la extensión de la cadena.</p>
+                                <p>Nota: si la cadena original supera el número de caracteres establecido entonces el método no añadirá ningún otro carácter a esta cadena.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>PadEnd()</h3></dt>
+                            <dd>
+                                <p>Este método es exactamente igual que el anterior con la diferencia de que en vez de incluir los nuevos caracteres al inicio de la cadena lo hará al final de esta.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/padEnd-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/padEnd-2.PNG" class="img" alt="">
+                            </dd>
+                        </dl>
+                    </section>
+                    <h2>Métodos para Modificar la Cadena</h2>
+                    <section>
+                        <dl>
+                            <dt><h3>Split()</h3></dt>
+                            <dd>
+                                <p>Este método permite dividir una cadena en diferentes porciones y almacenarla en un array; por lo tanto, lo que devuelve este método es un array con las diferentes porciones de la cadena original almacenadas dentro de este.</p>
+                                <p>Para hacer esto, el método necesita que se defina algún carácter como punto de referencia para dividir la cadena; por ejemplo, se puede indicar que cada vez que el método encuentre un espacio haga un corte en la cadena, de la siguiente forma:</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/split-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/split-2.PNG" class="img" alt="">
+                                <p>En este ejemplo cada vez que el método encuentre un espacio se generará un corte en la cadena; por lo tanto se almacenará una palabra en cada posición del array. En el ejemplo como resultado se hace llamado del dato almacenado en la segunda posición.</p>
+                                <p>Un aspecto a tener en cuenta es que aquel carácter que se emplee como punto de referencia para generar los cortes de la cadena no será almacenado dentro del array. </p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/split-3.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/split-4.PNG" class="img" alt="">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>Substring()</h3></dt>
+                            <dd>
+                                <p>Este método permite generar un nuevo "string" a partir del original; en otras palabras, este método permite "cortar" una sección de la cadena original y generar una nueva a partir de la sección cortada. Para esto el método permite definir las posiciones de los caracteres en las que se realizarán los cortes, tanto el de inicio como el de cierre.</p>
+                                <p>Para lo cual el método requiere de dos datos que hacen referencia a la posición de los caracteres de la cadena, en los cuales el primer dato indica el primer carácter incluido mientras que el segundo indica el carácter en el que se realiza el corte; por lo tanto el segundo carácter no será incluido dentro del nuevo string.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/substring-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/substring-2.PNG" class="img" alt="">
+                                <p>En este ejemplo de la cadena original se define que se genere un nuevo string que abarca desde la posición "0" hasta la "2" (sin incluirla), por lo que el nuevo string dispondrá de los caracteres en la posición "0" y "1".</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>ToLowerCase()</h3></dt>
+                            <dd>
+                                <p>Este método es en realidad muy simple; su función es la de convertir cualquier carácter en mayúscula de la cadena a minúscula. Por lo tanto, retorna la misma cadena pero con todos sus caracteres en minúsculas.</p>
+                                <img src="./img/toLowerCase-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/toLowerCase-2.PNG" class="img" alt="">
+                                <p>Nota: Recordar que JavaScript es un lenguaje sensible a las mayúsculas.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>ToString()</h3></dt>
+                            <dd>
+                                <p>Este método permite convertir datos a tipo "string", ya sean números o arrays; es decir, este método retorna únicamente cadenas de texto, ya sea que se le ingresen datos number y los retorne como string o se le ingresen varios conjuntos de datos como por ejemplo arrays o varias variables, en cuyo caso el método los retornará como una única cadena de texto. </p>
+                                <img src="./img/toString-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/toString-2.PNG" class="img" alt="">
+                                <p>En este ejemplo se puede evidenciar que el método convirtió el array "cadena" a string ya que en el llamado el resultado es "p", puesto que "0" es la posición del primer carácter del string; si "cadena" siguiese siendo un array la posición "0" correspondería al primer dato, el cual solía ser "pedro".</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dt><h3>Trim()</h3></dt>
+                        <dd>
+                            <p>Este método posee una función muy específica, la cual es eliminar todos los espacios de una cadena. </p>
+                            <img src="./img/trim-1.PNG" class="img" alt="">
+                            <h4>Resultado</h4>
+                            <img src="./img/trim-2.PNG" class="img" alt="">
+                            <p>En este ejemplo el string "cadena" posee tres (3) espacios al principio y otros tres (3) al final de la cadena; se utiliza el método "trim" para eliminarlos y se almacena el resultado en la variable "resultado" a la cual se le aplica la propiedad "length" cuya función es enumerar los caracteres de un string, dando como resultado "5", lo que evidencia que los espacios fueron eliminados, de lo contrario su valor sería de "11" caracteres. </p>
+                        </dd>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>TrimStart</h3></dt>
+                            <dd>
+                                <p>Su función es exactamente igual a la del método anterior, con la diferencia de que únicamente elimina los espacios que se encuentran al inicio de la cadena. </p>
+                                <img src="./img/trimStart-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/trimStart-2.PNG" class="img" alt="">
+                                <p>Este ejemplo es la continuación del anterior donde se puede ver que el método "trimStart" únicamente elimina los tres (3) espacios que se encontraban al principio de la cadena. </p>
+                            </dd>
+                        </dl>
+                    </section><section>
+                        <dl>
+                            <dt><h3>TrimEnd</h3></dt>
+                            <dd>
+                                <p>Su función es exactamente igual a la del método anterior, con la diferencia de que únicamente elimina los espacios que se encuentran al final de la cadena. </p>
+                                <img src="./img/trimEnd-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/trimEnd-2.PNG" class="img" alt="">
+                                <p>Este ejemplo es la continuación del anterior donde se puede ver que el método "trimEnd" únicamente elimina los tres (3) espacios que se encontraban al final de la cadena. </p>
+                            </dd>
+                        </dl>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../../../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta; si quieres saber más visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img  src="../../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                            <a href="" class="footer__instagram">
+                                <img src="../../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Curriculum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>

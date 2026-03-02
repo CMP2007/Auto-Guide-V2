@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+        <title>Propiedad Position</title>
+    </head>
+    <header>
+        <nav >
+            <ul class="nav"> 
+                <li><a href="../Index.html" class="logo"><img src="../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+                <li><a href="../HTML/indice.html" class="HTML tema"><span class="text__tema">HTML</span></a></li>
+                <li><a href="../CSS/indiceCSS.html" class="seleccion__CSS tema"><span class="text__tema">CSS</span></a></li>
+                <li><a href="../JavaScrip/Indice__JS.html" class="JS tema"><span class="text__tema">JS</span></a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <aside class="aside">
+        <div class="outer ">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_CSS">
+                <span class="hl_CSS"></span>
+                <span class="hl_CSS"></span>
+                <span class="hl_CSS"></span>
+                <span class="hl_CSS"></span>
+            </label>
+            <div class="nav-aside_CSS">
+                <ul>
+                    <h2>Teorías CSS</h2>
+                    <li><a href="./espesificidad.html"><h3>Especificidad</h3></a></li>
+                    <li><a href="./metodologia-BEN.html"><h3>Metodología BEM</h3></a></li>
+                    <li><a href="./teoriaMedidas.html"><h3>Teoría Medidas de Texto</h3></a></li>
+                    <li><a href="./normmalize.html"><h3>Archivo Normalize.CSS</h3></a></li>
+                    <li><a href="./TeoriaCajas.html"><h3>Teoría de las Cajas</h3></a></li>
+                    <div class="aside-divisor"></div>
+                    <h2>Propiedades</h2>
+                    <li><a href="./selectoresCSS.html "><h3>Selectores CSS</h3></a></li>
+                    <li><a href="./pseudoElementos.html"><h3>Pseudo-Elementos</h3></a></li>
+                    <li><a href="./pseudoClases.html"><h3>Pseudo-Clases</h3></a></li>
+                    <li><a href="./propiedadesTexto.html"><h3>Propiedades de texto</h3></a></li>
+                    <li><a href="./PropiedadesCajas.html"><h3>Propiedades de Cajas</h3></a></li>
+                    <li><a href="./display.html"><h3>Propiedad Display</h3></a></li>
+                    <li><a href="./propiedadesDiseño.html"><h3> Diseños CSS</h3></a></li>
+                    <li><a href="./object-fit-position.html"><h3> Object-fit y Object-position</h3></a></li>
+                    <li><a href="./coloresCSS.html"><h3>Colores CSS</h3></a></li>
+                    <li><a href="./display/flexBox.html"><h3>Flex-Box</h3></a></li>
+                    <li><a href="./display/Grid.html"><h3>Grid-Box</h3></a></li>
+                    <li><a href="./responsive-desing.html"><h3>Responsive Design</h3></a></li>
+                    <li><a href="./transiciones.html"><h3>Transition</h3></a></li>
+                    <li><a href="./animaciones.html"><h3>Animaciones</h3></a></li>
+                    <li><a href="./transform.html"><h3>Propiedad Transform</h3></a></li>
+                    <li><a href="./variables.html"><h3>Variables CSS</h3></a></li>
+                    <li><a href="./filtros.html"><h3>Filtros CSS</h3></a></li>
+                    <div class="aside-divisor"></div>
+                    <h2>Otros</h2>
+                    <li><a href="./ErroresComunes.html"><h3>Errores Comunes</h3></a></li>
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Position</h1>
+                    <section>
+                        <p>Esta es una propiedad de gran importancia en CSS; nos permite determinar la posición en la que se ubicarán uno o más elementos en un contenedor. Esta propiedad cuenta con diversos valores, cada uno con su propio efecto y particularidades:</p>
+                    </section>
+                    
+                    
+
+                    <h2>Valores</h2>
+                    <section>
+                        <dl>
+                            <dt id="static"><h3>Static</h3></dt>
+                            <dd>
+                                <p>Este se trata del valor por defecto de los elementos HTML. Básicamente su valor es nulo, ya que le indica al navegador que el elemento no se encuentra posicionado de forma especial (sigue el flujo normal del documento).</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="relative"><h3>Relative</h3></dt>
+                            <dd>
+                                <p>Este segundo valor posee una mecánica interesante: permite desplazar algún elemento sin que este pierda su espacio designado. Recordemos que todos los elementos HTML tienen un lugar designado por defecto. El efecto de esta propiedad es que se puede desplazar el elemento por el eje <b>X</b> y el eje <b>Y</b>, a la vez que este continúa conservando su espacio original.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/position1.PNG" alt="" class="img">
+                                <p>Como se puede apreciar en este ejemplo, la caja uno se encuentra desplazada a la derecha y hacia abajo; sin embargo, el espacio designado por defecto para ella le sigue perteneciendo.</p>
+                                <h4>Funcionamiento</h4>
+                                <p>Al aplicarse el valor <b>relative</b>, el elemento en cuestión adquiere la capacidad de utilizar cinco nuevas propiedades para su desplazamiento:</p>
+                                <ul>
+                                    <p><b>Eje Y</b></p>
+                                    <li><b>Top</b></li>
+                                    <li><b>Bottom</b></li>
+                                    <p><b>Eje X</b></p>
+                                    <li><b>Left</b></li>
+                                    <li><b>Right</b></li>
+                                    <p><b>Eje Z</b></p>
+                                    <li><b>z-index</b></li>
+                                </ul>
+                                <h4>Desplazamiento en ejes X e Y</h4>
+                                <p>Para desplazar el elemento hay que tener en cuenta que el punto de partida es el espacio asignado por defecto. Esta propiedad le brinda prioridad a los valores <b>left</b> y <b>top</b>; si se incluyen <b>right</b> o <b>bottom</b> junto a ellos, estos últimos podrían ser ignorados según el caso.</p>
+                                <p><b>Nota: El objetivo de estas propiedades es distanciar el elemento de su respectiva dirección, por ello el efecto es inverso al nombre: al darle un valor a left, se desplaza hacia la derecha.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="z-index"><h3>Desplazamiento en el eje Z (z-index)</h3></dt>
+                            <dd>
+                                <p>El desplazamiento en el eje <b>Z</b> se adquiere al posicionar los elementos. Por defecto, los elementos declarados al final del HTML se muestran por encima de los primeros si se sobreponen.</p>
+                                <img src="./img/ejmPosition1.PNG" alt="" class="img">
+                                <p>Para modificar este flujo, se asigna un valor numérico a la propiedad <b>z-index</b>; se mostrará por encima el elemento con el valor más alto.</p>
+                                <p><b>Nota: Una buena práctica es definir el aumento de los valores de 10 en 10 (10, 20, 30...) para tener margen si necesitamos ubicar elementos intermedios después.</b></p>
+                                
+                                <h4>Conflicto de contenedores padres e hijos</h4>
+                                <p>Por lo general, es imposible ubicar al contenedor por encima de su elemento hijo. Sin embargo, existe un truco técnico:</p>
+                                <ol>
+                                    <li><p>Se posicionan tanto el padre como el hijo (usando <b>relative</b> o similar).</p></li>
+                                    <li><p>No se define <b>z-index</b> en el padre.</p></li>
+                                    <li><p>Se define un valor de <b>-1</b> en el <b>z-index</b> del hijo.</p></li>
+                                </ol>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="absolute"><h3>Absolute</h3></dt>
+                            <dd>
+                                <p>El efecto es similar a relative, pero con tres diferencias clave:</p>
+                                <ol>
+                                    <li><p>El elemento pierde su espacio reservado en el flujo y se vuelve "flotante". El navegador utiliza su hueco para otros elementos.</p></li>
+                                    <li><p>Sus dimensiones se ajustan a su contenido por defecto, a menos que se definan <b>width</b> y <b>height</b>.</p></li>
+                                    <li><p>Se posiciona respecto al <b>Viewport</b> o al <b>contenedor posicionado más cercano</b> (normalmente el padre con <code>position: relative;</code>).</p></li>
+                                </ol>
+                                <h4>Centrar elementos con Absolute</h4>
+                                <p>Se logra definiendo un valor de "0" en <b>top, left, right y bottom</b> y añadiendo <b>margin: auto;</b>. El navegador compensará los márgenes para centrarlo exactamente.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="fixed"><h3>Fixed</h3></dt>
+                            <dd>
+                                <p>Similar a absolute, pero el elemento queda <b>fijo en la pantalla</b> (Viewport) incluso al hacer scroll. Se usa para menús de navegación o publicidad persistente.</p>
+                                <p><b>Tip de diseño:</b> Para que un elemento fixed no tape el inicio del contenido, se puede añadir un <code>padding-top</code> al <b>body</b>.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="sticky"><h3>Sticky</h3></dt>
+                            <dd>
+                                <p>Es una mezcla de <b>relative</b> y <b>fixed</b>. El elemento se comporta como un elemento normal hasta que, al hacer scroll, alcanza una posición definida (ej. <code>top: 0;</code>), momento en el cual se "pega" a la pantalla y sigue al usuario.</p>
+                                <p><b>Nota: Es obligatorio declarar al menos una propiedad de dirección (como top o bottom) para que sticky funcione.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta. Si quieres saber más, visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img src="../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                            <a href="" class="footer__instagram">
+                                <img src="../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Currículum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>

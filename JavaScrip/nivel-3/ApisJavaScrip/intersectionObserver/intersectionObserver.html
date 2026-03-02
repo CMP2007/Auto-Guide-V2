@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+    <title>Intersection Observer</title>
+</head>
+<header>
+    <nav>
+        <ul class="nav"> 
+            <li><a href="../../../../Index.html" class="logo"><img src="../../../../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+            <li><a href="../../../../HTML/indice.html" class="HTML tema"><span class="text__tema">HTML</span></a></li>
+            <li><a href="../../../../CSS/indiceCSS.html" class="CSS tema"><span class="text__tema">CSS</span></a></li>
+            <li><a href="../../../indiceNivel.html" class="seleccion__JS tema"><span class="text__tema">JS</span></a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <aside class="aside">
+        <div class="outer">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_JS">
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+            </label>
+            <div class="nav-aside_JS">
+                <ul>
+                    <a href="../indiceJavaScriptNivel2.html"><h2>Nivel 1 JS</h2></a> 
+                    <div class="aside-divisor"></div>
+                    <h2>Propiedades</h2>    
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Intersection Observer</h1>
+                    <section>
+                        <p>La función de esta API es simple: esta detecta si un elemento HTML se encuentra dentro del viewport del navegador o no. En otras palabras, esta API detecta si el elemento HTML en cuestión se encuentra enfocado dentro de la pantalla del navegador.</p>
+
+                        
+
+                        <p>Esta API trabaja a través del objeto "IntersectionObserver", el cual se declara como un objeto común.</p>
+                        <h4>Ejemplo</h4>
+                        <img src="./img/intersectionObserver-1.jpg" class="img" alt="">
+                        <p>Una característica del objeto "IntersectionObserver" radica en que este debe recibir de forma obligatoria un dato, el cual hace referencia a una función que define qué acción se tomará cuando el elemento entre en el viewport.</p>
+                        <h4>Ejemplo</h4>
+                        <img src="./img/intersectionObserver-2.jpg" class="img" alt="">
+                        <p>En este ejemplo, el dato "verifyVisibility" hace referencia a una función flecha a la cual se le asigna el parámetro "entries" (entradas). Este dato puede ser nombrado como se desee, pero lo que sí es de carácter obligatorio es definir un parámetro en esta función flecha, ya que en este se asignará un array el cual contendrá el listado de todos los elementos HTML a los que se les defina el seguimiento con la API.</p>
+                        <p>Por lo tanto, una ejecución muy simple de la API estaría conformada de la siguiente forma:</p>
+                        <h4>Ejemplo</h4>
+                        <img src="./img/intersectionObserver-3.jpg" class="img" alt="">
+                        <p>En este ejemplo se obtiene el elemento HTML en cuestión (caja3), se declara la variable "verifyVisibility", la cual contiene la función flecha que a su vez recibe el parámetro "entries". En este caso, la función define el dato entries como un array y define la variable "entry" para obtener el primer dato de este (lugar en el que se almacenará el primer elemento a hacer seguimiento). Luego se inicializa el objeto "IntersectionObserver" en la variable "observer" y se le asigna la función flecha; por último, se asigna el objeto para que haga seguimiento del elemento HTML.</p>
+                        <p>En otras palabras, se obtiene el elemento HTML al que se le hará seguimiento, se declara la función flecha la cual obtiene un dato, lo almacena en un array y obtiene el primer dato para imprimirlo en pantalla. Luego se inicializa la API con "IntersectionObserver" y se le pasa la función flecha. De ese modo se envía el elemento HTML a la función y, cuando dicho elemento entre en el viewport, se ejecuta el código de la función flecha.</p>
+                        <p>Por otra parte, se puede hacer retornar un valor booleano que indique si un elemento se encuentra en pantalla o no; esto se logra con la propiedad ".isIntersecting". De este modo, la propiedad retornará "false" en caso de que el elemento no se encuentre en pantalla y retornará "true" en caso de que sí lo esté.</p>
+                        <h4>Ejemplo</h4>
+                        <img src="./img/intersectionObserver-4.jpg" class="img" alt="">
+                        <p>Con esa pequeña modificación, el ejemplo anterior pasa de imprimir el objeto "IntersectionObserverEntry" para, en su lugar, retornar "true" o "false" según si el elemento se encuentra en el viewport o no.</p>
+                        
+                        <h3>Options</h3>
+                        <p>Se trata de un segundo parámetro que puede ser definido en el objeto "IntersectionObserver". Es un dato que contiene un objeto en el cual se definen ciertas pautas para la ejecución del evento; principalmente, estas pautas consisten en definir si el evento se ejecutará antes o después de lo definido por defecto.</p>
+                        <p>Es decir, se puede usar "options" para definir que el evento ocurra 50px antes de que el elemento se muestre o, por otro lado, que este no ocurra hasta que la mitad del elemento se encuentre dentro del viewport.</p>
+                        
+                        <h3>Lazy Load</h3>
+                        <p>Se trata de un ejemplo de uso de la API "Intersection Observer", el cual consiste en desarrollar un sistema de carga para definir cuántos o cuáles elementos cargar a la vez. Este tipo de sistema es empleado en redes sociales como Facebook o Instagram, ya que este tipo de plataformas están estructuradas como un muro en el cual se van cargando publicaciones según el usuario se desplaza por la página.</p>
+                        <p>En otras palabras, estas redes sociales se basan en el desplazamiento de los usuarios por el viewport para definir cuándo cargar más elementos en vez de cargarlos todos a la vez.</p>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../../../../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta. Si quieres saber más, visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                            <a href="" class="footer__Facebook"><img src="../../../../../Fuentes/iconmonstr-facebook-6-32.png" alt=""></a>
+                            <a href="" class="footer__instagram"><img src="../../../../../Fuentes/iconmonstr-instagram-11-32.png" alt=""></a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com"><img src="../../../../../Fuentes/iconmonstr-email-12-32.png" alt=""></a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Currículum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub"><img src="../../../../../Fuentes/iconmonstr-github-1-32.png" alt=""></a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>   
+    </aside>
+</body>
+</html>

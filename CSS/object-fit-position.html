@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+        <title>Object-Fit y Object-Position</title>
+    </head>
+    <header>
+        <nav >
+            <ul class="nav"> 
+                <li><a href="../Index.html" class="logo"><img src="../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+                <li><a href="../HTML/indice.html" class="HTML tema"><span class="text__tema">HTML</span></a></li>
+                <li><a href="../CSS/indiceCSS.html" class="seleccion__CSS tema"><span class="text__tema">CSS</span></a></li>
+                <li><a href="../JavaScrip/Indice__JS.html" class="JS tema"><span class="text__tema">JS</span></a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <aside class="aside">
+        <div class="outer ">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_CSS">
+                <span class="hl_CSS"></span>
+                <span class="hl_CSS"></span>
+                <span class="hl_CSS"></span>
+                <span class="hl_CSS"></span>
+            </label>
+            <div class="nav-aside_CSS">
+                <ul>
+                    <h2>Teorías CSS</h2>
+                    <li><a href="./espesificidad.html"><h3>Especificidad</h3></a></li>
+                    <li><a href="./metodologia-BEN.html"><h3>Metodología BEM</h3></a></li>
+                    <li><a href="./teoriaMedidas.html"><h3>Teoría Medidas de Texto</h3></a></li>
+                    <li><a href="./normmalize.html"><h3>Archivo Normalize.CSS</h3></a></li>
+                    <li><a href="./TeoriaCajas.html"><h3>Teoría de las Cajas</h3></a></li>
+                    <div class="aside-divisor"></div>
+                    <h2>Propiedades</h2>
+                    <li><a href="./selectoresCSS.html "><h3>Selectores CSS</h3></a></li>
+                    <li><a href="./pseudoElementos.html"><h3>Pseudo-Elementos</h3></a></li>
+                    <li><a href="./pseudoClases.html"><h3>Pseudo-Clases</h3></a></li>
+                    <li><a href="./propiedadesTexto.html"><h3>Propiedades de texto</h3></a></li>
+                    <li><a href="./PropiedadesCajas.html"><h3>Propiedades de Cajas</h3></a></li>
+                    <li><a href="./position.html"><h3>Propiedad Position</h3></a></li>
+                    <li><a href="./display.html"><h3>Propiedad Display</h3></a></li>
+                    <li><a href="./propiedadesDiseño.html"><h3> Diseños CSS</h3></a></li>
+                    <li><a href="./coloresCSS.html"><h3>Colores CSS</h3></a></li>
+                    <li><a href="./display/flexBox.html"><h3>Flex-Box</h3></a></li>
+                    <li><a href="./display/Grid.html"><h3>Grid-Box</h3></a></li>
+                    <li><a href="./responsive-desing.html"><h3>Responsive Design</h3></a></li>
+                    <li><a href="./transiciones.html"><h3>Transition</h3></a></li>
+                    <li><a href="./animaciones.html"><h3>Animaciones</h3></a></li>
+                    <li><a href="./transform.html"><h3>Propiedad Transform</h3></a></li>
+                    <li><a href="./variables.html"><h3>Variables CSS</h3></a></li>
+                    <li><a href="./filtros.html"><h3>Filtros CSS</h3></a></li>
+                    <div class="aside-divisor"></div>
+                    <h2>Otros</h2>
+                    <li><a href="./ErroresComunes.html"><h3>Errores Comunes</h3></a></li>
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Object-Fit y Object-Position</h1>
+                    <section id="descripcion">
+                        <p>Estas propiedades tienen la función de regular el comportamiento de las imágenes para que estas se adecuen lo mejor posible a la página web, conservando la mayor calidad posible. Por defecto, las imágenes en HTML modifican sus dimensiones para adaptarse al contenedor en el que se encuentran y ocupar el 100% de este, razón por la cual es muy probable que la calidad de la imagen se vea afectada, tal como se puede ver en el siguiente ejemplo, el cual muestra una imagen que se ingresó en un contenedor con dimensiones diferentes a las de la imagen original:</p>
+                        <h4>Código</h4>
+                        <img src="./img/object-fit1.PNG" alt="" class="img">
+                        <h4>Resultado</h4>
+                        <img src="./img/ejmObject-fit1.PNG" alt="" class="img">
+                        <p> Estos problemas de deformación y pérdida de calidad son los que solucionan <b>object-fit</b> y <b>object-position</b>.</p>
+                    </section>
+                    <section>
+                        <h2>Object-Fit</h2>
+                        <p>Esta propiedad define la forma en la que el navegador trabaja las dimensiones de las imágenes. Esta propiedad cuenta con múltiples valores, de los cuales cada uno define una forma de ajustar la imagen a la página de diferente manera; estos valores son: </p>
+                        
+                        
+
+                        <dl>
+                            <dt id="contain"><h3>Contain</h3></dt>
+                            <dd>
+                                <p>Este valor evita que la escala de la imagen se modifique para ajustarse a su contenedor; en otras palabras, mantiene la imagen con su relación alto-ancho original a la vez que la centra dentro de su contenedor:</p>
+                                <h4>Código</h4>
+                                <img src="./img/object-fit2.PNG" alt="" class="img">
+                                <h4>Resultado</h4>
+                                <img src="./img/ejmObject-fit2.PNG" alt="" class="img">
+                            </dd>
+                            <dt id="cover"><h3>Cover</h3></dt>
+                            <dd>
+                                <p>Este valor ajusta la imagen a su contenedor; sin embargo, en vez de estirarla alterando sus dimensiones, lo que hace es un <b>"acercamiento"</b> a esta, a la vez que <b>recorta los bordes</b> para adecuarla a las dimensiones del contenedor. En otras palabras, este valor define que la imagen cubra todo el contenedor sin deformarse:</p>
+                                <h4>Código</h4>
+                                <img src="./img/object-fit3.PNG" alt="" class="img">
+                                <h4>Resultado</h4>
+                                <img src="./img/ejmObject-fit3.PNG" alt="" class="img">
+                            </dd>
+                            <dt id="none"><h3>None</h3></dt>
+                            <dd>
+                                <p>Este valor define que se inserte la imagen en el contenedor con sus dimensiones originales. Literalmente, indica al navegador que no realice ningún tipo de cambio sobre la imagen o sus dimensiones, sin importar si esta es muy grande o muy pequeña para su contenedor, razón por la cual es el valor con menos uso.</p>
+                            </dd>
+                            <dt id="Scale-Down"><h3>Scale-Down</h3></dt>
+                            <dd>
+                                <p>Este valor tiene la capacidad de aplicar cualquiera de los otros valores, <b>siempre seleccionando aquel que resulte en la imagen con las menores dimensiones</b>. Por lo tanto, según las dimensiones de la página y de la imagen, puede emplear `none` o `contain` basándose en cuál integra la imagen más pequeña.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <h2>Object-Position</h2>
+                        <p>Esta propiedad define la forma en la que se posiciona la imagen en su contenedor, es decir, si esta estará centrada o alineada hacia un borde u otro. Esta propiedad cuenta con varios valores:</p>
+                        <ul>
+                            <li>
+                                <p><b>Left:</b> Alinea la imagen al borde izquierdo.</p>
+                            </li>
+                            <li>
+                                <p><b>Right:</b> Alinea la imagen al borde derecho.</p>
+                            </li>
+                            <li>
+                                <p><b>Top:</b> Alinea la imagen al borde superior.</p>
+                            </li>
+                            <li>
+                                <p><b>Bottom:</b> Alinea la imagen al borde inferior.</p>
+                            </li>
+                        </ul>
+                        <p>Esta propiedad también acepta valores de medidas (px, %, etc.), los cuales se emplean para desplazar la imagen en los ejes X e Y.</p>
+                        <h4>Código</h4>
+                        <img src="./img/object-position.PNG" alt="" class="img">
+                        <h4>Resultado</h4>
+                        <img src="./img/ejmObject-position.PNG" alt="" class="img">
+                        <p><b>Nota: Respondiendo a tu duda, efectivamente puedes pasar dos valores (ej. <code>object-position: 20px 50px;</code>). El primero corresponde al eje X (horizontal) y el segundo al eje Y (vertical).</b></p>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta. Si quieres saber más, visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img src="../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                            <a href="" class="footer__instagram">
+                                <img src="../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Currículum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>

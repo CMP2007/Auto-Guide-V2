@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+        <title>Pre-cargar Contenido</title>
+    </head>
+    <header>
+        <nav >
+            <ul class="nav"> 
+                <li><a href="../Index.html" class="logo"><img src="../../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+                <li><a href="../indice.html" class="seleccion__HTML tema">HTML</a></li>
+                <li><a href="../../CSS/indiceCSS.html" class="CSS tema">CSS</a></li>
+                <li><a href="../../JavaScrip/Indice__JS.html" class="JS tema">JS</a></li>
+                <div class="indicador"></div>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <aside class="aside">
+        <div class="outer ">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_HTML">
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+            </label>
+            <div class="nav-aside_HTML">
+                <ul>
+                        <h2>Temas HTML</h2>
+                        <li><a href="../etiquetas estructura/estructura.html"><h3>Estructura</h3></a></li>
+                        <li><a href="../etiquetas texto/texto.html"><h3>Texto</h3></a></li>
+                        <li><a href="../Etiquetas uso espesifico/usoEspesifico.html"><h3>Etiquetas Generales</h3></a></li>
+                        <li><a href="../etiquetas listas/listas.html"><h3>Listas</h3></a></li>
+                        <li><a href="../etiquetas de metadatos/metadatos.html"><h3>Metadatos</h3></a></li>
+                        <li><a href="../Visualizar codigo/VerCodigo.html"><h3>Representar código</h3></a></li>
+                        <li> <a href="../Multimedia/multimedia.html"><h3>Multimedia</h3></a></li>
+                        <li><a href="../Tablas HTML/tablas.html"><h3>Tablas</h3></a></li>
+                        <li><a href="../Eventos HTML/eventos.html"><h3>Eventos</h3></a></li>
+                        <li><a href="../Formularios HTML/formularios.html"><h3>Formularios</h3></a></li>
+                        <li><a href="../Validaciones/validaciones.html"><h3>Validaciones</h3></a></li>
+                        <li><a href="../Enviar Datos Form/EnviarDatos.html"><h3>Envío de Datos</h3></a></li>
+                       <li><a href="../PersonalizarControladores/ControladoresJS.html"><h3>Controladores JS</h3></a></li>
+                       <li><a href="../Notas/notas.html"><h4>Recordatorios</h4></a></li>
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Precargar Contenido</h1>
+                    <section id="descripcion">
+                        <p>Según cuáles sean las características y requerimientos de una página a la hora de ser cargada por el navegador, se puede dar el caso de que se requiera que ciertos scripts o elementos estén disponibles al momento de que los elementos sean cargados, todo esto para el correcto funcionamiento de la página, sin embargo la forma en la que se cargan los diversos archivos que conforman una página web se encuentra ya establecida de antemano.</p>
+                        
+                        
+
+                        <p>Existe una forma de asignar un elemento o dato para que sea tratado con prioridad por el navegador a la hora de cargar la página, para que de ese modo este recurso esté disponible al momento de que sea requerido, este tipo de configuración se logra empleándolo en los metadatos de la página, más precisamente con el elemento <b>"link"</b> el cual posee el atributo <b>"rel"</b> el cual a su vez cuenta con el valor <b>"preload"</b>.</p>
+                        <p>En otras palabras, al aplicarse el valor <b>"preload"</b> en el atributo <b>"rel"</b> del elemento <b>"link"</b> se puede definir que algún elemento se cargue con antelación ya que este será requerido rápidamente al cargarse la página, un aspecto a tener en cuenta de esta implementación es que pese a que el nombre de este valor contiene el término 'precargar', realmente este no carga ni ejecuta ningún script, simplemente asigna que estos elementos seleccionados sean descargados y almacenados en caché con prioridad. </p>
+                        <p>Por lo tanto el elemento <b>"link"</b> no solo se utiliza para cargar los estilos CSS de la página:</p>
+                        <img src="./img/ejmLinkPreload1.PNG" alt="" class="img">
+                        <p>Sino que también tiene la función de designar algún elemento para que se precargue al iniciarse la carga de la página como se puede apreciar en el siguiente ejemplo:</p>
+                        <img src="./img/ejmLinkPreload2.PNG" alt="" class="img">
+                        <p>Este ejemplo aparte de simple puede parecer trivial, sin embargo los beneficios de implementar el preload se hacen notar a la hora de que los demás elementos HTML sean cargados, por ejemplo es útil seleccionar a los siguientes elementos para que sean precargados con antelación:</p>
+                        <ul>
+                            <li><p>Recursos a los que se les apunta desde dentro de CSS como fuentes o imágenes</p></li>
+                            <li><p>Recursos que puedan solicitar JavaScript como JSON, scripts importados o web workers</p></li>
+                            <li><p>Imágenes más grandes y archivos de vídeo</p></li>
+                        </ul>
+                        <p>Al emplear el <b>"preload"</b> es importante tener presente:</p>
+                        <ul>
+                            <li><p>La ruta hacia el recurso en cuestión</p></li>
+                            <li><p>El de qué tipo de recurso se trata</p></li>
+                        </ul>
+                    </section>
+                    <section id="as">
+                        <h3>Atributo As</h3>
+                        <p>Es posible mejorar el rendimiento del "preload" con el atributo <b>"as"</b>, el cual se utiliza en conjunto con este y permite definir de qué tipo de archivo se trata la precarga, al hacer esto se obtienen las siguientes ventajas:</p>
+                    <ul>
+                        <li><p>Priorizar la carga de recursos con mayor precisión</p></li>
+                        <li><p>Almacenar el caché para futuras ocasiones reutilizando el recurso si es preciso</p></li>
+                        <li><p>Aplicar la política de seguridad correcta al recurso</p></li>
+                        <li><p>Establecer los encabezados de solicitud de aceptación correctos</p></li>
+                    </ul>
+                    <p>Debido a que es posible precargar muchos tipos de archivos el atributo <b>"as"</b> posee muchos valores, algunos de estos son:</p>
+                    <table>
+                        <tr>
+                            <th>Valor del atributo</th>
+                            <th>Tipo de archivo</th>
+                            <th>Descripción</th>
+                        </tr>
+                        <tr>
+                            <td><b>audio</b></td>
+                            <td>audio</td>
+                            <td>Define un archivo de audio, se incorpora igual que lo haría en un elemento "audio"</td>
+                        </tr>
+                        <tr>
+                            <td><b>document</b></td>
+                            <td>document</td>
+                            <td>Define un documento HTML que será incrustado en un "frame" o un "iframe"</td>
+                        </tr>
+                        <tr>
+                            <td><b>embed</b></td>
+                            <td>Algún recurso</td>
+                            <td>Cualquier recurso que será incrustado en un "embed"</td>
+                        </tr>
+                        <tr>
+                            <td><b>fetch</b></td>
+                            <td>Recurso Fetch o XHR</td>
+                            <td>Recurso al que se accederá mediante una solicitud fetch o XHR, como un archivo ArrayBuffer, WebAssembly/WASM binario o JSON </td>
+                        </tr>
+                        <tr>
+                            <td><b>font</b></td>
+                            <td>Fuente</td>
+                            <td>Define un archivo de fuente CSS</td>
+                        </tr>
+                        <tr>
+                            <td><b>image</b></td>
+                            <td>archivo de imagen</td>
+                            <td>Define la precarga de un archivo de imagen, normalmente se usa para imágenes particularmente grandes</td>
+                        </tr><tr>
+                            <td><b>object</b></td>
+                            <td>Algún Recurso</td>
+                            <td>Un recurso para ser incrustado en un elemento "object"</td>
+                        </tr>
+                        <tr>
+                            <td><b>script</b></td>
+                            <td>Archivo JS</td>
+                            <td>Define la precarga de un archivo JavaScript</td>
+                        </tr>
+                        <tr>
+                            <td><b>style</b></td>
+                            <td>Estilos CSS</td>
+                            <td>Define la precarga de una hoja de estilos CSS</td>
+                        </tr>
+                        <tr>
+                            <td><b>track</b></td>
+                            <td>archivo WebVTT</td>
+                            <td>Define la carga de un archivo WebVTT</td>
+                        </tr>
+                        <tr>
+                            <td><b>worker</b></td>
+                            <td>worker web o JS</td>
+                            <td>Define la precarga de un worker de JavaScript o un worker compartido</td>
+                        </tr>
+                        <tr>
+                            <td><b>video</b></td>
+                            <td>archivo de vídeo</td>
+                            <td>Define la precarga de un archivo de vídeo como los que se usan comúnmente en los elementos "video"</td>
+                        </tr>
+                    </table>
+                    </section>
+                    <section id="mime">
+                        <h3>Incluyendo el tipo MIME</h3>
+                        <p>Los elementos "link" son capaces de recibir un atributo "type" el cual a su vez puede recibir el tipo MIME del recurso al que apunta el elemento. Esto es particularmente útil cuando se precargan recursos, en otras palabras la función de esto es que el navegador tenga una forma de determinar si el recurso es compatible consigo mismo; en caso de que sí lo sea, el recurso será descargado, por otro lado, en caso de que no sea compatible el recurso simplemente será ignorado por el navegador. </p>
+                        <p><b>Nota: MIME o Múltiples Internet Mail es una extensión del protocolo de correo de Internet original que permite a las personas utilizar el protocolo para el intercambio de diferentes tipos de archivos de datos en Internet: audio, vídeo, imágenes, programas de aplicaciones y otros tipos, así como el texto.</b></p>
+                        <p>A continuación se muestra un fragmento de código el cual en términos simples es el responsable del comportamiento central detrás de la precarga general:</p>
+                        <img src="./img/ejmPrecargaType.PNG" alt="" class="img">
+                        <p>Este código de ejemplo asigna un video.mp4 para que se cargue previamente en todos aquellos navegadores que tengan soporte para vídeos mp4, por lo tanto para los usuarios de estos navegadores la interacción con el vídeo será más suave y receptiva en comparación con aquellos navegadores que no sean compatibles con el recurso.</p>
+                        <p>Es bueno tener en cuenta que en el caso de que se emplee la técnica de asignar tanto un vídeo ".mp4" como uno ".webm" con el fin de mejorar la compatibilidad, si se llega a presentar un usuario desde un navegador que posea compatibilidad con ambos formatos entonces los dos recursos serán descargados, todo esto pese a que realmente solo uno de estos llegará a ser utilizado, como se puede apreciar en este ejemplo:</p>
+                        <img src="./img/ejmPrecargaType2.PNG" alt="" class="img">
+                        <p>Por lo tanto no es recomendable el precargar varios recursos para un mismo elemento, para estos casos lo mejor simplemente es precargar el recurso que se crea que llegará a ser utilizado por la mayoría de los usuarios, cabe señalar que esto no hará que el video.webm no esté disponible para los navegadores que lo requieran, de hecho en el ejemplo HTML mostrado con anterioridad ese código también hace que se precargue el video.webm pero lo define de una forma que hará que este no sea precargado innecesariamente para todos los usuarios.</p>
+                    </section>
+                    <section id="cors">
+                        <h3>Recuperaciones habilitadas para CORS</h3>
+                        <p>Al precargar recursos que se obtienen con CORS habilitado (por ejemplo, fetch(), XMLHttpRequest o fuentes), se debe tener especial cuidado al configurar el atributo crossorigin en su elemento de enlace. El atributo debe configurarse para que coincida con el modo de credenciales y CORS del recurso, incluso cuando la recuperación no es de origen cruzado.</p>
+                        <p><b>Nota: Recordemos que el intercambio de recursos de origen cruzado o CORS es un mecanismo que permite que se puedan solicitar recursos restringidos en una página web desde un dominio diferente del dominio que sirvió el primer recurso.</b></p>
+                        
+                        
+
+                        <p>Como se mencionó anteriormente, un caso interesante en el que esto se aplica son los archivos de fuentes. Por varios motivos, estos deben obtenerse mediante CORS en modo anónimo, usando este caso como ejemplo resultaría en lo siguiente:</p>
+                        <img src="./img/ejmPrecargaConCORS.PNG" alt="" class="img">
+                        <p>En este ejemplo no solo se proporcionan sugerencias de tipo MIME en los atributos de tipo, sino que también se proporciona el atributo de origen cruzado para asegurar que el modo CORS de la precarga coincida con la solicitud de recurso de fuente eventual.</p>
+                    </section>
+                    <section id="media">
+                        <h3>Incluyendo Media</h3>
+                        <p>Una buena característica de los elementos "link" es su capacidad para aceptar atributos "media", esto le permite aceptar "media types" (tipos de media) o "media queries" (consultas de medios) lo que permite realizar una precarga receptiva como se puede apreciar en el siguiente ejemplo:</p>
+                        <img src="./img/ejmPrecargaMedia1.PNG" alt="" class="img">
+                        <img src="./img/ejmPrecargaMedia2.PNG" alt="" class="img">
+                        <p>En este caso el código precarga una imagen a través de dos elementos <b>"link"</b>, esto debido a que se está asignando el uso de cada uno para una circunstancia en particular, en base al ancho de la pantalla en la que se visualice la página se procederá a precargar una imagen grande o una pequeña, para lograr esto usamos Window.matchMedia / MediaQueryList para hacer esto, la ventaja de hacer esto es que se aumentan las posibilidades de que el recurso esté disponible para la presentación de la página, reduciendo FOUT (flash de texto sin estilo).  </p>
+                        <p>Este tipo de prácticas no tiene por qué limitarse a imágenes o a archivos del mismo estilo, por ejemplo se podría mostrar una imagen o gráfica SVG cuando se utilicen pantallas pequeñas, de ese modo se garantiza la calidad de esta, e incluso usar un script de JavaScript u otro dependiendo de las capacidades del navegador.</p>
+                    </section>
+                    <section id="PrecargaJS">
+                        <h3>Precargar Script de JavaScript</h3>
+                        <p>Como ya se ha mencionado anteriormente es posible el precargar scripts JavaScript, recordemos que la precarga no significa que se ejecutará el script, por ejemplo el siguiente código:</p>
+                        <img src="./img/ejmPrecargaScript1.PNG" alt="" class="img">
+                        <p>Aquí creamos una instancia de HTMLLinkElement y luego la adjuntamos al DOM, esto significa que el navegador precargará el archivo myscript.js, pero aún no lo usará. Para usarlo se podría hacer esto:</p>
+                        <img src="./img/ejmPrecargaScript2.PNG" alt="" class="img">
+                        <p>Esto es útil cuando desea precargar un script, pero luego posponer la ejecución hasta exactamente cuando lo necesite.</p>
+                    </section>
+                    <section id="otrasFormas">
+                        <h3>Otras formas de precargar recursos</h3>
+                        <p>Existen otras formas de precargar recursos, pese a que ninguna es tan adecuada como el atributo <b>"preload"</b>, estas formas son: </p>
+                        <dl>
+                            <dt><b>link rel='prefetch': </b></dt>
+                            <dd>
+                                <p> Ha sido compatible con los navegadores durante mucho tiempo, pero está diseñado para obtener recursos que se utilizarán en la próxima carga de navegación/página (por ejemplo, cuando vaya a la página siguiente). En algunos casos puede ser útil pero no es útil para la página actual sin mencionar que, los navegadores darán a los recursos de <b>"prefetch"</b> una prioridad más baja que los de <b>"preload"</b>, después de todo la página actual es más importante que la siguiente</p>
+                            </dd>
+                            <dt><b>link rel='prerender': </b></dt>
+                            <dd>
+                                <p> Representa una página web específica en segundo plano, acelerando su carga si el usuario navega hacia ella. Debido al potencial de desperdiciar el ancho de banda de los usuarios, Chrome trata la representación previa como una captación previa de NoState.</p>
+                            </dd>
+                            <dt><b>link rel='subresource': </b></dt>
+                            <dd>
+                                <p> (No forma parte del estándar) fue compatible con Chrome hace un tiempo, y estaba destinado a abordar el mismo problema que la precarga, pero tenía un problema: no había forma de determinar una prioridad para los elementos (como no existía en ese entonces), por lo que todos fueron obtenidos con una prioridad bastante baja.</p>
+                            </dd>
+                            <p>Hay una serie de cargadores de recursos basados en secuencias de comandos, pero no tienen ningún poder sobre la cola de priorización de recuperación del navegador y están sujetos a los mismos problemas de rendimiento.</p>
+                        </dl>
+                    </section>
+                    <section id="Compatibilidad">
+                        <h3>Compatibilidad con Navegadores</h3>
+                        <p>A continuación se muestra una breve tabla de la compatibilidad de este atributo en las diferentes versiones de los principales navegadores:</p>
+                        <img src="./img/ejmPrecargaConpatibilidad.PNG" alt="" class="img">
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta, si quieres saber más visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img  src="../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                            <a href="" class="footer__instagram">
+                                <img src="../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Currículum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>

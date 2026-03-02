@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+    <title>Métodos de Arrays</title>
+</head>
+<header>
+    <nav >
+        <ul class="nav"> 
+            <li><a href="../../../Index.html" class="logo"><img src="../../../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+            <li><a href="../../../HTML/indice.html" class="HTML tema"><span class="text__tema">HTML</span></a></li>
+            <li><a href="../../../CSS/indiceCSS.html" class="CSS tema"><span class="text__tema">CSS</span></a></li>
+            <li><a href="../../indiceNivel.html" class="seleccion__JS tema"><span class="text__tema">JS</span></a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <aside class="aside">
+        <div class="outer ">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_JS">
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+            </label>
+            <div class="nav-aside_JS">
+                <ul>
+                    <a href="../Indice__JS.html"><h2>Nivel 1 JS</h2></a>
+                    <div class="aside-divisor"></div>
+                    <h2>Propiedades</h2>    
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Métodos de Arrays</h1>
+                    <h2>Métodos Transformadores</h2>
+                    <section>
+                        <p>Estos métodos se caracterizan por modificar el array; por lo tanto, no se basan en generar uno nuevo, sino que modifican el array original. </p>
+                    </section>
+                    <section>
+                        <p>Los métodos de arrays son diversos métodos que nos permiten modificar y manipular los valores de un array. Existen multitud de métodos, los más comunes y esenciales son: </p>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>Pop()</h3></dt>
+                            <dd>
+                                <p>Este método extrae el último dato de un array y lo devuelve como resultado, pero luego de hacerlo elimina este dato del array; por lo que, luego de que el método "pop" extrae el último dato de un array, este ya no formará parte de este. </p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/pop-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/pop-2.PNG" class="img" alt="">
+                                <p>En este ejemplo se aplica el método pop al array "nombres", lo cual elimina su último dato "jorge"; ya que pop retorna este dato antes de eliminarlo, este es guardado en una variable llamada "resultado" y luego se imprime en pantalla. </p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>Shift()</h3></dt>
+                            <dd>
+                                <p>Este método es exactamente igual al anterior con la diferencia de que extrae el primer dato y no el último; de este modo, este elemento también retorna el dato como resultado antes de eliminarlo.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/shift-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/shift-2.PNG" class="img" alt="">
+                                <p>Este ejemplo es igual pero con un resultado algo más extenso que el anterior, ya que en este caso se muestra el array antes de modificarlo, luego se muestra el dato que ha sido extraído y guardado en la variable "resultado" y por último se muestra el array luego de haber sido modificado.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>Push()</h3></dt>
+                            <dd>
+                                <p>Este método permite ingresar un dato al final del array a la vez que retorna como resultado la posición del elemento que ha sido añadido o, si se quiere ver de este modo, retorna el número de datos almacenados dentro del array.  </p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/push-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/push-2.PNG" class="img" alt="">
+                                <p>En este ejemplo se imprime en pantalla un array llamado "nombres," luego se usa el método "push" para añadir un nuevo dato a este y por último se vuelve a imprimir el array con los cambios.</p>
+                                <p>Nota: en la variable resultado se está guardando el retorno de push, el cual es el número de datos dentro del array (4).</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>Reverse()</h3></dt>
+                            <dd>
+                                <p>Este método permite invertir el orden de los elementos de un array, es decir, el primer elemento se convierte en el último y el último elemento pasa al primero.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/inverse-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/inverse-2.PNG" class="img" alt="">
+                                <p>En este ejemplo se imprime en pantalla el valor del array "números", luego se aplica el método "reverse" para invertir el orden de los datos; por lo tanto, el dato en la primera posición (0) pasa a la quinta posición (4) y viceversa, y por último se vuelve a imprimir el valor del array.  </p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>UnShift()</h3></dt>
+                            <dd>
+                                <p>Este método permite añadir datos al principio del array; a su vez, este retorna la nueva longitud del array.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/unshift-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/unshift-2.PNG" class="img" alt="">
+                                <p>En este ejemplo se imprime el valor del array "números", luego se le añaden tres valores al principio con el método "unshift" y por último se imprime el nuevo valor del array.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>sort</h3></dt>
+                            <dd>
+                                <p>Este método permite organizar alfabéticamente o crecientemente los valores dentro de un array.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/sort-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/sort-2.PNG" class="img" alt="">
+                                <p>En este ejemplo el array "números" cuenta con diversos valores numéricos, los cuales se encuentran desordenados; se imprimen los valores en pantalla, se aplica el método "sort" para organizarlos (en este caso crecientemente) y luego se imprime el nuevo valor del array.  </p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>Splice</h3></dt>
+                            <dd>
+                                <p>Este método permite eliminar y añadir datos al array al mismo tiempo, para lo cual el método necesita que se definan varios datos.</p>
+                                <p>Los dos primeros del método se tratan de datos numéricos de los cuales el primero corresponde a la posición del array en donde se aplicarán los datos (incluyendo el dato en esa posición), mientras que el segundo número corresponde a la cantidad de datos que serán eliminados del array. Para eliminar datos, este método empieza a recorrer el array desde la posición indicada en el primer dato el número de posiciones indicadas en el segundo dato; por lo tanto, si no se desea eliminar ningún dato basta con indicar el segundo dato del método como "0" ("0" datos a eliminar).</p>
+                                <p>Por otro lado, para añadir datos al array basta con ingresarlos después de los dos datos anteriores del método. Cabe destacar que al ingresar datos también se tendrá en cuenta la posición inicial (primer dato numérico), por lo que los nuevos datos se ingresarán a partir de esa posición, desplazando los viejos o reemplazándolos en el caso de que se hayan definido para que sean eliminados (segundo dato numérico); de este modo se puede añadir nuevos datos a la vez que se eliminan los antiguos.  </p>
+                                <p>En otras palabras, este método permite eliminar e ingresar datos al array al mismo tiempo, así como elegir la posición en la que esta modificación se hará.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/splice-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/splice-2.PNG" class="img" alt="">
+                                <p>En este ejemplo el array "números" posee varios valores, los cuales se imprimen en pantalla; luego se aplica el método "splice" indicando que los cambios se realizarán a partir del segundo dato (1), también se indica que se eliminarán los siguientes tres (3) puestos a partir de este y luego se definen los nuevos datos que serán ingresados en el array. Luego de ejecutar el método se imprime en pantalla el nuevo valor del array; de ese modo los valores de la posición dos (1) a la cuatro (3) son reemplazados por los nuevos datos. </p>
+                                <p>Nota: No es necesario ingresar datos a la vez que otros son eliminados; si únicamente se desea eliminar datos, simplemente no se define ningún dato para que sea ingresado. A su vez, si no se desea eliminar ningún dato, basta con colocar el segundo dato numérico en cero (0) y definir los datos a ingresar; de ese modo solo se ingresarán datos pero ninguno se eliminará.</p>
+                                <p>Nota: para ingresar los datos al principio basta con colocar el primer dato numérico del método (posición de los cambios) en cero (0); pero por otro lado, si se desea ponerlos en última posición, este método siempre desplaza el último elemento y lo ubica después de los datos ingresados, por lo que para ingresar datos al último el método "push" es mejor opción.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <h2>Métodos Accesores</h2>
+                    <section>
+                     <p>Se tratan de aquellos métodos que generan un nuevo array a partir del original.</p>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>Join</h3></dt>
+                            <dd>
+                                <p>Este método se asemeja mucho al método "toString" de las cadenas, ya que permite convertir todos los datos en un array en una única cadena de texto; sin embargo, existe una diferencia crucial con este método, la cual es que el "join" permite definir el separador que se desee entre los datos del array, es decir, entre dato y dato "join" permite ingresar la cadena de texto que se desee, de esa forma controlar mejor la estructura de la nueva cadena de texto.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/join-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/join-2.PNG" class="img" alt="">
+                                <p>En este ejemplo se imprimen los diferentes valores del array "números", seguido a eso se utiliza el método "join" para convertir todo el array en una única cadena de texto, pero se añade un salto de línea HTML y el texto "elemento" para que de este modo, al imprimirse la nueva cadena de texto, tenga la estructura deseada.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>Slice</h3></dt>
+                            <dd>
+                                <p>Este método permite generar un nuevo array con los datos existentes dentro de otro; por lo tanto, su efecto es similar al de copiar los datos seleccionados del array original y pegarlos en el nuevo array.</p>
+                                <p>Para lo cual cuenta con cierta estructura: "slice" requiere de dos datos numéricos, los cuales se encargan de definir las posiciones de los datos dentro del array original que serán copiados por el método. El primer dato hace referencia a la posición desde la cual se desea empezar (incluyendo el dato en esa posición); por otro lado, el segundo parámetro define el número de posiciones que se tendrán en cuenta por el método a partir de la establecida en el primer dato (el segundo dato no incluye el valor en esa posición).   </p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/slice-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/slice-2.PNG" class="img" alt="">
+                                <p>En este ejemplo se imprimen en pantalla los valores del array original, luego se utiliza el método "slice" para generar un segundo array que posea los datos ubicados entre la primera posición (0) y tercera posición (3) sin incluir la tercera; luego, este segundo array es impreso en pantalla.</p>
+                                <p>Para las ocasiones en las que se posea un array con demasiados datos, se pueden emplear valores negativos en el segundo dato; de este modo, el método descontará esta cantidad de datos empezando por el último. Es decir, si definimos el rango de posiciones entre la "0" y la posición "-1" (segundo dato), estaríamos indicando al sistema "toma los datos entre la primera posición y todas las demás menos la última"; de este modo, si quisiéramos tomar todas las posiciones del array simplemente se definiría el rango como "0", así el método tomará todos los datos sin excluir ninguno. </p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>ToString()</h3></dt>
+                            <dd>
+                                <p>Este método permite convertir datos a tipo "string", ya sean números o arrays; es decir, este método retorna únicamente cadenas de texto, ya sea que se le ingresen datos number y los retorne como string o se le ingresen varios conjuntos de datos como, por ejemplo, arrays o varias variables, en cuyo caso el método los retornará como una única cadena de texto. </p>
+                                <img src="./img/toString-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/-2.PNG" class="img" alt="">
+                                <p>En este ejemplo se puede evidenciar que el método convirtió el array "cadena" a string, ya que en el llamado el resultado es "p", puesto que "0" es la posición del primer carácter del string; si "cadena" siguiese siendo un array, la posición "0" correspondería al primer dato, el cual solía ser "pedro".</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>Includes()</h3></dt>
+                            <dd>
+                                <p>Si la cadena expresada en este método se puede encontrar en alguno de los datos del array, devuelve "true"; de lo contrario, devuelve "false". En otras palabras, este método determina si una cadena de caracteres se encuentra o no dentro del array.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/includes-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/includes-2.PNG" class="img" alt="">
+                                <p>En este ejemplo el array "números" contiene una serie de datos, los cuales se imprimen en pantalla; luego se emplea el método "includes" para determinar si la cadena "pedro" se encuentra dentro del array. Ya que este es el caso, el método retorna un "true", el cual es guardado dentro de la variable "resultado" e impreso en pantalla; si la cadena "pedro" no se hubiera encontrado en el array, entonces el retorno del método sería false. </p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>IndexOf()</h3></dt>
+                            <dd>
+                                <p>Este método es exactamente igual que el anterior, con la diferencia de que este no retorna valores booleanos; en su lugar, retorna la posición en la que se encuentra el inicio de la cadena dentro del array.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/indexof-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/indexof-2.PNG" class="img" alt="">
+                                <p>En este ejemplo el array "números" contiene una serie de datos, los cuales se imprimen en pantalla; luego se emplea el método "indexOf" para determinar si la cadena "pedro" está dentro del array y en qué posición se encuentra. Ya que este dato se encuentra en la tercera posición, el método retorna "2".</p>
+                                <p>Una particularidad de este método es que en el caso de que no se encuentre ningún carácter dentro de la cadena, este método no retorna "false", en su lugar retorna "-1" de la siguiente manera:</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>LastIndexOf()</h3></dt>
+                            <dd>
+                                <p>Este método es igual que el anterior con la diferencia de que este no toma como referencia los caracteres de la cadena de texto; en su lugar toma como referencia todo el dato como un único elemento, por lo que se puede decir que busca en base a si la cadena de caracteres es la misma o no. Del mismo modo, si se encuentra con más de una coincidencia, retornará la posición de la última de estas.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/lastIndexOf-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/lastIndexOf-2.PNG" class="img" alt="">
+                                <p>En este ejemplo se imprimen en pantalla todos los datos almacenados dentro del array, luego se utiliza el método "lastIndexOf" para buscar el conjunto de caracteres "pedro"; este método retorna la posición de la última de sus coincidencias.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <h2>Métodos de Repetición</h2>
+                    <section>
+                        <dl>
+                            <dt><h3>ForEach()</h3></dt>
+                            <dd>
+                                <p>Este método adquiere el valor de un dato del array; sin embargo, este método es más complejo que solo eso, ya que se asemeja mucho a los bucles. Este método recibe una función como parámetro, por lo que se puede definir un conjunto de acciones a realizar con el valor que se adquiera del array; a su vez, una vez la función se ha ejecutado, el método retorna al principio y adquiere el valor del elemento ubicado en la siguiente posición del array.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/forEach-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/forEach-2.PNG" class="img" alt="">
+                                <p>En este ejemplo el array "números" contiene una serie de datos; a este se le aplica el método "forEach", el cual extrae el valor del primer elemento del array y luego ejecuta la función que se encuentra dentro de sus paréntesis. En este caso la función imprime el valor almacenado en la variable "numero" y añade un salto de línea; luego de terminar la ejecución de la función, el método retorna al principio y toma el valor del segundo elemento, y de este modo recorrerá todo el array. </p>
+                                <p>Nota: Las funciones que son recibidas como parámetros en este método pueden tratarse de funciones tradicionales, flecha y flecha de una sola línea.</p>
+                                <p>Nota: No olvidar incluir el "let" en la variable de la función.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt><h3>Filter</h3></dt>
+                            <dd>
+                                <p>El funcionamiento de este método es exactamente igual que el anterior, ya que también se asemeja a los ciclos y recibe funciones como parámetros; pero se diferencia en que este método permite incluir condiciones para filtrar los datos del array original que no cumplan con estas condiciones. De ese modo, este método retorna un nuevo array que contendrá únicamente los datos que sí cumplen con la condición establecida.  </p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/filter-1.PNG" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/filter-2.PNG" class="img" alt="">
+                                <p>En este ejemplo se puede apreciar cómo se aplica el método "filter" al array "números", método al cual se le define la condición de que únicamente incluya los datos que posean más de 5 caracteres; para lo cual se utiliza la propiedad "length", la cual retorna el número de caracteres de un dato. De ese modo, todos los elementos que no cumplan la condición (mayores a 5 caracteres) no serán copiados al nuevo array; luego se imprime el nuevo array en pantalla. </p>
+                                <p>Nota: No olvidar incluir el "let" en la variable de la función.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../../../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta; si quieres saber más, visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img  src="../../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                            <a href="" class="footer__instagram">
+                                <img src="../../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Curriculum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>

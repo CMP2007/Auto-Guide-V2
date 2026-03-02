@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+        <title>Elementos de multimedia</title>
+    </head>
+    <header>
+        <nav >
+            <ul class="nav"> 
+                <li><a href="../Index.html" class="logo"><img src="../../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+                <li><a href="../indice.html" class="seleccion__HTML tema">HTML</a></li>
+                <li><a href="../../CSS/indiceCSS.html" class="CSS tema">CSS</a></li>
+                <li><a href="../../JavaScrip/Indice__JS.html" class="JS tema">JS</a></li>
+                <div class="indicador"></div>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <aside class="aside">
+        <div class="outer ">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_HTML">
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+            </label>
+            <div class="nav-aside_HTML">
+                <ul>
+                        <h2>Temas HTML</h2>
+                        <li><a href="../etiquetas estructura/estructura.html"><h3>Estructura</h3></a></li>
+                        <li><a href="../etiquetas texto/texto.html"><h3>Texto</h3></a></li>
+                        <li><a href="../Etiquetas uso espesifico/usoEspesifico.html"><h3>Etiquetas Generales</h3></a></li>
+                        <li><a href="../etiquetas listas/listas.html"><h3>Listas</h3></a></li>
+                        <li><a href="../etiquetas de metadatos/metadatos.html"><h3>Metadatos</h3></a></li>
+                        <li><a href="../Visualizar codigo/VerCodigo.html"><h3>Representar código</h3></a></li>
+                        <li><a href="../Tablas HTML/tablas.html"><h3>Tablas</h3></a></li>
+                        <li><a href="../Eventos HTML/eventos.html"><h3>Eventos</h3></a></li>
+                        <li><a href="../Formularios HTML/formularios.html"><h3>Formularios</h3></a></li>
+                        <li><a href="../Validaciones/validaciones.html"><h3>Validaciones</h3></a></li>
+                        <li><a href="../Enviar Datos Form/EnviarDatos.html"><h3>Envío de Datos</h3></a></li>
+                       <li><a href="../PersonalizarControladores/ControladoresJS.html"><h3>Controladores JS</h3></a></li>
+                        <li> <a href="../Pre-cargar Contenido/Precargar.html"><h3>Pre-Carga</h3></a></li>
+                        <li><a href="../Notas/notas.html"><h4>Recordatorios</h4></a></li>
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Elementos de multimedia</h1>
+                    <section class="pagination">
+                        <a href="#" class="desplazar off">
+                            <div>
+                                <span>
+                                    <span class=" off"> ← </span>PREVIO
+                                </span>
+                            </div>
+                        </a>
+                        <div class="numbers">
+                            <a href="#" class="off">
+                                <div>
+                                    1
+                                </div>
+                            </a>
+                            <a href="./multimedia-pag-2.html" class="pagina paginaHTML">
+                                <div>
+                                    2
+                                </div>
+                            </a>
+                            <a href="./multimedia-pag-3.html" class="pagina paginaHTML">
+                                <div>
+                                    3
+                                </div>
+                            </a>
+                        </div>
+                         <a href="./multimedia-pag-2.html" class="desplazar">
+                           <div>
+                                <span class="pagina paginaHTML">Next <span class="pagArrowRight"> →</span></span>
+                            </div>
+                        </a>
+                    </section>
+                    <section id="descripción">
+                        <p>Desde hace algún tiempo los lenguajes web son lo bastante poderosos como para soportar contenido multimedia en sus diversos formatos, como lo son las imágenes, video, audio, e incluso es posible el incrustar secciones de otras páginas dentro de otra, todos estos elementos y conceptos relacionados son abordados a continuación:</p>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="audio"><h3>Audio</h3></dt>
+                            <dd>
+                                <p>Se trata de una etiqueta para reproducir audio en la página, se utiliza de una forma similar a la etiqueta video. Debido a las patentes que poseen algunos formatos de audio no todos los navegadores pueden aceptar los mismos formatos, en la actualidad son dos los formatos más utilizados en la industria, estos son: "mp3" y "ogg", de modo que para que el archivo de audio esté disponible para casi todos los navegadores lo más recomendable es incluir el archivo en cuestión una vez por "mp3" y una vez por "ogg".</p>
+                                <p>Para optimizar esto utilizamos el elemento "source", el cual se incluye dentro de la etiqueta "audio", usando el atributo "src" dentro de este, la función del elemento source es que el navegador pueda elegir el formato de audio que sea compatible con este, para esto usa el atributo "type", este atributo es leído por el navegador para ubicar el formato de audio que es compatible, si el atributo "type" no se incorpora el navegador probará cada elemento hasta encontrar el formato de audio que sea compatible, aumentando el tiempo de ejecución. </p>
+                                <p>La etiqueta "audio" al tratarse de una etiqueta HTML5 existen navegadores que aún no están capacitados para ejecutarla, por lo tanto la estructura de esta etiqueta no solo debe de incluir los atributos de "src", sino que también una etiqueta "p" con un mensaje de notificación, este párrafo será visible en aquellos casos en los que no sea posible ejecutar los archivos de audio, ya sea por un tema de compatibilidad o de conexión, por lo tanto es recomendable que este párrafo contenga un texto de notificación y si de verdad es muy necesario un enlace directo al archivo de audio en cuestión.</p>
+                                <img src="./img/ejmAudio.PNG" alt="" class="img">
+                                <h4>Atributos</h4>
+                                <ul>
+                                    <li><p><b>Autoplay:</b> indica que el audio se reproduzca automáticamente apenas se cargue, no es muy recomendable su uso ya que los usuarios pueden encontrarlo molesto </p></li>
+                                    <li><p><b>buffered:</b> Un atributo que se puede leer para determinar qué intervalos de tiempo del multimedia se han almacenado en búfer. Este atributo contiene un objeto TimeRanges.</p></li>
+                                    <li><p><b>Controls:</b> Ofrece controles para que el usuario pueda controlar la reproducción</p></li>
+                                    <li><p><b>Muted:</b> Hace que los medios se reproduzcan con el sonido apagado de forma predeterminada.</p></li>
+                                    <li><p><b>Loop:</b> Hace que el audio comience a reproducirse cada vez que finaliza. Esto puede en ocasiones resultar molesto, por lo que lo mejor es utilizarlo solo si es realmente necesario.</p></li>
+                                    <li>
+                                        <p><b>Preload:</b> Le indica al navegador que implementación podría darle una mejor experiencia al usuario, puede tener alguno de los siguientes valores:</p> 
+                                        <ul>
+                                            <li><i>none:</i> Le indica al navegador que el usuario no tendrá que consultar el audio, y no será necesario almacenarlo en caché</li>
+                                            <li><i>metadata:</i> Le indica al navegador que el usuario tendrá que consultar el audio, es razonable almacenar los metadatos</li>
+                                            <li><i>auto:</i> Indica que el audio tiene prioridad, es necesario descargarlo aun si el usuario no lo use</li>
+                                        </ul>
+                                        <p>Si el preload no está configurado su valor será definido por el navegador.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>src:</b> Indica la url del audio que se va a usar. Su uso es opcional ya que también se puede usar el elemento "source" dentro del bloque de audio para indicar el audio que se va a insertar.</p>
+                                        <p>Las compensaciones de tiempo se especifican como valores float que indican el número de segundos que se va a compensar.</p>
+                                    </li>
+                                </ul>
+                                <p><b>Nota: los atributos autoplay y preload no fuerzan al navegador a seguir el valor del atributo, son solo una sugerencia.</b></p>
+                                <P><b>Nota: los atributos width y height no tienen efecto en un elemento audio, ya que no hay un componente visual que estructurar.</b></P>
+                                <p><b>Nota: En cualquier momento se puede restablecer al principio el elemento de audio con JavaScript, ubicando el elemento "source" por su id y asignándole la propiedad "load()".</b></p>
+                                <h4>Incorporar subtítulos</h4>
+                                <p>Esto se realiza creando un archivo "WebVTT", este tipo de archivo está creado con el fin de almacenar cadenas de texto junto con metadatos para indicar en qué momento se mostrará cada cadena de texto e incluso información de estilo y posicionamiento. Las cadenas de texto se denominan señales y existen diferentes tipos con diferentes usos:</p>
+                                <ul>
+                                    <li><p><b>Subtitles (Subtítulos):</b> Son traducciones de un lenguaje extranjero usado en el video o audio</p></li>
+                                    <li><p><b>Captions (Leyendas):</b> Son transcripciones de diálogos o sonidos significativos para que puedan ser entendidas en situaciones en las que no se puede escuchar el audio</p> </li>
+                                    <li><p><b>timed descriptions (descripciones cronometradas):</b> Texto para conversión a audio, para atender a personas con discapacidad visual.</p></li>
+                                </ul>
+                                <p>Un ejemplo de la vista de un código WebVTT sería:</p>
+                                <img src="./img/EjmWebVTT.PNG" alt="" class="img">
+                                <p>Para que este archivo se muestre junto con la reproducción de medios HTML se debe:</p>
+                                <ol>
+                                    <li><p>Guardar el archivo ".vtt" en el lugar correcto</p></li>
+                                    <li><p>Enlazar el archivo ".vtt" con la etiquetas "track". La pista debe colocarse dentro de los elementos audio o video, pero después de todos los elementos de origen (source)</p></li>
+                                    <li><p>Usar la etiquetas "kind" para definir si el archivo se trata de subtítulos, leyendas o descripciones"</p></li>
+                                </ol>
+                                <p>El siguiente es un ejemplo del código resultante</p>
+                                <img src="./img/ejmSubtitulos.PNG" alt="" class="img">
+                                <p><b>Nota: en el ejemplo se usa un elemento "video" pero también se puede usar con uno "audio".</b></p>
+                                <p><b>Nota: Se puede usar JavaScript para habilitar el botón de subtítulos, y elegir entre por ejemplo varios lenguajes.</b></p>
+                                <p><b>Nota: Los navegadores se nutren especialmente del texto, eso incluye incluso a los subtítulos de un elemento multimedia, lo cual le permite al navegador vincularse incluso con el fragmento del elemento multimedia que coincida con la búsqueda.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="canvas"><h3>Canvas</h3></dt>
+                            <dd>
+                                <p>Se usa para crear gráficos a través de comandos JavaScript, también se puede usar para crear animaciones y hacer composiciones de fotos, se trata de una etiqueta bastante reciente así que solo está disponible en versiones recientes de los navegadores. </p> 
+                                <h4>Atributos</h4>
+                                <ul>
+                                    <li><p><b>width:</b> Se trata de la anchura del elemento, el valor predeterminado es de 300px</p></li>
+                                    <li><p><b>height:</b> Se trata de la altura del elemento, el valor predeterminado es de 150px</p></li>
+                                </ul>
+                                <h4>Sobre Accesibilidad</h4>
+                                <p>El elemento canvas no provee ninguna información adicional sobre los elementos que tiene dibujados. El contenido de la etiqueta canvas no se muestra a los lectores de pantalla como otras etiquetas semánticas. Como regla general, deberías evitar utilizar canvas en un sitio accesible.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="embed"><h3>Embed</h3></dt>
+                            <dd>
+                                <p>Representa junto con el elemento "object" una herramienta de incrustación de propósito general, en otras palabras se diferencia de "iframe" ya que "embed" puede incrustar múltiples tipos de contenido externo que incluyan tecnologías de complemento como Java Applets y Flash, en otras palabras puede ejecutar contenido externo y sus plug-in.</p>
+                                <p><b>Nota: Un plug-in (complemento) es un software que permite que el navegador ejecute un elemento con el cual no es compatible de forma nativa</b></p>
+                                <p>En sí el "embed" es una tecnología heredada por HTML5, no es verdaderamente usado ya que los subprogramas con plug-in no se utilizan desde hace algunos años, pese a esto se puede dar alguna circunstancia de que se encuentre como puede ser en intranets o proyectos empresariales. </p>
+                                <h4>Atributos</h4>
+                                <ul>
+                                    <li><p>Embed incluye los <b>atributos globales</b></p></li>
+                                    <li><p><b>height:</b> altura mostrada en px</p></li>
+                                    <li><p><b>width:</b> ancho mostrado en px</p></li>
+                                    <li><p><b>src:</b> La dirección URL del recurso que se está incrustando</p></li>
+                                    <li><p><b>type:</b> El tipo MIME que se va a usar para la selección del plug-in para crear una instancia</p></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="figure"><h3>Figure</h3></dt>
+                            <dd>
+                                <p>Es una etiqueta HTML5, se trata de un contenedor con la función de vincular una imagen con un texto de pie de imagen, cumple un rol semántico.</p>
+                                <p>La forma de emplearlo consiste en que este elemento contenga en su interior el elemento "img" y el elemento "figcaption".</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="iframe"><h3>Iframe</h3></dt>
+                            <dd>
+                                <p>Esta etiqueta se utiliza para incorporar documentos web en el documento actual, esto es bueno para poder incluir contenido de terceros sobre el cual no se tenga el control web dentro de la nuestra, por ejemplo de esto está el siguiente video el cual pese a visualizarse en esta página realmente ningún elemento de este se encuentra en la página, en su lugar se tomó una sección directamente de la página de youtube y se insertó aquí de la siguiente manera:</p>
+                                <p>Primero que nada recordemos que youtube brinda la opción de incrustar videos en otras páginas web muy fácilmente a través de los siguientes pasos:</p>
+                                <ol>
+                                    <li><p>Primero nos dirigimos al video que deseamos incorporar</p></li>
+                                    <li><p>Luego hacemos clic en el botón "Compartir"</p></li>
+                                    <li><p>Seleccionamos la opción de "insertar", y se nos brindará un código HTML con la etiqueta "iframe" ya incorporada (podemos configurar algunas cosas sobre cómo queremos que se visualice el video en nuestra página)</p></li>
+                                    <li><p>Copiamos el código y lo incrustamos en el archivo HTML deseado</p></li>
+                                </ol> 
+                                <p>El resultado es el siguiente</p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/FZS0CVd6XD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="img"></iframe>
+                                <p>Google Maps también permite hacer algo muy similar, de la siguiente forma:</p>
+                                <ul>
+                                    <li><p>Vamos a Google Maps y buscamos el mapa que deseamos incorporar</p></li>
+                                    <li><p>Hacemos clic en el menú de la esquina superior izquierda de la página</p></li>
+                                    <li><p>Seleccionamos "Compartir o insertar mapa"</p></li>
+                                    <li><p>Seleccionamos la opción de "insertar", la cual nos dará un código HTML ya estructurado </p></li>
+                                    <li><p>Copiamos el código y lo insertamos en nuestro archivo HTML para incorporarlo</p></li>
+                                </ul>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d31995488.28848698!2d-81.07848391210466!3d-11.786213222497603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x8e648721ba42e8dd%3A0x5df63fea56d56c66!2zTcOpcmlkYQ!3m2!1d8.5698244!2d-71.1804988!4m5!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA%2C%20Argentina!3m2!1d-34.6036844!2d-58.3815591!5e0!3m2!1ses!2sve!4v1673495657569!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="img"></iframe>
+                                <p><b>Nota: Es muy importante tener en cuenta el tema de los derechos de autor al usar un "iframe", lo mejor es nunca mostrar contenido del que no se sea el propietario o el dueño brindando un consentimiento por escrito, en el caso de que el contenido sea licenciado se deben obtener y cumplir los términos de la licencia.</b></p>
+                                <h4>Atributos:</h4>
+                                <ul>
+                                    <li><p><b>allowfullscreen:</b> Si está configurado, el "iframe" se puede colocar en modo pantalla completa usando el <a href="https://developer.mozilla.org/es/docs/Web/API/Fullscreen_API" class="a__HTML">Full Screen API</a></p> </li>
+                                    <li><p><b>Frameborder:</b> Al asignarle un valor de "1" añade un borde alrededor de todo el elemento incrustado, su valor mínimo es "0", actualmente no es recomendable su uso ya que se obtiene el mismo o mejores resultados con CSS</p></li>
+                                    <li><p><b>Src: </b> Al igual que en los elementos "video", "audio", "img" contiene la ruta que apunta al documento a incrustar</p></li>
+                                    <li><p><b>Contenido de reserva:</b> Al igual que un elemento "audio" o "video" el "iframe" incluye un texto que se mostrará en caso de que el navegador no soporte esta etiquetas (actualmente es poco probable que se encuentre un navegador que no lo ejecute), se incorpora mediante un elemento "p" dentro de la etiqueta de apertura y de cierre del "iframe" (Suele contener un enlace al documento que se pretendía insertar)</p></li>
+                                    <li><p><b>width:</b> Define la anchura del elemento</p></li>
+                                    <li><p><b>height:</b> Define la altura del elemento</p></li>
+                                    <li><p><b>sandbox:</b> Este atributo solicita una mayor configuración de seguridad en el "iframe" (Requiere versiones de navegadores más recientes)</p></li>
+                                </ul>
+                                <p><b>Nota: Es recomendable establecer el atributo "src" con JavaScript luego de que se cargue el contenido principal para que de esa forma la página se pueda usar antes y cargue de forma más rápida.</b></p>
+                                <h4>Seguridad</h4>
+                                <p>Los "iframe" son "Vectores de ataque", es decir, objetivos de ataque de crackers, por lo tanto pudiesen llegar a ser vulnerabilidades en una página web, para esto se han desarrollado varios mecanismos y buenas prácticas para hacerlos más seguros.</p>
+                                <p><b>Configurar el Servidor:</b> Una de estas prácticas consiste en incluir en el servidor en el que albergue la página una configuración para evitar que la página sea incrustada en "iframe" ya que de esta forma se evita que se robe el contenido de la página y otros lo reclamen como propio o que inserten el sitio web en una página maliciosa para robar información del usuario, sin mencionar que el costo del ancho de banda consumido por ejecutar el "iframe" correría por parte de la página que está siendo insertada.</p>
+                                <p><b>Aplicarlo solo si es necesario:</b> Ya que los "iframes" representan un cierto riesgo siempre es bueno limitar su uso a solo aquellos casos en los que sea necesario su implementación.</p>
+                                <p><b>Usar HTTPS:</b> HTTPS es la versión encriptada de HTTP, pese a su costo se debería de incorporar a la página web siempre que sea posible, ya que brinda dos grandes ventajas: </p>
+                                <ol>
+                                    <li>Reduce las posibilidades de que el contenido remoto sea manipulado mientras se encuentra en tránsito</li>
+                                    <li>Impide que el contenido manipulado acceda al contenido padre y viceversa</li>
+                                </ol>
+                                <p><b>Nunca se debería de insertar contenido de terceros mediante el HTTP, debido al gran peligro que conlleva</b>, una buena solución es <a href="https://developer.mozilla.org/es/docs/Learn/Common_questions/Using_Github_pages" class="a__HTML">GitHub pages</a> el cual permite usar HTTPS por defecto, por lo tanto no es necesario tramitar el certificado de seguridad</p>
+                                <p><b>Siempre usar el atributo "sandbox": </b> Básicamente consiste en brindarle al elemento y su contenido únicamente los permisos necesarios para hacer su trabajo, un contenido sin restricciones puede hacer muchas cosas como por ejemplo ejecutar JavaScript, es por eso que se restringe la funcionalidad del elemento y su contenido para reducir las opciones de un cracker. El atributo "sandbox" por defecto aplica todas las restricciones posibles al elemento "iframe" pero de ser necesario se pueden volver a conceder permisos uno por uno. <b>Un recordatorio de seguridad importante es nunca conceder el permiso de allow-scripts junto con allow-same-origin</b> ya que estos eventos pudiesen saltarse las medidas de seguridad y ejecutar Scripts para desactivar el "sandbox" por completo</p>
+                                <p><b>Nota: sandbox no evita que un usuario pueda ser engañado por contenido malicioso, si existe alguna posibilidad de que el contenido pudiese ser malicioso lo mejor es publicarlo desde un dominio diferente al principal</b></p>
+                                <p><b>Configurar directivas CSP: </b> Esto es con exactitud la configuración de servidor que se nombró con anterioridad, consisten en programar un envío de encabezados HTTP (metadatos) para evitar que la página web se presente en un iframe</p>
+                                <p><b>Nota: Una buena regla de oro para la seguridad web es "Nunca puedes ser demasiado cauteloso. Si lo hizo, verifíquelo de todos modos. Si alguien más lo hizo, asuma que es peligroso hasta que se demuestre lo contrario".</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section class="pagination">
+                        <a href="#" class="desplazar off">
+                            <div>
+                                <span>
+                                    <span class=" off"> ← </span>PREVIO
+                                </span>
+                            </div>
+                        </a>
+                        <div class="numbers">
+                            <a href="#" class="off">
+                                <div>
+                                    1
+                                </div>
+                            </a>
+                            <a href="./multimedia-pag-2.html" class="pagina paginaHTML">
+                                <div>
+                                    2
+                                </div>
+                            </a>
+                            <a href="./multimedia-pag-3.html" class="pagina paginaHTML">
+                                <div>
+                                    3
+                                </div>
+                            </a>
+                        </div>
+                         <a href="./multimedia-pag-2.html" class="desplazar">
+                           <div>
+                                <span class="pagina paginaHTML">Next <span class="pagArrowRight"> →</span></span>
+                            </div>
+                        </a>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta, si quieres saber más visita mi perfil de GitHub haciendo clic en mi fotografía, o visitas mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img  src="../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                
+                            <a href="" class="footer__instagram">
+                                <img src="../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Curriculum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+    <title>IndexedDB</title>
+</head>
+<header>
+    <nav>
+        <ul class="nav"> 
+            <li><a href="../../../../Index.html" class="logo"><img src="../../../../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+            <li><a href="../../../../HTML/indice.html" class="HTML tema"><span class="text__tema">HTML</span></a></li>
+            <li><a href="../../../../CSS/indiceCSS.html" class="CSS tema"><span class="text__tema">CSS</span></a></li>
+            <li><a href="../../../indiceNivel.html" class="seleccion__JS tema"><span class="text__tema">JS</span></a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <aside class="aside">
+        <div class="outer">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_JS">
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+            </label>
+            <div class="nav-aside_JS">
+                <ul>
+                    <a href="../indiceJavaScriptNivel2.html"><h2>Nivel 1 JS</h2></a> 
+                    <div class="aside-divisor"></div>
+                    <h2>Propiedades</h2>    
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>IndexedDB</h1>
+                    <section>
+                        <p>Se trata de una api especializada en la interacción con bases de datos; de hecho, "MongoDB" trabaja con una lógica similar a esta api. Su funcionamiento es parecido al de "localStorage" o "sessionStorage", ya que permite almacenar datos en el navegador, pero con grandes particularidades que la diferencian. </p>
+                        
+                        
+
+                        <ul>
+                            <li>
+                                <p>Esta api está orientada a objetos; a su vez, los datos de esta se basan en pares de "nombre/valor".</p>
+                            </li>
+                            <li>
+                                <p>Es asíncrona, por lo que se puede acceder y manipular los datos sin la necesidad de recargar la página.</p>
+                            </li>
+                            <li>
+                                <p>Esta api trabaja con los eventos del "DOM", por lo que los resultados o respuestas estarán basados en estos eventos.</p>
+                            </li>
+                        </ul>
+                        <h3>Proceso de Creación</h3>
+                        <p>La primera acción a tomar para trabajar con esta api es elaborar una solicitud de creación de la base de datos. Para esto existe cierta pauta, la cual consiste en que la constante donde se almacene esta solicitud debe llamarse "IDBRequest"; esto ya que es el nombre designado para indicar que se trata de una base de datos "IndexedDB". Por supuesto que es posible nombrar esta variable de cualquier otra forma, sin embargo, se recomienda aplicar este nombre ya que se considera como buena práctica.</p>
+                        <p>Teniendo en cuenta este aspecto y accediendo al objeto "indexedDB", se utiliza el método ".open()", el cual permite abrir (en caso de que exista) o crear (en caso de que no exista) una base de datos. Este método recibe dos datos para trabajar: el primero corresponde al nombre de la base de datos, mientras que el segundo define la versión de la misma.</p>
+                        <h4>Ejemplo</h4>
+                        <img src="./img/indexedDB-1.jpg" class="img" alt="">
+                        <p>Nota: Definir la versión de la base de datos como "1" tan solo es con el propósito del ejemplo de la petición; este aspecto se desglosará más adelante.</p>
+                        <p>Nota: Si la constante se nombra de la misma forma que "indexedDB", es necesario realizar la solicitud como "window.indexedDB", ya que de lo contrario JavaScript no ubica al objeto; en su lugar, lo interpreta como un llamado a dicha constante.</p>
+                        
+                        <p>Una vez realizada la solicitud para la base de datos con el método ".open()", se procede a inicializar una serie de escuchas de eventos; esto ya que algunos de estos se utilizan para definir qué acción realizar en base a cuál sea el resultado de la solicitud del método ".open". Estos eventos son: </p>
+                        <ul>
+                            <li>
+                                <p>success: Este evento determina si todo salió correctamente en la solicitud ".open()".</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/indexedDB-2.jpg" class="img" alt="">
+                            </li>
+                            <li>
+                                <p>error: Este evento se dispara en caso de que surja algún error al acceder a la base de datos.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/indexedDB-3.jpg" class="img" alt="">
+                            </li>
+                            <li>
+                                <p>upgradeneeded: Se trata de un evento que se dispara en caso de que la base de datos no haya sido creada o se necesite actualizar la versión; por lo tanto, se trata de una comprobación para evaluar la existencia de la base de datos.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/indexedDB-4.jpg" class="img" alt="">
+                            </li>
+                        </ul>
+                        <h3>Crear Almacén de Objetos</h3>
+                        <p>Un almacén de objetos es una arquitectura de almacenamiento que se caracteriza por guardar los datos como objetos a diferencia de otras metodologías. De esta forma es como trabaja la api "IndexedDB", "MongoDB" y otras bases de datos no relacionales; por lo tanto, un almacén de objetos sería lo que es una tabla para una base de datos relacional.</p>
+                        <p>Un aspecto sumamente importante de los almacenes de objetos es que estos solo pueden ser creados en el momento en que se crea o actualiza la base de datos, razón por la cual la declaración de estos se debe realizar desde el evento "upgradeneeded".</p>
+                        <p>Para crear un almacén de objetos es necesario acceder a la base de datos a través de la propiedad ".result" de la solicitud. Esto se debe a que en la constante "IDBRequest" no se almacena la base de datos en sí, sino la solicitud; la base de datos se obtiene como un resultado exitoso de esta.</p>
+                        <h4>Ejemplo</h4>
+                        <img src="./img/indexedDB-6.jpg" class="img" alt="">
+                        <p>Para crear el almacén de objetos en sí, se utiliza el método "createObjectStore()", el cual recibe dos datos: el primero es el nombre del almacén, mientras el segundo es un objeto de opciones para la "key" (identificador).</p>
+                        <h4>Ejemplo</h4>
+                        <img src="./img/indexedDB-7.jpg" class="img" alt="">
+                        <p>En este caso, se suele definir "autoIncrement: true", lo que significa que por cada objeto almacenado el índice se incrementará automáticamente.</p>
+                        <p>Nota: Una alternativa a "autoIncrement" es "keyPath", el cual permite definir una propiedad del objeto como llave primaria.</p>
+                        <h4>Resultado</h4>
+                        <img src="./img/indexedDB-8.jpg" class="img" alt="">
+                        
+                        <h3>Almacenar objetos</h3>
+                        <p>Lo primero para guardar un objeto es utilizar las transacciones, las cuales son operaciones que se realizan en los almacenes de objetos. Cualquier acción como añadir, modificar o eliminar se considera una transacción.</p>
+                        <h4>Ejemplo</h4>
+                        <img src="./img/indexedDB-9.jpg" class="img" alt="">
+                        <p>Se usa el método ".transaction" para aperturar una transacción, indicando el nombre del almacén y el tipo de acceso:</p>
+                        <ul>
+                            <li>
+                                <p>readwrite: Permite modificar, añadir o eliminar objetos.</p>
+                            </li>
+                            <li>
+                                <p>readonly: Únicamente permite leer los objetos.</p>
+                            </li>
+                        </ul>
+                        <p>Finalmente, se utiliza el método "objectStore" para indicar sobre qué almacén operaremos y el método ".add" para pasar el objeto en cuestión.</p>
+                        <h4>Ejemplo</h4>
+                        <img src="./img/indexedDB-11.jpg" class="img" alt="">
+
+                        <h3>Leer Objetos</h3>
+                        <p>Para leer datos se utiliza el método ".openCursor()", el cual permite recorrer los objetos almacenados. Este método también requiere una transacción de tipo "readonly".</p>
+                        <h4>Ejemplo</h4>
+                        <img src="./img/indexedDB-14.jpg" class="img" alt="">
+                        <p>Nota: Si se desea acceder a todos los datos, se aplica el método ".continue()" al resultado del cursor dentro del evento success.</p>
+                        
+                        <h3>Modificar y Eliminar</h3>
+                        <p>Para modificar se utiliza ".put()", que funciona igual que ".add" pero reemplaza el objeto si la llave ya existe. Para eliminar se usa ".delete()", indicando la "key" del objeto.</p>
+                        <h4>Ejemplo Eliminar</h4>
+                        <img src="./img/indexedDB-19.jpg" class="img" alt="">
+
+                        <h3>MatchMedia</h3>
+                        <p>Esta api permite trabajar con Responsive Design desde JavaScript. Lo más recomendable es limitar su implementación a casos donde CSS no sea suficiente.</p>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../../../../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta. Si quieres saber más, visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                            <a href="" class="footer__Facebook"><img src="../../../../../Fuentes/iconmonstr-facebook-6-32.png" alt=""></a>
+                            <a href="" class="footer__instagram"><img src="../../../../../Fuentes/iconmonstr-instagram-11-32.png" alt=""></a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com"><img src="../../../../../Fuentes/iconmonstr-email-12-32.png" alt=""></a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Currículum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub"><img src="../../../../../Fuentes/iconmonstr-github-1-32.png" alt=""></a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>   
+    </aside>
+</body>
+</html>

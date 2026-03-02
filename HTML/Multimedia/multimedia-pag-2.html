@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+    <title>Elementos de multimedia</title>
+</head>
+<header>
+    <nav>
+        <ul class="nav"> 
+            <li><a href="../Index.html" class="logo"><img src="../../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+            <li><a href="../indice.html" class="seleccion__HTML tema">HTML</a></li>
+            <li><a href="../../CSS/indiceCSS.html" class="CSS tema">CSS</a></li>
+            <li><a href="../../JavaScrip/Indice__JS.html" class="JS tema">JS</a></li>
+            <div class="indicador"></div>
+        </ul>
+    </nav>
+</header>
+<body>
+    <aside class="aside">
+        <div class="outer ">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_HTML">
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+            </label>
+            <div class="nav-aside_HTML">
+                <ul>
+                        <h2>Temas HTML</h2>
+                        <li><a href="../etiquetas estructura/estructura.html"><h3>Estructura</h3></a></li>
+                        <li><a href="../etiquetas texto/texto.html"><h3>Texto</h3></a></li>
+                        <li><a href="../Etiquetas uso espesifico/usoEspesifico.html"><h3>Etiquetas Generales</h3></a></li>
+                        <li><a href="../etiquetas listas/listas.html"><h3>Listas</h3></a></li>
+                        <li><a href="../etiquetas de metadatos/metadatos.html"><h3>Metadatos</h3></a></li>
+                        <li><a href="../Visualizar codigo/VerCodigo.html"><h3>Representar código</h3></a></li>
+                        <li><a href="../Tablas HTML/tablas.html"><h3>Tablas</h3></a></li>
+                        <li><a href="../Eventos HTML/eventos.html"><h3>Eventos</h3></a></li>
+                        <li><a href="../Formularios HTML/formularios.html"><h3>Formularios</h3></a></li>
+                        <li><a href="../Validaciones/validaciones.html"><h3>Validaciones</h3></a></li>
+                        <li><a href="../Enviar Datos Form/EnviarDatos.html"><h3>Envío de Datos</h3></a></li>
+                       <li><a href="../PersonalizarControladores/ControladoresJS.html"><h3>Controladores JS</h3></a></li>
+                        <li> <a href="../Pre-cargar Contenido/Precargar.html"><h3>Pre-Carga</h3></a></li>
+                        <li><a href="../Notas/notas.html"><h4>Recordatorios</h4></a></li>
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Elementos de multimedia</h1>
+                    <section class="pagination">
+                        <a href="./multimedia.html" class="desplazar">
+                            <div>
+                                <span class="pagina paginaHTML">
+                                    <span class="pagArrowLeft"> &larr; </span>PREVIO
+                                </span>
+                            </div>
+                        </a>
+                        <div class="numbers">
+                            <a href="./multimedia.html" class="pagina paginaHTML">
+                                <div>
+                                    1
+                                </div>
+                            </a>
+                            <a href="#" class="off">
+                                <div>
+                                    2
+                                </div>
+                            </a>
+                            <a href="./multimedia-pag-3.html" class="pagina paginaHTML">
+                                <div>
+                                    3
+                                </div>
+                            </a>
+                        </div>
+                         <a href="./multimedia-pag-3.html" class="desplazar">
+                           <div>
+                                <span class="pagina paginaHTML">Next <span class="pagArrowRight"> &rarr;</span></span>
+                            </div>
+                        </a>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="img"><h3>Img</h3></dt>
+                            <dd>
+                                <p>Esta etiqueta tiene la función de vincular archivos de imagen para que se visualicen en la página, para esto se utiliza el atributo "src".</p>
+                                <h4>Atributos</h4>
+                                <ul>
+                                    <li><p><b>src: </b> lugar en el que se almacena la URL del archivo de imagen</p> </li>
+                                    <li><p><b>width: </b> Define el ancho en la imagen</p></li>
+                                    <li><p><b>height: </b> Define el alto en la imagen</p></li>
+                                    <li><p><b>alt: </b> Se trata de un texto alterno que describa la imagen, se usa en aquellas situaciones en las que la imagen no pueda ser mostrada, por ejemplo si existe algún error en la carga de las imágenes, o si se utiliza algún motor de lectura en la página</p></li>
+                                    <li><p><b>title: </b> Asigna un título a la imagen, sin embargo no es muy utilizado ya que únicamente muestra el título si se posiciona el ratón sobre la imagen, a la vez que puede causar errores en los motores de lectura</p> </li>
+                                </ul>
+                                <p><b>Nota: Los motores de búsqueda tienen en cuenta el texto alternativo al realizar alguna, pueden hacer coincidir la búsqueda con este texto </b></p>
+                                <p><b>Nota: Desactivar las imágenes es una actividad común en lugares con poco ancho de banda o un costo de internet muy alto, en estos casos el "alt" es muy útil </b></p>
+                                <p><b>Nota: Normalmente se utiliza el width y el height en CSS, sin embargo si se usa en HTML, la página reservará el espacio asignado para la imagen aun si esta aún no ha terminado de cargar</b></p>
+                                <h4>Imágenes Adaptables</h4>
+                                <p>En la web existen dos tipos de formatos de imagen, los vectoriales y las rasterizadas estas últimas son los formatos como png y jpg los cuales consisten en código que le indica al navegador la posición de cada píxel que compone la imagen, por ello es que la imagen se puede distorsionar cuando se altera el tamaño o proporción de esta, ya que el navegador seguirá esta estructura sin importar qué, empezará a hacer ajustes para seguir cumpliendo con esta estructura.</p>
+                                <p>Debido a esto es que el cómo se aprecie una imagen en nuestra página se verá enormemente determinado por el dispositivo del que se ingrese y por lo tanto por el tamaño de la pantalla de este, por ejemplo si agrandamos una imagen para que cumpla con un tamaño adecuado para visualizarse desde una gran pantalla es muy probable que esta pierda calidad y se pixele, por otro lado si tomamos la misma imagen y la reducimos hasta poder visualizarla adecuadamente en un teléfono móvil es probable que al ser tan pequeña no podamos apreciar adecuadamente el contenido de esta.</p>
+                                <p>A esto es que se refiere una imagen adaptable, se trata de ajustar la imagen al tamaño en el que será visualizada, para ello la solución que se encontró consiste en incorporar varias imágenes en un elemento img cada una editada para visualizarse adecuadamente en un diferente radio de píxeles, por defecto este solo permite vincular una imagen por uso, debido a esto existen los atributos "srcset" y "sizes". </p>
+                                <li>
+                                    <b>srcset: </b> Define el conjunto de imágenes y su tamaño que el navegador podría elegir según cuál sea la más conveniente para el dispositivo, la estructura para separar cada conjunto de información es con una coma, cada conjunto de información está compuesto por:
+                                    <ol>
+                                        <li><p>El nombre del archivo de imagen</p></li>
+                                        <li><p>El ancho intrínseco de la imagen en píxeles, este será el tamaño real de la imagen, es importante tener en cuenta que se utiliza la unidad "W" no "px" como en otros casos</p> </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <b>Size: </b> Define el conjunto de condiciones de medios en los que se muestra cada imagen, por ejemplo el ancho de la pantalla, por lo tanto define en qué ancho de pantalla sería correcto mostrar cada imagen, está compuesto por:   
+                                    <ol>
+                                        <li><p>La condición de medios en la que se indica mostrar cada imagen por ejemplo: (max-width: 600px)</p></li>
+                                        <li><p>El ancho que finalmente ocupará la imagen cuando la condición de medios se cumpla, por ejemplo: (440px.), por lo general esta se define como menor al ancho de la pantalla para no afectar la experiencia del usuario</p></li>
+                                    </ol>
+                                    <b>Nota: En el ancho de la ranura se debe indicar una longitud absoluta (px, em) o una relativa (porcentaje).</b>
+                                </li>
+                                <p>El siguiente es un ejemplo de código, se puede apreciar que el último conjunto de datos en el atributo "size" no posee condición de medios, esto se debe a que es el caso por defecto que se utilizará si ninguno de los casos anteriores se cumple, es importante tener en cuenta el orden de los elementos ya que el navegador elegirá el primer caso que sea compatible e ignorará todo lo que esté posterior a este. </p>
+                                <img src="./img/ejmImgAjustable.PNG" alt="" class="img">
+                                <p>En este código el navegador hace lo siguiente:</p>
+                                <ol>
+                                    <li><p>Verifica el ancho del dispositivo</p></li>
+                                    <li><p>Buscará la primera condición de medios que se cumpla</p></li>
+                                    <li><p>Verificará la medida dada a la imagen en esa consulta de medios</p></li>
+                                    <li><p>Cargará la imagen en el atributo "srcset" que mejor coincida con la medida asignada para la imagen</p></li>
+                                </ol>
+                                <p>Los navegadores desactualizados que no soporten esta característica simplemente la ignorarán y continuarán con la carga común del atributo "src".</p>
+                                <p>Una imagen en disco de 480px siempre tendrá un tamaño mucho menor que una de 800px de ese modo se puede ahorrar ancho de banda y tiempo de carga al iniciar la página web.</p>
+                                <p><b>Nota: Algunos dispositivos móviles mienten sobre el ancho de su pantalla lo cual no es muy útil para diseños receptivos, incluyendo (meta name="viewport" content="width=device-width") entre los metadatos de la página los obligas a utilizar su ancho real.</b></p>
+                                <h4>Cambiar la resolución de la imagen</h4>
+                                <p>Otra forma de mejorar el consumo de ancho de banda así como el tiempo de carga de nuestra página es el de ofrecer como opción al navegador la misma imagen pero con diferentes resoluciones, para esto se utiliza un método similar al anterior, es decir se utiliza el atributo "srcset" haciendo referencia a múltiples imágenes, con la diferencia de que en esta ocasión el tamaño en píxeles de las imágenes no es diferente, sino que se diferencia entre sí por la calidad de cada una.</p>
+                                <p>Esto se realiza con la intención de que el navegador detecte la resolución a la que está trabajando el computador y seleccione la imagen acorde a esta, por lo tanto si el computador está configurado con una resolución alta el navegador seleccionará una imagen con buena resolución, por otro lado si la configuración es para una resolución baja el navegador seleccionará la imagen con menor resolución, esto cobra sentido cuando tenemos en cuenta el espacio en memoria de cada imagen, ya que mientras mayor resolución mayor será el peso de la imagen, de este modo podemos buscar la eficiencia de recursos cargando solo los que sean necesarios en base al dispositivo desde el que se ingrese, un ejemplo de este código sería el siguiente: </p>
+                                <img src="./img/ejmImgResolucion.PNG" alt="" class="img">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="figureFigcaption"><h3>Figure y Figcaption</h3></dt>
+                            <dd>
+                                <p>Se trata de elementos para indicar que un texto está vinculado con una imagen (pie de imagen), se trata de elementos con valor semántico para el uso de lectores de pantalla o motores de búsqueda.</p>
+                                <p>La forma de emplearlo es que junto al elemento de imagen ("img") esté contenido en un "figure" y el elemento "figcaption" conteniendo el contenido del pie de página, de la siguiente manera:</p>
+                                <img src="./img/ejmFigcaption.PNG" alt="" class="img">
+                                <p>En este ejemplo el elemento "figcaption" dice al navegador, o a alguna tecnología de apoyo, que el texto que contiene describe la imagen que está contenida en el elemento "figure".</p>
+                                <p><b>Nota: Desde el punto de vista de la accesibilidad, los pies de imagen y el texto alternativo (Atributo "alt") cumplen funciones diferentes. Los pies de imagen benefician incluso a quien puede ver la imagen, mientras que el texto "alt" proporciona la misma función en una imagen ausente. Por tanto, los subtítulos y el texto "alt" no deberían decir lo mismo, porque ambos aparecen si la imagen no se muestra.</b></p>
+                                <p><b>Nota: Un elemento figure podría contener varias imágenes, un trozo de código, audio, video, ecuaciones, una tabla, o cualquier otra cosa no exclusivamente imágenes</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="object"><h3>Object</h3></dt>
+                            <dd>
+                                <p>Representa junto con el elemento "embed" una herramienta de incrustación de propósito general, en otras palabras se diferencia de "iframe" ya que "object" puede incrustar múltiples tipos de contenido externo que incluyan tecnologías de complemento como Java Applets y Flash, en otras palabras puede ejecutar contenido externo y sus plug-in.</p>
+                                <p><b>Nota: Un plug-in (complemento) es un software que permite que el navegador ejecute un elemento con el cual no es compatible de forma nativa.</b></p>
+                                <p>En sí el "object" es una tecnología heredada por HTML5, no es verdaderamente usado ya que los subprogramas con plug-in no se utilizan desde hace algunos años, pese a esto se puede dar alguna circunstancia de que se encuentre como puede ser en intranets o proyectos empresariales. </p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="picture"><h3>picture</h3></dt>
+                            <dd>
+                                <p>Se trata de un elemento contenedor al igual que "audio" y "video", que contiene varios elementos de origen los cuales proporcionan varias fuentes diferentes para que el navegador elija entre ellas, este elemento se utiliza para volver las imágenes en elementos responsive, la estructura del elemento es la siguiente:</p>
+                                <img src="./img/ejmPicture.PNG" alt="" class="img">
+                                <p>Como se puede observar el elemento "picture" está compuesto por varios elementos "source", de los cuales cada uno llama a una imagen alternativa a disposición del navegador, estos elementos contienen el atributo "media" el cual define las condiciones de medios bajo las cuales se ejecuta cada imagen alternativa, así como también poseen el atributo "srcset" el cual contiene el llamado al archivo de imagen adecuado para esas condiciones de medios. </p>
+                                <p>En todo caso siempre es necesario incluir el elemento "img" antes del cierre del elemento "picture" esto ya que brinda el "medio" en el cual se mostrarán las imágenes así como también actuará como un recurso alternativo para aquellos casos en los que algún navegador no sea compatible con el elemento "picture".</p>
+                                <p>Para crear imágenes responsive no se puede utilizar JavaScript, esto es ya que lo primero que el navegador carga es el HTML, eso incluye las imágenes, si hacemos que se analice el ancho de la pantalla con JavaScript o CSS para cuando estos sean interpretados las imágenes ya estarán siendo cargadas, por lo tanto sería igual a seleccionar cuál elemento se utilizará luego de haberlo descargado, en este caso se produciría una sobrecarga de los elementos, este sería el peor de los casos para un elemento responsive. </p>
+                                <p>También podemos usar el elemento "picture" y el elemento "source" de una forma más tradicional para los navegadores antiguos, la cual es utilizando los atributos "type" "size" por ejemplo:</p>
+                                <img src="./img/ejmPicture2.PNG" alt="" class="img">
+                                <p>Algunas cosas a tener en cuenta son:</p>
+                                <ul>
+                                    <li><p>El atributo "media" solo se utiliza si se necesita crear imágenes responsive</p></li>
+                                    <li><p>En el elemento "source" solo se puede referenciar imágenes del tipo definido en "type"</p></li>
+                                    <li><p>También se puede crear listas de referencias de elementos en los atributos "srcset" y "sizes" separando los conjuntos de datos con una coma </p></li>
+                                </ul>
+                                <p><b>Nota: recordar que el computador simplemente elegirá el primer elemento que arroje un verdadero, por lo que la posición de los elementos es importante.</b></p>
+                                <p><b>Nota: También hay que recordar que el atributo "srcset" puede referenciar varias imágenes e incluso un atributo de tamaño por lo que se pudiera ofrecer un conjunto de imágenes de varios tamaños e incluso diferentes resoluciones, sin embargo siendo realistas es poco probable que sea necesario hacerlo.</b></p>
+                                <p><b>Nota: Cuando utilice "media", no ofrezca también condiciones de medios dentro del atributo de "size"</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="video"><h3>Video</h3></dt>
+                            <dd>
+                                <p>La etiqueta video fue incorporada en HTML5 por lo que no está disponible en versiones antiguas de los navegadores así como en aquellos que estén basados exclusivamente en el texto. Esta etiqueta permite incorporar videos fácilmente en la página, la estructura de este elemento es:</p>
+                                <img src="./img/ejmVideo.PNG" alt="" class="img">
+                                <p>En este ejemplo se puede apreciar el "contenido de reserva", se puede estructurar de la forma que se desee pero en este caso se trata de un enlace que dirigirá al usuario hacia el video original para que pueda visualizarlo en algún reproductor web como YouTube, la forma de incorporar esto es con un enlace ubicado en el interior del elemento "video", con la característica de que se mostrará al usuario únicamente en los casos en los que el navegador no sea compatible con los elementos HTML5 de "video".</p>
+                                <h4>Atributos</h4>
+                                <p>Posee diversos atributos, algunos de los cuales son exclusivos de este elemento:</p>
+                                <ul>
+                                    <li><p><b>src: </b> Al igual que en otras ocasiones en este se almacena la ruta al archivo de video a reproducir</p></li>
+                                    <li><p><b>Controls: </b> Este elemento es exclusivo del elemento "video", indica al navegador que se deben de incluir la interfaz de control de video del navegador, también se puede usar para crear una propia usando JavaScript</p></li>
+                                    <li><p><b>El párrafo dentro de la etiqueta Video: </b> Se mostrará en aquellas situaciones en las que el navegador no soporte la etiqueta "video" </p></li>
+                                    <li><p><b>width: </b> Define el ancho del recuadro de video en la página</p></li>
+                                    <li><p><b>Height: </b> Define el alto del recuadro de video en la página</p></li>
+                                    <li><p><b>Autoplay: </b> Indica una reproducción automática del elemento mientras la página se carga, no es muy recomendable usarlo ya que los usuarios pueden encontrarlo molesto</p></li>
+                                    <li><p><b>Loop: </b>Hace que el vídeo (o audio) comience a reproducirse cada vez que finaliza. Esto también puede llegar a resultar molesto para los usuarios</p></li>
+                                    <li><p><b>Muted: </b> Hace que los medios se reproduzcan con el sonido apagado de forma predeterminada</p></li>
+                                    <li><p><b>Poster: </b> La URL de una imagen que se mostrará antes de reproducir el vídeo. Está destinado a ser utilizado para la miniatura del vídeo</p></li>
+                                    <li>
+                                        <p><b>Preload: </b> Se utiliza para almacenar en memoria los archivos grandes; Puede tomar uno de estos tres valores:</p>
+                                        <ul>
+                                            <li><p>None: no almacena el archivo en el búfer</p></li>
+                                            <li><p>Auto: almacena el archivo multimedia</p></li>
+                                            <li><p>Metadata: almacena solo los metadatos del archivo</p></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <h4>Compatibilidad</h4>
+                                <p>Ya que se están incluyendo elementos multimedia a la página entra en vigor un tema bastante importante, el cual es: el formato del elemento. Este es un aspecto indispensable al incorporar videos a una página web, esto debido a que existen varios formatos de audio y video, así como varias formas de reproducirlos, por ello dependiendo del navegador que se utilice algunos de estos pueden no ser compatibles, esto puede originar que según cuál sea el formato del elemento que se esté incorporando en la página este no podrá ser visualizado en algunos navegadores.</p>
+                                <p>Esta discrepancia entre los navegadores se debe a que algunos de los formatos de audio y video están sujetos a patentes, lo que imposibilita su empleo en aquellos que no se encuentren autorizados, por lo tanto estos navegadores recurren a formatos alternos que les brinden desempeños similares.</p>
+                                <p>A la hora de implementar un video en la página existen en la actualidad dos formatos establecidos: el formato "mp4" (principalmente soportado en Internet Explorer y Safari) y el formato "webm" (principalmente soportado por Firefox y Chrome), ya que cada uno funciona en algunos navegadores y en otros no.</p>
+                                <p>Lo recomendable es que al incorporar un video en una página web es que se incorpore el elemento una vez por cada formato dentro de la etiqueta "source", es decir se utiliza dos veces el elemento "source" con el atributo "src" en su interior, una ocasión para el elemento en formato "mp4" y otra para el elemento en formato "webm" de la siguiente forma: </p>
+                                <img src="./img/videoFormatos.PNG" alt="" class="img">
+                                <p>Esto ya que el elemento "source" apunta a la propia fuente del navegador, por lo tanto el navegador elegirá el primer formato que este soporte, el elemento "source" también cuenta con el atributo "type", el cual le indica al navegador el formato en el que se encuentra cada elemento, el navegador puede leer este atributo y de este modo omitir los formatos no compatibles ejecutando solo los que sea capaz de reproducir ahorrando de este modo recursos y tiempo, con la implementación de estos dos formatos el video debería de poder ser ejecutado en casi todos los navegadores. </p>
+                                <p><b>Nota: </b> Como mínimo la interfaz debe incluir una manera de empezar y terminar la reproducción, y ajustar el volumen.</p>
+                                <h4>Incorporar subtítulos</h4>
+                                <p>Esto se realiza creando un archivo "WebVTT", este tipo de archivo está creado con el fin de almacenar cadenas de texto junto con metadatos para indicar en qué momento se mostrará cada cadena de texto e incluso información de estilo y posicionamiento. Las cadenas de texto se denominan señales y existen diferentes tipos con diferentes usos:</p>
+                                <ul>
+                                    <li><p><b>Subtitles (Subtítulos): </b> Son traducciones de un lenguaje extranjero usado en el video o audio</p></li>
+                                    <li><p><b>Captions (Leyendas): </b> Son transcripciones de diálogos o sonidos significativos para que puedan ser entendidas en situaciones en las que no se puede escuchar el audio </p></li>
+                                    <li><p><b>timed descriptions (descripciones cronometradas): </b> Texto para conversión a audio, para atender a personas con discapacidad visual</p></li>
+                                </ul>
+                                <p>Un ejemplo de la vista de un código WebVTT sería:</p>
+                                <img src="./img/EjmWebVTT.PNG" alt="" class="img">
+                                <p>Para que este archivo se muestre junto con la reproducción de medios HTML se debe:</p>
+                                <ol>
+                                    <li><p>Guardar el archivo ".vtt" en el lugar correcto</p></li>
+                                    <li><p>Enlazar el archivo ".vtt" con la **etiquetas** "track". La pista debe colocarse dentro de los elementos audio o video, pero después de todos los elementos de origen (source)</p></li>
+                                    <li><p>Usar la **etiquetas** "kind para definir si el archivo se trata de subtítulos, leyendas o descripciones"</p></li>
+                                </ol>
+                                <p>El siguiente es un ejemplo del código resultante:</p>
+                                <img src="./img/ejmSubtitulos.PNG" alt="" class="img">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section class="pagination">
+                        <a href="./multimedia.html" class="desplazar">
+                            <div>
+                                <span class="pagina paginaHTML">
+                                    <span class="pagArrowLeft"> &larr; </span>PREVIO
+                                </span>
+                            </div>
+                        </a>
+                        <div class="numbers">
+                            <a href="./multimedia.html" class="pagina paginaHTML">
+                                <div>
+                                    1
+                                </div>
+                            </a>
+                            <a href="#" class="off">
+                                <div>
+                                    2
+                                </div>
+                            </a>
+                            <a href="./multimedia-pag-3.html" class="pagina paginaHTML">
+                                <div>
+                                    3
+                                </div>
+                            </a>
+                        </div>
+                         <a href="./multimedia-pag-3.html" class="desplazar">
+                           <div>
+                                <span class="pagina paginaHTML">Next <span class="pagArrowRight"> &rarr;</span></span>
+                            </div>
+                        </a>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta, si quieres saber más visita mi perfil de GitHub haciendo clic en mi fotografía, o visitas mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img src="../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                            <a href="" class="footer__instagram">
+                                <img src="../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Currículum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>

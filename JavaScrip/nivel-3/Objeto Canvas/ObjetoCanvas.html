@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+    <title>Objeto Canvas</title>
+</head>
+<header>
+    <nav >
+        <ul class="nav"> 
+            <li><a href="../../../Index.html" class="logo"><img src="../../../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+            <li><a href="../../../HTML/indice.html" class="HTML tema"><span class="text__tema">HTML</span></a></li>
+            <li><a href="../../../CSS/indiceCSS.html" class="CSS tema"><span class="text__tema">CSS</span></a></li>
+            <li><a href="../../indiceNivel.html" class="seleccion__JS tema"><span class="text__tema">JS</span></a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <aside class="aside">
+        <div class="outer ">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_JS">
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+            </label>
+            <div class="nav-aside_JS">
+                <ul>
+                    <a href="../indiceJavaScriptNivel2.html"><h2>Nivel 1 JS</h2></a> 
+                    <div class="aside-divisor"></div>
+                    <h2>Propiedades</h2>    
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Objeto Canvas</h1>
+                    <section>
+                        <p>Canvas se trata de un elemento HTML el cual se encuentra estrechamente relacionado con JavaScript; esto ya que literalmente este elemento requiere de código JavaScript para funcionar. Este elemento se utiliza para generar todo tipo de gráficos, animaciones, composiciones de fotos, publicidades, juegos, entre otras funcionalidades.</p>
+                        <p>En sí el funcionamiento de canvas se basa en delegar ciertas tareas de generación de gráficos al GPU del equipo, de ese modo los equipos modernos permiten optimizar recursos y tiempo.  </p>
+                        <p> En otras palabras, "canvas" se trata de un elemento HTML el cual permite asignar códigos JavaScript al GPU. Esto ya que en equipos modernos este se trata de un componente que permite realizar todo tipo de cálculos relacionados con los gráficos de una forma mucho más óptima de lo que se podría hacer con el procesador del equipo.</p>
+                        <p>Por lo tanto, "canvas" es un elemento que permite asignar tareas de procesamiento al GPU para que de ese modo no todos los cálculos recaigan en el procesador, reduciendo en gran medida los tiempos de carga de animaciones, gráficos, juegos, fotos, etc.</p>
+                        <h4>Ejemplo</h4>
+                        <img src="./img/canvas-1.jpg" class="img" alt="">
+                        <p>Una característica particular de este elemento radica en que por defecto "canvas" posee unas dimensiones de 300px de ancho (width) y un alto de 150px (height). Estas dimensiones se pueden modificar desde CSS, sin embargo esto no es recomendable ya que de ese modo se cambiará la escala de los elementos generados en este, caso para el cual sería necesario emplear un "método de escala". </p>
+                        <h4>Ejemplo</h4>
+                        <img src="./img/canvas-2.jpg" class="img" alt="">
+                        <p>Por ello este es de los pocos, si es que no el único elemento en el que lo más recomendable es asignar las dimensiones de este directamente desde HTML usando las propiedades "width" y "height", para que de ese modo las dimensiones de los elementos generados no se vean alteradas.</p>
+                    </section>
+                    <h2>Canvas con JavaScript</h2>
+                    <section>
+                        <p>La inclusión del JavaScript es bastante simple, ya que se basa en obtener el elemento "canvas" como a cualquier otro elemento HTML, más un paso extra el cual es añadir el "contexto". El contexto se refiere a la tecnología utilizada para generar el elemento en cuestión; estas tecnologías pueden ser definidas como "2d" o "3d". </p>
+                        <h4>Ejemplo</h4>
+                        <img src="./img/canvas-3.jpg" class="img" alt="">
+                        <p>A partir de este punto todos los métodos empleados para construir los elementos se aplican al "contexto", no al canvas, esto ya que estos son construidos sobre el contexto, no sobre el elemento canvas en sí. </p>
+                        <h3>Métodos Básicos</h3>
+                        <p>El objeto "canvas" posee multitud de métodos para poder estructurar cualquier tipo de elementos dentro de este. Los más básicos e indispensables son: </p>
+                        <ul>
+                            <li>
+                                <h4>.strokeRect( )</h4>
+                                <p>Este método permite generar y posicionar una cuadrícula hueca, para lo cual recibe cuatro tipos de datos:</p>
+                                <ol>
+                                    <li><p>El primer dato corresponde al margen "left" respecto al borde del canvas.</p></li>
+                                    <li><p>Este segundo dato corresponde al margen "top" respecto al borde del canvas.</p></li>
+                                    <li><p>El tercer dato corresponde al ancho (width) del elemento expresado en píxeles.</p></li>
+                                    <li><p>El cuarto dato corresponde al alto (height) del elemento expresado en píxeles.</p></li>
+                                </ol>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/canvas-4.jpg" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/canvas-5.jpg" class="img" alt="">
+                            </li>
+                            <li>
+                                <h4>.fillRect( )</h4>
+                                <p>Este método es exactamente igual al anterior, con la diferencia de que la cuadrícula se encuentra rellena. </p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/canvas-6.jpg" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/canvas-7.jpg" class="img" alt="">
+                            </li>
+                            <li>
+                                <h4>.strokeStyle( )</h4>
+                                <p>Se trata de un método que permite modificar el color empleado en los elementos generados por "strokeRect".</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/canvas-8.jpg" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/canvas-9.jpg" class="img" alt="">
+                                <p>Nota: Este método debe ser incorporado antes de "strokeRect", es decir, debe aplicarse antes de ser generado el rectángulo.</p>
+                            </li>
+                            <li>
+                                <h4>.fillStyle( )</h4>
+                                <p>Se trata de un método que permite modificar el color empleado en los elementos generados por "fillRect".</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/canvas-10.jpg" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/canvas-11.jpg" class="img" alt="">
+                                <p>Nota: Este método debe ser incorporado antes de "fillRect", es decir, debe aplicarse antes de ser generado el rectángulo.</p>
+                            </li>
+                            <li>
+                                <h4>lineWidth</h4>
+                                <p>Este método permite definir el grosor de las líneas.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/canvas-12.jpg" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/canvas-13.jpg" class="img" alt="">
+                            </li>
+                            <li>
+                                <h4>Líneas en Canvas</h4>
+                                <p>Las líneas, al tratarse de un elemento de diseño tan versátil, cuentan con múltiples métodos para desarrollar líneas de diversas características. </p>
+                                <p>"lineTo" permite definir la ubicación de los puntos de inicio y final de la línea, para lo cual se le añaden dos valores referentes a la posición del punto en el eje X y eje Y.</p>
+                                <p>"stroke" por su parte es el método encargado de generar la línea en sí, la cual parte y culmina en los puntos marcados por "lineTo".</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/canvas-14.jpg" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/canvas-15.jpg" class="img" alt="">
+                                <p>"lineTo" permite generar cualquier cantidad de puntos los cuales pueden ser unidos por "stroke".</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/canvas-16.jpg" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/canvas-17.jpg" class="img" alt="">
+                                <p>"closePath" para indicar el cierre de la línea. De ese modo, si más adelante se inicia una línea nueva, los puntos indicados para esta no se vincularán erróneamente con los de la línea actual.  </p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/canvas-18.jpg" class="img" alt="">
+                                <p>Por último se añade el método "beginPath", el cual indica que los siguientes puntos pertenecen a una nueva línea independiente a la anterior. De lo contrario, esta nueva línea se unirá a la anterior, aun si se usa "closePath".  </p>
+                            </li>
+                        </ul>
+                        <p>Nota: El elemento "canvas" no funciona con elementos SVG, sino que en su lugar lo hace en base a píxeles, por ello son susceptibles a las dimensiones de la pantalla del dispositivo.</p>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../../../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta. Si quieres saber más, visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img  src="../../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                            <a href="" class="footer__instagram">
+                                <img src="../../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Currículum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>

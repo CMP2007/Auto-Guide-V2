@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+        <title>Propiedad Display</title>
+    </head>
+    <header>
+        <nav >
+            <ul class="nav"> 
+                <li><a href="../Index.html" class="logo"><img src="../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+                <li><a href="../HTML/indice.html" class="HTML tema"><span class="text__tema">HTML</span></a></li>
+                <li><a href="../CSS/indiceCSS.html" class="seleccion__CSS tema"><span class="text__tema">CSS</span></a></li>
+                <li><a href="../JavaScrip/Indice__JS.html" class="JS tema"><span class="text__tema">JS</span></a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <aside class="aside">
+        <div class="outer ">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_CSS">
+                <span class="hl_CSS"></span>
+                <span class="hl_CSS"></span>
+                <span class="hl_CSS"></span>
+                <span class="hl_CSS"></span>
+                <span class="hl_CSS"></span>
+            </label>
+            <div class="nav-aside_CSS">
+                <ul>
+                    <h2>Teorías CSS</h2>
+                    <li><a href="./espesificidad.html"><h3>Especificidad</h3></a></li>
+                    <li><a href="./metodologia-BEN.html"><h3>Metodología BEM</h3></a></li>
+                    <li><a href="./teoriaMedidas.html"><h3>Teoría Medidas de Texto</h3></a></li>
+                    <li><a href="./normmalize.html"><h3>Archivo Normalize.CSS</h3></a></li>
+                    <li><a href="./TeoriaCajas.html"><h3>Teoría de las Cajas</h3></a></li>
+                    <div class="aside-divisor"></div>
+                    <h2>Propiedades</h2>
+                    <li><a href="./selectoresCSS.html "><h3>Selectores CSS</h3></a></li>
+                    <li><a href="./pseudoElementos.html"><h3>Pseudo-Elementos</h3></a></li>
+                    <li><a href="./pseudoClases.html"><h3>Pseudo-Clases</h3></a></li>
+                    <li><a href="./propiedadesTexto.html"><h3>Propiedades de texto</h3></a></li>
+                    <li><a href="./PropiedadesCajas.html"><h3>Propiedades de Cajas</h3></a></li>
+                    <li><a href="./position.html"><h3>Propiedad Position</h3></a></li>
+                    <li><a href="./propiedadesDiseño.html"><h3> Diseños CSS</h3></a></li>
+                    <li><a href="./object-fit-position.html"><h3> Object-fit-Object-position</h3></a></li>
+                    <li><a href="./coloresCSS.html"><h3>Colores CSS</h3></a></li>
+                    <li><a href="./display/flexBox.html"><h3>Flex-Box</h3></a></li>
+                    <li><a href="./display/Grid.html"><h3>Grid-Box</h3></a></li>
+                    <li><a href="./responsive-desing.html"><h3>Responsive Design</h3></a></li>
+                    <li><a href="./transiciones.html"><h3>Transition</h3></a></li>
+                    <li><a href="./animaciones.html"><h3>Animaciones</h3></a></li>
+                    <li><a href="./transform.html"><h3>Propiedad Transform</h3></a></li>
+                    <li><a href="./variables.html"><h3>Variables CSS</h3></a></li>
+                    <li><a href="./filtros.html"><h3>Filtros CSS</h3></a></li>
+                    <div class="aside-divisor"></div>
+                    <h2>Otros</h2>
+                    <li><a href="./ErroresComunes.html"><h3>Errores Comunes</h3></a></li>
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Propiedad Display</h1>
+                    <section id="descripcion">
+                        <p>Esta propiedad altera el tipo de elemento en sí, por lo tanto esto afecta directamente a su comportamiento, es decir, esta propiedad se centra en alterar el comportamiento de los elementos del sitio web. Esta propiedad cuenta con numerosos valores disponibles; cada uno de estos cuenta con un comportamiento en específico. A su vez podemos agrupar algunos de estos como los <b>tipos de elementos básicos</b> los cuales son:</p>
+                    </section>
+                    <section id="basicos">
+                        <h2>Tipos de elementos básicos </h2>
+                        <dl>
+                            <dt id="Inline"><h3>Inline</h3></dt>
+                            <dd>
+                                <p>Este valor define que el comportamiento de la caja sea el de un elemento de tipo línea, es decir, estos elementos únicamente dispondrán del espacio necesario para mostrar su contenido, los demás elementos podrán posicionarse alrededor sin ningún inconveniente. Una de las características de este valor es que no se pueden modificar las dimensiones del elemento.</p>
+                            </dd>
+                            <dt id="block"><h3>Block</h3></dt>
+                            <dd>
+                                <p>Este valor define que el comportamiento de la caja sea el de un elemento tipo bloque, es decir, estos elementos dispondrán del espacio vertical necesario para mostrar su contenido, sin embargo horizontalmente dispondrán de todo el espacio disponible, por lo que otros elementos únicamente podrán ubicarse debajo o arriba de estos. Otra característica de este valor es que no se pueden ubicar elementos en el eje <b>X</b> de los elementos de bloque, por lo que son muy limitados al posicionar elementos a su alrededor.</p>
+                            </dd>
+                            <dt id="inline-block"><h3>Inline-block</h3></dt>
+                            <dd>
+                                <p>El efecto de este valor se podría decir que es una mezcla de <b>inline</b> y de <b>block</b>, esto ya que permite modificar las dimensiones de la caja a placer, y posicionar elementos a su alrededor sin ningún inconveniente.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section id="descripcion2">
+                        <p>Estos tipos de elementos básicos sientan la base de las páginas web modernas, sin embargo hace mucho tiempo dejaron de ser lo único en lo que se basan las páginas web. Con el paso del tiempo y la evolución de los lenguajes web se crearon nuevas formas de maquetar las páginas web, no obstante estos nuevos métodos son bastante complejos y extensos por lo que se desglosan en sus propios apartados a continuación: </p>
+                    </section>
+                    <section id="maquetado">
+                        <div>
+                            <a href="./display/flexBox.html"><h3>FlexBox</h3></a>
+                        </div>
+                        <div>
+                            <a href="./display/Grid.html"><h3>Grid</h3></a>
+                        </div>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta, si quieres saber más visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img  src="../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                            <a href="" class="footer__instagram">
+                                <img src="../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Curriculum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>

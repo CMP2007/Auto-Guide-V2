@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+    <title>Variables</title>
+</head>
+<header>
+    <nav >
+        <ul class="nav"> 
+            <li><a href="../../../Index.html" class="logo"><img src="../../../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+            <li><a href="../../../HTML/indice.html" class="HTML tema"><span class="text__tema">HTML</span></a></li>
+            <li><a href="../../../CSS/indiceCSS.html" class="CSS tema"><span class="text__tema">CSS</span></a></li>
+            <li><a href="../../indiceNivel.html" class="seleccion__JS tema"><span class="text__tema">JS</span></a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <aside class="aside">
+        <div class="outer ">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_JS">
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+                <span class="hl_JS"></span>
+            </label>
+            <div class="nav-aside_JS">
+                <ul>
+                    <a href="../indiceJavaScriptNivel2.html"><h2>Nivel 1 JS</h2></a> 
+                    <div class="aside-divisor"></div>
+                    <h2>Propiedades</h2>    
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Control de Flujo y Manejo de Errores</h1>
+                    <section>
+                        <p>Se tratan de todos aquellos recursos o herramientas con los que cuenta JavaScript para manipular el flujo de ejecución del código así como de control de errores, para lo cual se crean secciones del código estipuladas para ejecutarse en el caso de que ocurra un error imprevisto. </p>
+                    </section>
+                    <h2>Control de Flujo </h2>
+                    <section>
+                        <p>Se trata de las sentencias de control de flujo, las cuales son todos aquellos elementos que permitan manipular o controlar el flujo de ejecución del código, algunos ejemplos de esto son: </p>
+                        <ul>
+                            <li><p><a href="../../nivel-1/Condicionales/condicionales.html#else" class="a__JS"><h3>Else</h3></a></p></li>
+                            <li><p><a href="../../nivel-1/Condicionales/condicionales.html#elseif" class="a__JS"><h3>Else if</h3></a></p></li>
+                            <li><p><a href="../../nivel-1/Condicionales/condicionales.html#if" class="a__JS"><h3>If</h3></a></p></li>
+                        </ul>
+                        <p> En todos estos casos nos permiten controlar el flujo del código a través de condicionales, sin embargo existen otros tipos de sentencias del flujo las cuales cuentan con otro tipo de características, las cuales son:</p>
+                        <dl>
+                            <dt><h3>Los Bloques</h3></dt>
+                            <dd>
+                                <p>Se tratan de secciones de código en las que se crean ámbitos de variables independientes del resto del código, es decir, al utilizar las llaves en una sección del código, todas las variables que se encuentren dentro de estas pertenecerán a un alcance local, por lo tanto solo podrán ser utilizadas dentro de este bloque. </p>
+                                <p>Por lo tanto este concepto es igual al del alcance global o local de las variables al usarse en otras estructuras de bloques como funciones, condicionales, objetos etc, para lo cual se mantiene la funcionalidad de los diferentes tipos de variable: const, var y let.</p>
+                                <img src="./img/bloques-1.PNG" alt="" class="img">
+                                <p>En otras palabras los bloques nos permiten crear apartados de variables locales sin que se genere un conflicto con las variables o datos externos.</p>
+                            </dd>
+                            <dt><h3>Sentencia Switch</h3></dt>
+                            <dd>
+                                <p>Se trata de un último tipo de sentencia de control de flujo, su función es semejante a la de "if" "else if" y "else", ya que esta también define el qué código ejecutar según las condiciones que se cumplan o incumplan. </p>
+                                
+                                <p>Sin embargo la estructura de "Switch" es bastante diferente, ya que esta a diferencia de los otros condicionales los cuales por cada uno de sus usos definen un bloque de código a ejecutar, y el conjunto de estos genera una estructura de condiciones para diversos casos que se puedan presentar, "Switch" por cada una de sus implementaciones permite definir múltiples bloques de códigos para los diversos casos. </p>
+                                <p>Para esto la sintaxis de "Switch" está compuesta por la declaración de su palabra clave, (nombre) la cual recibe un dato el cual definirá los casos de ejecución, también posee la palabra clave "case", la cual define cada uno de los casos de ejecución, para lo cual luego de este se define el valor del dato que desencadenará el bloque de código (condición), seguido de dos puntos (:), seguido del código a ejecutar.  </p>
+                                <p>Para cerrar cada uno de los casos se utiliza la palabra clave "break", la cual al igual que en las funciones detiene la ejecución del "Switch" y evita que se ejecuten los otros casos, por último se usa la palabra clave "default", la cual permite definir un caso que se ejecutará si ninguna de las otras condiciones es cumplida. </p>
+                                <img src="./img/switch-1.jpg" class="img" alt="">
+                                <p>En este ejemplo el resultado en consola es "no es ninguna", ya que el valor de la variable "pito" no cumple con ninguna de las condiciones definidas.</p>
+                                <p>Nota: Una característica de "Switch" es que posee un rendimiento bastante inferior a una estructura condicional compuesta por "if", "else if" y "else", por lo que por lo general solo es usada para aplicar las condiciones de códigos complejos ya que este permite un código más legible, o al implementar sentencias complejas bastante específicas, para la gran mayoría de los casos casi siempre es más óptimo usar los otros condicionales. </p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <h2>Control De Errores</h2>
+                    <section>
+                        <p>En JavaScript así como en cualquier otro lenguaje se pueden ocasionar multitud de errores al ejecutar un código, por lo tanto es un aspecto que el lenguaje está preparado para enfrentar, razón por lo cual existen lo que son "sentencias de manejo de excepciones", las cuales permiten notificar, documentar o definir errores de forma que estos sean de ayuda para el desarrollador, otros programadores e incluso los usuarios . </p>
+                        <dl>
+                            <dt><h3>Excepciones</h3></dt>
+                            <dd>
+                                <p>Estas consisten en el manejo de flujo de los errores, razón por la cual existen varios tipos de errores dentro del lenguaje, estos tipos son:  </p>
+                                <ul>
+                                    <li>
+                                        <p>ECMAScript: Se trata de aquellas excepciones que ocurren en las capas internas del lenguaje (tecnología interna de este).</p>
+                                    </li>
+                                    <li>
+                                        <p>DOMException y DOMError: Son todas aquellas excepciones relacionadas al DOM.</p>
+                                    </li>
+                                </ul>
+                                <p>Todo lo referente a las excepciones ECMAScript se encuentra aquí: <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects#objetos_fundamentales" class="a__JS">Objetos Fundamentales JS</a></p>
+                                <p>A su vez todo lo referente a las excepciones DOMException se encuentra en: <a href="https://developer.mozilla.org/es/docs/Web/API/DOMException" class="a__JS">DOMException</a></p>
+                                <p>Y por último todo lo referente a las excepciones DOMError está en: <a href="https://developer.mozilla.org/es/docs/Web/API/DOMError" class="a__JS">DOMError</a></p>
+                            </dd>
+                            <dt><h3>Try...Catch</h3></dt>
+                            <dd>
+                                <p>Se trata de un mecanismo para capturar los errores, y en función de esto definir los mensajes de estos así como ejecutar un bloque de código en consecuencia, es decir permite que se defina el qué hacer y cómo notificar sobre el error.</p>
+                                <p>Para esto el mecanismo consta de dos partes, las cuales son "try" la cual contiene el código que se ejecutará, la cual retorna cualquier error que se origine en este, y "catch", la cual recibe el error originado en "try" y en respuesta ejecuta el código definido dentro de este.</p>
+                                <p>Nota: En el "catch" se suele definir el valor dato receptor del error con nombres como "e" o "error" por temas de legibilidad. </p>
+                                <p>Debido a esta dependencia para manejar el error es que ninguno de los elementos funcionará si no se encuentran los dos juntos.</p>
+                                <img src="./img/tryCatch-1.jpg" class="img" alt="">
+                                <p>De este modo se pueden generar mensajes o acciones de error personalizables las cuales permiten el definir el manejo de errores de un proyecto.</p>
+                                <p>Es necesario tener en cuenta que "try catch" no funciona con errores de sintaxis, únicamente funciona para definir errores "esperados" que pudiesen suceder con alguno de los datos del código, del mismo modo al usar "try catch" salvo por los de sintaxis, el manejo de errores por defecto de JavaScript se desactiva al usar este recurso, esto para permitir que las implementaciones del desarrollador se lleven a cabo.</p>
+                                <p>Por último es necesario tener en cuenta que existen dos tipos de "try catch", los cuales son el "catch" condicional e incondicional.</p>
+                                <ul>
+                                    <li>
+                                        <p>Condicional: Se trata de aquel "catch" que dentro de sí contiene condicionales para ejecutarse según sea el caso del error, es decir es un "catch" con estructuras "if", "else" o "else if" dentro de sí.</p>
+                                        <img src="./img/catchCondicional-1.jpg" class="img" alt="">
+                                    </li>
+                                    <li>
+                                        <p>Incondicional: Simplemente se trata de aquel "catch" que únicamente posee una estructura de código dentro de sí, es decir es aquel "catch" que no posee ningún condicional dentro de este, como es el caso del primer ejemplo de "try catch".</p>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dt><h3>Finally</h3></dt>
+                            <dd>
+                                <p>Se trata de otra sección del "try catch", la cual se utiliza para incorporar un bloque de código que se ejecutará sin importar si se cumple el bloque "try" o el bloque "catch", en otras palabras sin importar si ocurre un error o no, este segmento del código se ejecutará de igual forma.</p>
+                                <p>Por lo tanto el bloque "finally" tiene la jerarquía suficiente para ignorar elementos como el "return", los cuales detienen la ejecución del método, por ello aun después de un "return" el bloque de "finally" se ejecutará, sin importar el cómo se constituya el código de los bloques "try catch". </p>
+                                <img src="./img/tryCatchFinaly-1.jpg" class="img" alt="">
+                                <p>En el caso del ejemplo, el bloque "finally" sobreescribe el valor de la propiedad "return", por lo tanto la constante "prueba" retorna "3".</p>
+                            </dd>
+                            <dt><h3>Sentencia Throw</h3></dt>
+                            <dd>
+                                <p>Esta sentencia permite disparar un error de forma intencionada, literalmente al emplearlo se generará un error con el valor que se le especifique.</p>
+                                <h4>Código</h4>
+                                <img src="./img/tryCatchThrow-1.jpg" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/tryCatchThrow-2.jpg" class="img" alt="">
+                                <p>Esta sentencia funciona dentro o fuera de un "try catch" de igual forma, la diferencia radica en que al usarse dentro de un "try catch" este error puede ser manipulado.</p>
+                                <p>A su vez el "throw" puede disparar otros tipos de elementos como por ejemplo objetos: </p>
+                                <h4>Código</h4>
+                                <img src="./img/tryCatchThrow-3.jpg" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/tryCatchThrow-4.jpg" class="img" alt="">
+                                <p>De ese modo se puede disparar cualquier tipo de dato con "throw" incluyendo arrays y objetos como se pudo apreciar, para lo cual se puede acceder a los valores o propiedades de la misma forma que se haría con normalidad:</p>
+                                <h4>Código</h4>
+                                <img src="./img/tryCatchThrow-5.jpg" class="img" alt="">
+                                <h4>Resultado</h4>
+                                <img src="./img/tryCatchThrow-6.jpg" class="img" alt="">
+                            </dd>
+                            <dt><h3>Casos de uso del Try Catch</h3></dt>
+                            <dd>
+                                <p>Este elemento realmente no es demasiado usado, esto se debe a que se recomienda que su implementación se reserve para las situaciones en las que realmente se esté obligado a trabajar con excepciones, las cuales en la mayoría de las ocasiones ocurren cuando surgen problemas que están fuera del control del desarrollador, por ejemplo los llamados a la base de datos, los cuales por motivos externos como la conexión del usuario pueden fallar. </p>
+                                <p>No se recomienda el uso de "try catch" para tratar errores que sean generados por el código, a menos que se usen para alertar o notificar a otro programador o al usuario de un aspecto del error o de un suceso. </p>
+                            </dd>
+                        </dl>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../../../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta, si quieres saber más visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img  src="../../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                            <a href="" class="footer__instagram">
+                                <img src="../../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Curriculum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>

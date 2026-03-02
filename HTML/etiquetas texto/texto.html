@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Pathway+Extreme:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+        <title>Etiquetas de texto</title>
+    </head>
+    <header>
+        <nav >
+            <ul class="nav"> 
+                <li><a href="../../Index.html" class="logo"><img src="../../logos/Logo.png" width="90px" height="90px" alt=""></a></li>
+                <li><a href="../indice.html" class="seleccion__HTML tema">HTML</a></li>
+                <li><a href="../../CSS/indiceCSS.html" class="CSS tema">CSS</a></li>
+                <li><a href="../../JavaScrip/Indice__JS.html" class="JS tema">JS</a></li>
+                <div class="indicador"></div>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <aside class="aside">
+        <div class="outer ">    
+            <input type="checkbox" id="menu" checked="checked" class="input-18"/>
+            <label for="menu" class="menu-aside_HTML">
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+                <span class="hl_HTML"></span>
+            </label>
+            <div class="nav-aside_HTML">
+                <ul>
+                        <h2>Temas HTML</h2>
+                        <li><a href="../etiquetas estructura/estructura.html"><h3>Estructura</h3></a></li>
+                        <li><a href="../Etiquetas uso espesifico/usoEspesifico.html"><h3>Etiquetas Generales</h3></a></li>
+                        <li><a href="../etiquetas listas/listas.html"><h3>Listas</h3></a></li>
+                        <li><a href="../etiquetas de metadatos/metadatos.html"><h3>Metadatos</h3></a></li>
+                        <li><a href="../Visualizar codigo/VerCodigo.html"><h3>Representar código</h3></a></li>
+                        <li> <a href="../Multimedia/multimedia.html"><h3>Multimedia</h3></a></li>
+                        <li><a href="../Tablas HTML/tablas.html"><h3>Tablas</h3></a></li>
+                        <li><a href="../Eventos HTML/eventos.html"><h3>Eventos</h3></a></li>
+                        <li><a href="../Formularios HTML/formularios.html"><h3>Formularios</h3></a></li>
+                        <li><a href="../Validaciones/validaciones.html"><h3>Validaciones</h3></a></li>
+                        <li><a href="../Enviar Datos Form/EnviarDatos.html"><h3>Envío de Datos</h3></a></li>
+                        <li><a href="../PersonalizarControladores/ControladoresJS.html"><h3>Controladores JS</h3></a></li>
+                        <li> <a href="../Pre-cargar Contenido/Precargar.html"><h3>Pre-Carga</h3></a></li>
+                        <li><a href="../Notas/notas.html"><h4>Recordatorios</h4></a></li>
+                </ul>
+            </div>
+            <div class="desplazamiento">
+                <article class="content">
+                    <h1>Etiquetas de texto</h1>
+                    <section id="Descripcion">
+                        <p>Este apartado trata sobre todas aquellas etiquetas cuya función consiste en modificar o ajustar la forma en la que se visualizará el texto de un elemento.</p>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="abbr"><h3>Abbr</h3></dt>
+                            <dd>
+                                <p>Se trata de una etiqueta para definir las abreviaturas; su efecto es que la abreviatura o el acrónimo se mostrará con un subrayado punteado y, al posicionar el ratón sobre este, se mostrará un texto emergente con la expresión completa del término. Para definir la expresión completa se utiliza el atributo "title", seguido de la expresión.</p>
+                                <img src="./img/ejmAbrebiatura.PNG" alt="" class="img">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dt id="b"><h3>B</h3></dt>
+                            <dd>
+                                <p>Su función únicamente es la de mostrar el texto que se encuentre dentro de esta etiqueta en negritas; no añade ningún valor semántico a este.</p>
+                            </dd>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="em"><h3>Em</h3></dt>
+                            <dd>
+                                <p>Se usa para dar un poco de énfasis o relevancia a algún texto; el texto dentro de esta etiqueta se muestra en cursiva.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="i"><h3>I</h3></dt>
+                            <dd>
+                                <p>Consiste en una etiqueta para mostrar el texto en cursiva o itálica; no brinda ningún valor semántico.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="span"><h3>Span</h3></dt>
+                            <dd>
+                                <p>Tal y como se mencionó en el apartado de <a href="../etiquetas estructura/estructura.html" class="a__HTML">etiquetas de estructura</a>, se trata de una etiqueta no semántica de texto; por lo tanto, su función es incorporarlo en el interior de un texto para hacer posible distinguir algún área del mismo sin añadirle valor semántico. Esto se puede lograr usando el atributo "class" para poder incorporar CSS.</p>
+                                <p><b>Nota: por sí mismo, el navegador no muestra algún estilo en particular al texto que se encuentre en este elemento.</b></p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="sup_sub"><h3>Superíndice y Subíndice</h3></dt>
+                            <dd>
+                                <p>En ocasiones puede ser necesario incorporar estos elementos en algún texto; para ello existen estas dos etiquetas:</p>
+                                <ul>
+                                    <li><p><b>sup: </b> Esta etiqueta se usa para definir el <b>superíndice</b>; lo hace encasillando a este en su interior.</p></li>
+                                    <li><b>sub: </b> Esta etiqueta se usa para definir el <b>subíndice</b>; lo hace encasillando a este en su interior.</li>
+                                </ul>
+                                <p>Un ejemplo de ambos casos es el siguiente:</p>
+
+                                <h4>Código</h4>
+                                <img src="./img/ejmSupSub1.PNG" alt="" class="img">
+
+                                <h4>Visualización</h4>
+                                <img src="./img/ejmSupSub2.PNG" alt="" class="img">
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="strong"><h3>Strong</h3></dt>
+                            <dd>
+                                <p>Se usa para darle gran importancia al texto dentro de esta etiqueta; se muestra como texto en negritas.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <dl>
+                            <dt id="u"><h3>U</h3></dt>
+                            <dd>
+                                <p>Su función únicamente es la de mostrar el texto que se encuentre dentro de este subrayado; no añade ningún valor semántico a este.</p>
+                            </dd>
+                        </dl>
+                    </section>
+                    <section id="CitarContenido">
+                        <h2>Etiquetas para Citar Contenido</h2>
+                        <p>Una peculiaridad de HTML es que, entre tantos elementos, también existen algunos con la función específica de estructurar las citas de texto de forma adecuada. En base al tipo de cita, se emplea un elemento diferente según el caso.</p>
+                        <dl>
+                            <dt id="CitasIndependiente"><h3>Citas en bloque independiente</h3></dt>
+                            <dd>
+                                <p>Para estos casos se utiliza el elemento <b>&lt;blockquote&gt;</b>, el cual debe encasillar una etiqueta "p" con la cita. Esta se mostrará como un párrafo con sangría a la izquierda y derecha; también es importante utilizar el atributo "cite=' '", en el cual se puede ingresar una URL que apunte a la fuente de la cita.</p>
+                                <h4>Ejemplo</h4>
+                                <img src="./img/ejmCitas1.PNG" alt="" class="img">
+                                <p><b>Nota: Este tipo de cita indica que es una cita ampliada.</b></p>
+                            </dd>
+                            <dt id="CitasLinea"><h3>Citas en Línea</h3></dt>
+                            <dd>
+                                <p>Estas funcionan igual que las citas en bloque, con la diferencia de que se utiliza la etiqueta <b>"q"</b>, la cual se incorpora dentro del elemento "p", encasillando únicamente las palabras deseadas. El resultado será que la cita se mostrará entre comillas. </p>
+                                <img src="./img/ejmCitas2.PNG" alt="" class="img">
+                                <p><b>Nota: Estas indican que se trata de una cita breve que no necesita de un salto de línea.</b></p>
+                            </dd>
+                            <dt id="fuente"><h3>Incorporar la Fuente de la Página</h3></dt>
+                            <dd>
+                                <p>El atributo "cite" parece útil, pero los buscadores o motores de lectura no suelen mostrarlo visualmente. Por lo tanto, la mejor forma de incorporar la fuente en la página es utilizando un enlace (a); para esto, simplemente incorporamos este elemento en la redacción de forma que el enunciado o el tipo de cita lo permita, con la URL que dirija a la fuente deseada. </p>
+                            </dd>
+                        </dl>
+                    </section>
+                </article>
+                <footer class="content">
+                    <h2>Contacto</h2>
+                    <div class="footer__top">
+                        <div class="footer__perfil">
+                            <img src="../../logos/contacto.jpg" class="Perfil_logo" alt="">
+                        </div>
+                        <div class="Presentacion links">
+                            <h3>¿Quién soy?</h3>
+                            <p>Mi nombre es Carlos Miguel Puche Moreno, estoy estudiando programación web de forma autodidacta. Si quieres saber más, visita mi perfil de GitHub haciendo clic en mi fotografía, o visita mis redes sociales:</p>
+                        </div>
+                        <div class="footer__Redes links">
+                            <h3>Redes</h3>
+                                <a href="" class="footer__Facebook">
+                                    <img  src="../../../Fuentes/iconmonstr-facebook-6-32.png" alt="">
+                                </a>
+                
+                            <a href="" class="footer__instagram">
+                                <img src="../../../Fuentes/iconmonstr-instagram-11-32.png" alt="">
+                            </a>
+                            <a class="footer__gmail" href="mailto:puchecarlos@gmail.com">
+                                <img src="../../../Fuentes/iconmonstr-email-12-32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__Culliculum links">
+                            <h3>Currículum</h3>
+                            <a href="https://github.com/CMP2007" class="footer__GitHub">
+                                <img src="../../../Fuentes/iconmonstr-github-1-32.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>  
+        </div>  
+    </aside>
+</body>
+</html>
